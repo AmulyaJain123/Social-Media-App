@@ -8,6 +8,9 @@ module.exports = {
     }, 
     extend: {},
   },
+  safelist: {
+    
+  },
   plugins: [],
 }
 

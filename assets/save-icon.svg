@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20"
+    x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+    <g>
+        <path
+            d="M490.101 76.8 435.2 21.899c-11.7-11.7-26.7-19.2-43.2-21.301C388.7.3 385.401 0 382.099 0H45C20.099 0 0 20.099 0 45v421c0 24.899 20.099 45 45 45h422c24.901 0 45-20.101 45-45V129.899c0-20.1-7.8-39-21.899-53.099z"
+            style="" fill="#495a79" data-original="#495a79"></path>
+        <path
+            d="M512 129.899V466c0 24.899-20.099 45-45 45H256V0h126.099C385.4 0 388.7.3 392 .599c16.5 2.1 31.5 9.6 43.2 21.301l54.901 54.9C504.2 90.899 512 109.799 512 129.899z"
+            style="" fill="#42516d" data-original="#42516d" class=""></path>
+        <path d="M407 241H105c-8.284 0-15 6.714-15 15v76h332v-76c0-8.286-6.716-15-15-15z" style="" fill="#5af1ff"
+            data-original="#5af1ff"></path>
+        <path d="M407 241H256v91h166v-76c0-8.286-6.716-15-15-15z" style="" fill="#51dae6" data-original="#51dae6">
+        </path>
+        <path d="M90 302h332v210H90z" style="" fill="#d9e1f2" data-original="#d9e1f2"></path>
+        <path d="M256 302h166v210H256z" style="" fill="#c3cde6" data-original="#c3cde6"></path>
+        <path d="M391.401 0H120v165c0 8.284 6.716 15 15 15h242c8.284 0 15-6.716 15-15V.599L391.401 0z" style=""
+            fill="#dbe2f2" data-original="#dbe2f2" class=""></path>
+        <path d="M256 0v180h121c8.284 0 15-6.716 15-15V.599c-.234-.234-.364-.366-.599-.599H256z" style="" fill="#cfd6e6"
+            data-original="#cfd6e6" class=""></path>
+        <path d="M332 150h-91V0h91v150z" style="" fill="#495a79" data-original="#495a79"></path>
+        <path d="M256 0h76v150h-76z" style="" fill="#42516d" data-original="#42516d" class=""></path>
+        <path d="M347 452H165c-8.291 0-15-6.709-15-15s6.709-15 15-15h182c8.291 0 15 6.709 15 15s-6.709 15-15 15z"
+            style="" fill="#949fb3" data-original="#949fb3"></path>
+        <path d="M347 422h-91v30h91c8.291 0 15-6.709 15-15s-6.709-15-15-15z" style="" fill="#8a94a8"
+            data-original="#8a94a8"></path>
+        <path d="M347 392H165c-8.291 0-15-6.709-15-15s6.709-15 15-15h182c8.291 0 15 6.709 15 15s-6.709 15-15 15z"
+            style="" fill="#949fb3" data-original="#949fb3"></path>
+        <path d="M347 362h-91v30h91c8.291 0 15-6.709 15-15s-6.709-15-15-15z" style="" fill="#8a94a8"
+            data-original="#8a94a8"></path>
+    </g>
+</svg>

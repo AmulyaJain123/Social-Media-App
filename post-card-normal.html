@@ -1,0 +1,85 @@
+<div class="post-card bg-white mx-auto mt-6 mb-6 shadow-sm rounded-xl p-3 flex flex-col">
+    <!-- Header -->
+    <div class="flex justify-between">
+        <!-- Name and profile pic -->
+        <div class="flex ">
+            <!-- Account -->
+            <div class="group flex ml-2 justify-center items-center pr-3 group">
+                <a href="#">
+                    <div id="account" class="h-[30px] w-[30px] rounded-full border-black">
+                    </div>
+                </a>
+            </div>
+            <!-- Name and Time -->
+            <div class="flex flex-col justify-around">
+                <h3 class="text-sm font-semibold">Amulya Jain</h3>
+                <h3 class="text-xs text-zinc-400">2 hours ago</h3>
+            </div>
+        </div>
+        <!-- More Dropdown -->
+        <button>
+            <div
+                class="h-[35px] w-[35px] rounded-full flex justify-center items-center hover:bg-slate-200 duration-200">
+                <img src="assets/more-horizontal-dots.svg" alt="">
+            </div>
+        </button>
+    </div>
+    <!-- Post -->
+    <div class="w-full group mt-4 bg-gray-100 flex items-center justify-center rounded-lg h-[384px]">
+        <a href="#" class="w-full h-full">
+            <img class="object-cover h-full w-full rounded-lg group-hover:opacity-75 duration-200"
+                src="assets/the-horse-is-moving-on-the-meadow-generative-ai-free-photo.jpg" alt="">
+        </a>
+    </div>
+    <!-- Like Comments Share and Save -->
+    <div class="flex mt-1 justify-between py-2">
+        <!-- left-side -->
+        <div class="flex space-x-4">
+            <!-- like-div -->
+            <div class="flex items-center">
+                <button class="group">
+                    <img class="group-hover:opacity-55" src="assets/heart-like.svg" alt="">
+                </button>
+                <span class="text-zinc-400 flex items-center text-sm ml-2">1600</span>
+            </div>
+            <!-- Comments-div -->
+            <div class="flex items-center">
+                <button class="group">
+                    <img class="group-hover:opacity-55" src="assets/messages-icon-topnav.svg" alt="">
+                </button>
+                <span class="text-zinc-400 flex items-center text-sm ml-2">236</span>
+            </div>
+            <!-- Share Button -->
+            <button>
+                <img class="hover:opacity-55" src="assets/send-airplane.svg" alt="">
+            </button>
+        </div>
+        <!-- right side -->
+        <div>
+            <button>
+                <img class="hover:opacity-55" src="assets/bookmark-save.svg" alt="">
+            </button>
+        </div>
+    </div>
+    <hr>
+    <!-- Add a Comment -->
+    <div class="flex mt-4 items-center">
+        <!-- left part -->
+        <div class="flex w-full">
+            <!-- Account -->
+            <div class="group flex ml-2 justify-center items-center pr-3 group">
+                <a href="#">
+                    <div id="account" class="h-[25px] w-[25px] rounded-full border-black">
+                    </div>
+                </a>
+            </div>
+            <input placeholder="Add a comment...."
+                class="text-sm font-sans pl-3 placeholder-zinc-600 focus:outline-none border-none  w-full" type="text">
+        </div>
+        <div>
+            <button class="ml-2">
+                <img src="assets/send-airplane-horizontal.svg" alt="">
+            </button>
+        </div>
+    </div>
+</div>

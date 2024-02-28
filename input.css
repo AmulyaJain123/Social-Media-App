@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.hid {
+  display: none;
+}
+.top-nav-search {
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+.top-nav-middle {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+#account {
+  background-image: url("../assets/png-transparent-computer-icons-google-account-scalable-graphics-computer-file-my-account-icon-rim-123rf-symbol-thumbnail.png");
+  background-size: contain;
+  background-position: center;
+}
+.left-sidebar {
+  height: calc(100vh - 3.5rem);
+}
+.left-sidebar::-webkit-scrollbar,
+.main-body::-webkit-scrollbar {
+  width: 6px;
+}
+.left-sidebar::-webkit-scrollbar-track,
+.main-body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  opacity: 0;
+}
+.left-sidebar:hover::-webkit-scrollbar-thumb,
+.main-body:hover::-webkit-scrollbar-thumb {
+  opacity: 100;
+  background-color: #6b7280;
+  border-radius: 20px;
+}
+.left-sidebar {
+  @media (max-width: 640px) {
+    display: none;
+  }
+}
+.right-body {
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+.main-body {
+  height: calc(100vh - 3.5rem);
+  width: calc(100vw - 16rem);
+  @media (max-width: 640px) {
+    width: 100vw;
+  }
+}
+.mid-body,
+.right-body {
+  min-height: calc(100vh-3.5rem);
+}
+.post-card {
+  width: 500px;
+}
+.end-card {
+  width: 550px;
+}

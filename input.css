@@ -9,6 +9,9 @@
     display: none;
   }
 }
+.post-card {
+  background-image: linear-gradient(-225deg, #caf0f8, #ade8f4, #90e0ef);
+}
 .top-nav-middle {
   @media (max-width: 768px) {
     display: none;

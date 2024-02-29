@@ -230,9 +230,8 @@
                 </svg>
                 <span class="flex items-center">Profile</span>
             </a>
-
-            <!-- Hidden -->
-            <div id="hidden-top-sidebar" class="hidflex flex-col w-full">
+            <!-- hidden -->
+            <div id="hidden-top-sidebar" class="hidden flex flex-col w-full">
                 <a href="#" class="left-sidebar-links flex pl-5 ml-4 mr-3 text-md w-[90%] rounded-lg py-3">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
                         width="25" height="25" x="0" y="0" viewBox="0 0 512 512"
@@ -272,7 +271,7 @@
 
             </div>
             <!-- See More -->
-            <a href="#" class=" flex pl-5 ml-5 mr-3 text-md w-[90%] rounded-lg py-3">
+            <div id="see-more" class="hover:cursor-pointer flex pl-5 ml-5 mr-3 text-md w-[90%] rounded-lg py-3">
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
                     width="25" height="25" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
                     xml:space="preserve" class="hovered-paths mr-4">
@@ -292,9 +291,9 @@
                     </g>
                 </svg>
                 <span class="flex items-center">See More</span>
-            </a>
+            </div>
             <!-- See Less -->
-            <a href="#" class=" flex pl-5 ml-5 mr-3 text-md w-[90%] rounded-lg py-3">
+            <div id="see-less" class="hidden hover:cursor-pointer flex pl-5 ml-5 mr-3 text-md w-[90%] rounded-lg py-3">
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
                     width="25" height="25" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
                     xml:space="preserve" class="hovered-paths mr-4 rotate-180">
@@ -314,7 +313,7 @@
                     </g>
                 </svg>
                 <span class="flex items-center">See Less</span>
-            </a>
+            </div>
         </div>
         <!-- Settings etc -->
         <div class="flex flex-col mt-2 pt-2 items-center">
@@ -405,6 +404,45 @@
     </div>
     <!-- Main Body -->
     <div class="main-body flex fixed top-[3.5rem] right-0 overflow-auto">
+        <!-- POST-CARD SEE MORE POPUP -->
+        <div id="postcard-see-more-popup-overlay"
+            class="hidden z-10 h-screen w-screen backdrop-blur-sm  fixed top-0 left-0"></div>
+        <div id="postcard-see-more-popup"
+            class="hidden fixed top-[50%] z-20 left-[50%] translate-y-[-50%] translate-x-[-50%] flex flex-col w-[400px] border-2 border-navhoverfill bg-bodybg rounded-xl">
+            <!-- close -->
+            <div id="postcard-seemore-popup-close"
+                class="absolute top-0 right-0 flex justify-center items-center m-2 rounded-full hover:bg-red-300">
+                <button>
+                    <svg fill="navhoverfill" width="25" height="25" viewBox="0 0 32 32" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16 0c-8.836 0-16 7.163-16 16s7.163 16 16 16c8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 30.032c-7.72 0-14-6.312-14-14.032s6.28-14 14-14 14 6.28 14 14-6.28 14.032-14 14.032zM21.657 10.344c-0.39-0.39-1.023-0.39-1.414 0l-4.242 4.242-4.242-4.242c-0.39-0.39-1.024-0.39-1.415 0s-0.39 1.024 0 1.414l4.242 4.242-4.242 4.242c-0.39 0.39-0.39 1.024 0 1.414s1.024 0.39 1.415 0l4.242-4.242 4.242 4.242c0.39 0.39 1.023 0.39 1.414 0s0.39-1.024 0-1.414l-4.242-4.242 4.242-4.242c0.391-0.391 0.391-1.024 0-1.414z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Tiles -->
+            <div class="divide-y divide-navhoverfill">
+                <div class="postcard-more-popup-link flex w-full rounded-t-xl items-center py-3 justify-center">
+                    @amulya123
+                </div>
+                <a href="#" class="postcard-more-popup-link flex w-full items-center py-3 justify-center">
+                    Unfollow
+                </a>
+                <a href="#" class="postcard-more-popup-link flex w-full items-center py-3 justify-center">
+                    Like
+                </a>
+                <a href="#" class="postcard-more-popup-link flex w-full items-center py-3 justify-center">
+                    Go to Account
+                </a>
+                <a href="#" class="postcard-more-popup-link flex w-full items-center py-3 justify-center">
+                    Share
+                </a>
+                <a href="#" class="postcard-more-popup-link flex w-full rounded-b-xl items-center py-3 justify-center">
+                    View Comments
+                </a>
+            </div>
+        </div>
         <!-- Mid Body -->
         <div class="mid-body w-[65%] m-3 pt-4">
             <!-- Create Post -->
@@ -447,7 +485,7 @@
                         </div>
                     </div>
                     <!-- More Dropdown -->
-                    <button>
+                    <button id="postcard-more">
                         <div
                             class="h-[35px] w-[35px] rounded-full flex justify-center items-center hover:bg-[#48bfe3] duration-200">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
@@ -463,7 +501,7 @@
                         </div>
                     </button>
                 </div>
-                <div class="flex">
+                <div class="relative flex">
                     <!-- Post -->
                     <div class="w-full group mt-4 bg-bodybg flex items-center justify-center rounded-lg h-[384px]">
                         <a href="#" class="w-full h-full">
@@ -496,7 +534,7 @@
                                 <span class="text-navbg flex items-center mt-1 text-sm mx-auto">1600</span>
                             </div>
                             <!-- Comments-div -->
-                            <div class="flex flex-col items-center">
+                            <div class="comment-icon flex flex-col items-center">
                                 <button class="group">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
@@ -551,6 +589,93 @@
                             </button>
                         </div>
                     </div>
+                    <!-- HIDDEN COMMENT SECTION -->
+                    <div id="hidden-comment-section"
+                        class=" hidden bg-navbg  flex flex-col absolute top-[-48px] right-[-420px] p-3 rounded-xl w-[400px] h-[504px] ">
+                        <!-- mini square -->
+                        <div class="h-4 w-4 bg-navbg rotate-45 absolute left-[-8px] top-[142px]"></div>
+                        <!-- Comments -->
+                        <div class="space-y-3 pr-2 overflow-auto hidden-comment-section-scroll">
+                            <div
+                                class=" border flex flex-col bg-lightpurple rounded-xl py-1 border-black divide-y divide-black ">
+                                <!-- Name and profile pic -->
+                                <div class="flex mb-1">
+                                    <!-- Account -->
+                                    <div class="group flex ml-2 justify-center items-center pr-3 group">
+                                        <a href="#">
+                                            <div id="account" class="h-[30px] w-[30px] rounded-full border-black">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Name and Time -->
+                                    <div class="flex flex-col justify-around">
+                                        <h3 class="text-[14px] font-semibold">Amulya Jain</h3>
+                                        <h3 class="text-[10px] text-navbg">2 hours ago</h3>
+                                    </div>
+                                </div>
+                                <!-- Comment content -->
+                                <div class="px-2 text-sm">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quia suscipit
+                                    corrupti, provident quibusdam illo, nisi ut omnis eligendi modi repellat dignissimos
+                                    totam soluta, molestias tempore mollitia distinctio. Vero delectus dolor
+                                    perspiciatis
+                                    optio dolores explicabo repellat sunt, sequi asperiores neque!
+                                </div>
+                            </div>
+                            <div
+                                class=" border flex flex-col bg-lightpurple rounded-xl py-1 border-black divide-y divide-black ">
+                                <!-- Name and profile pic -->
+                                <div class="flex mb-1">
+                                    <!-- Account -->
+                                    <div class="group flex ml-2 justify-center items-center pr-3 group">
+                                        <a href="#">
+                                            <div id="account" class="h-[30px] w-[30px] rounded-full border-black">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Name and Time -->
+                                    <div class="flex flex-col justify-around">
+                                        <h3 class="text-[14px] font-semibold">Amulya Jain</h3>
+                                        <h3 class="text-[10px] text-navbg">2 hours ago</h3>
+                                    </div>
+                                </div>
+                                <!-- Comment content -->
+                                <div class="px-2 text-sm">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quia suscipit
+                                    corrupti, provident quibusdam illo, nisi ut omnis eligendi modi repellat dignissimos
+                                    totam soluta, molestias tempore mollitia distinctio. Vero delectus dolor
+                                    perspiciatis
+                                    optio dolores explicabo repellat sunt, sequi asperiores neque!
+                                </div>
+                            </div>
+                            <div
+                                class=" border flex flex-col bg-lightpurple rounded-xl py-1 border-black divide-y divide-black ">
+                                <!-- Name and profile pic -->
+                                <div class="flex mb-1">
+                                    <!-- Account -->
+                                    <div class="group flex ml-2 justify-center items-center pr-3 group">
+                                        <a href="#">
+                                            <div id="account" class="h-[30px] w-[30px] rounded-full border-black">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Name and Time -->
+                                    <div class="flex flex-col justify-around">
+                                        <h3 class="text-[14px] font-semibold">Amulya Jain</h3>
+                                        <h3 class="text-[10px] text-navbg">2 hours ago</h3>
+                                    </div>
+                                </div>
+                                <!-- Comment content -->
+                                <div class="px-2 text-sm">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quia suscipit
+                                    corrupti, provident quibusdam illo, nisi ut omnis eligendi modi repellat dignissimos
+                                    totam soluta, molestias tempore mollitia distinctio. Vero delectus dolor
+                                    perspiciatis
+                                    optio dolores explicabo repellat sunt, sequi asperiores neque!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- Add a Comment -->
                 <div class="flex mt-4 items-center">
@@ -573,6 +698,7 @@
                         </button>
                     </div>
                 </div>
+
             </div>
             <!-- Post Card -->
             <div
@@ -595,7 +721,7 @@
                         </div>
                     </div>
                     <!-- More Dropdown -->
-                    <button>
+                    <button id="postcard-more">
                         <div
                             class="h-[35px] w-[35px] rounded-full flex justify-center items-center hover:bg-[#48bfe3] duration-200">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
@@ -611,7 +737,7 @@
                         </div>
                     </button>
                 </div>
-                <div class="flex">
+                <div class="relative flex">
                     <!-- Post -->
                     <div class="w-full group mt-4 bg-bodybg flex items-center justify-center rounded-lg h-[384px]">
                         <a href="#" class="w-full h-full">
@@ -644,7 +770,7 @@
                                 <span class="text-navbg flex items-center mt-1 text-sm mx-auto">1600</span>
                             </div>
                             <!-- Comments-div -->
-                            <div class="flex flex-col items-center">
+                            <div class="comment-icon flex flex-col items-center">
                                 <button class="group">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
@@ -699,6 +825,93 @@
                             </button>
                         </div>
                     </div>
+                    <!-- HIDDEN COMMENT SECTION -->
+                    <div id="hidden-comment-section"
+                        class=" hidden bg-navbg  flex flex-col absolute top-[-48px] right-[-420px] p-3 rounded-xl w-[400px] h-[504px] ">
+                        <!-- mini square -->
+                        <div class="h-4 w-4 bg-navbg rotate-45 absolute left-[-8px] top-[142px]"></div>
+                        <!-- Comments -->
+                        <div class="space-y-3 pr-2 overflow-auto hidden-comment-section-scroll">
+                            <div
+                                class=" border flex flex-col bg-lightpurple rounded-xl py-1 border-black divide-y divide-black ">
+                                <!-- Name and profile pic -->
+                                <div class="flex mb-1">
+                                    <!-- Account -->
+                                    <div class="group flex ml-2 justify-center items-center pr-3 group">
+                                        <a href="#">
+                                            <div id="account" class="h-[30px] w-[30px] rounded-full border-black">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Name and Time -->
+                                    <div class="flex flex-col justify-around">
+                                        <h3 class="text-[14px] font-semibold">Amulya Jain</h3>
+                                        <h3 class="text-[10px] text-navbg">2 hours ago</h3>
+                                    </div>
+                                </div>
+                                <!-- Comment content -->
+                                <div class="px-2 text-sm">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quia suscipit
+                                    corrupti, provident quibusdam illo, nisi ut omnis eligendi modi repellat dignissimos
+                                    totam soluta, molestias tempore mollitia distinctio. Vero delectus dolor
+                                    perspiciatis
+                                    optio dolores explicabo repellat sunt, sequi asperiores neque!
+                                </div>
+                            </div>
+                            <div
+                                class=" border flex flex-col bg-lightpurple rounded-xl py-1 border-black divide-y divide-black ">
+                                <!-- Name and profile pic -->
+                                <div class="flex mb-1">
+                                    <!-- Account -->
+                                    <div class="group flex ml-2 justify-center items-center pr-3 group">
+                                        <a href="#">
+                                            <div id="account" class="h-[30px] w-[30px] rounded-full border-black">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Name and Time -->
+                                    <div class="flex flex-col justify-around">
+                                        <h3 class="text-[14px] font-semibold">Amulya Jain</h3>
+                                        <h3 class="text-[10px] text-navbg">2 hours ago</h3>
+                                    </div>
+                                </div>
+                                <!-- Comment content -->
+                                <div class="px-2 text-sm">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quia suscipit
+                                    corrupti, provident quibusdam illo, nisi ut omnis eligendi modi repellat dignissimos
+                                    totam soluta, molestias tempore mollitia distinctio. Vero delectus dolor
+                                    perspiciatis
+                                    optio dolores explicabo repellat sunt, sequi asperiores neque!
+                                </div>
+                            </div>
+                            <div
+                                class=" border flex flex-col bg-lightpurple rounded-xl py-1 border-black divide-y divide-black ">
+                                <!-- Name and profile pic -->
+                                <div class="flex mb-1">
+                                    <!-- Account -->
+                                    <div class="group flex ml-2 justify-center items-center pr-3 group">
+                                        <a href="#">
+                                            <div id="account" class="h-[30px] w-[30px] rounded-full border-black">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Name and Time -->
+                                    <div class="flex flex-col justify-around">
+                                        <h3 class="text-[14px] font-semibold">Amulya Jain</h3>
+                                        <h3 class="text-[10px] text-navbg">2 hours ago</h3>
+                                    </div>
+                                </div>
+                                <!-- Comment content -->
+                                <div class="px-2 text-sm">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quia suscipit
+                                    corrupti, provident quibusdam illo, nisi ut omnis eligendi modi repellat dignissimos
+                                    totam soluta, molestias tempore mollitia distinctio. Vero delectus dolor
+                                    perspiciatis
+                                    optio dolores explicabo repellat sunt, sequi asperiores neque!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- Add a Comment -->
                 <div class="flex mt-4 items-center">
@@ -721,6 +934,7 @@
                         </button>
                     </div>
                 </div>
+
             </div>
             <!-- Post Card -->
             <div
@@ -743,7 +957,7 @@
                         </div>
                     </div>
                     <!-- More Dropdown -->
-                    <button>
+                    <button id="postcard-more">
                         <div
                             class="h-[35px] w-[35px] rounded-full flex justify-center items-center hover:bg-[#48bfe3] duration-200">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
@@ -759,7 +973,7 @@
                         </div>
                     </button>
                 </div>
-                <div class="flex">
+                <div class="relative flex">
                     <!-- Post -->
                     <div class="w-full group mt-4 bg-bodybg flex items-center justify-center rounded-lg h-[384px]">
                         <a href="#" class="w-full h-full">
@@ -792,7 +1006,7 @@
                                 <span class="text-navbg flex items-center mt-1 text-sm mx-auto">1600</span>
                             </div>
                             <!-- Comments-div -->
-                            <div class="flex flex-col items-center">
+                            <div class="comment-icon flex flex-col items-center">
                                 <button class="group">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
@@ -847,6 +1061,93 @@
                             </button>
                         </div>
                     </div>
+                    <!-- HIDDEN COMMENT SECTION -->
+                    <div id="hidden-comment-section"
+                        class=" hidden bg-navbg  flex flex-col absolute top-[-48px] right-[-420px] p-3 rounded-xl w-[400px] h-[504px] ">
+                        <!-- mini square -->
+                        <div class="h-4 w-4 bg-navbg rotate-45 absolute left-[-8px] top-[142px]"></div>
+                        <!-- Comments -->
+                        <div class="space-y-3 pr-2 overflow-auto hidden-comment-section-scroll">
+                            <div
+                                class=" border flex flex-col bg-lightpurple rounded-xl py-1 border-black divide-y divide-black ">
+                                <!-- Name and profile pic -->
+                                <div class="flex mb-1">
+                                    <!-- Account -->
+                                    <div class="group flex ml-2 justify-center items-center pr-3 group">
+                                        <a href="#">
+                                            <div id="account" class="h-[30px] w-[30px] rounded-full border-black">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Name and Time -->
+                                    <div class="flex flex-col justify-around">
+                                        <h3 class="text-[14px] font-semibold">Amulya Jain</h3>
+                                        <h3 class="text-[10px] text-navbg">2 hours ago</h3>
+                                    </div>
+                                </div>
+                                <!-- Comment content -->
+                                <div class="px-2 text-sm">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quia suscipit
+                                    corrupti, provident quibusdam illo, nisi ut omnis eligendi modi repellat dignissimos
+                                    totam soluta, molestias tempore mollitia distinctio. Vero delectus dolor
+                                    perspiciatis
+                                    optio dolores explicabo repellat sunt, sequi asperiores neque!
+                                </div>
+                            </div>
+                            <div
+                                class=" border flex flex-col bg-lightpurple rounded-xl py-1 border-black divide-y divide-black ">
+                                <!-- Name and profile pic -->
+                                <div class="flex mb-1">
+                                    <!-- Account -->
+                                    <div class="group flex ml-2 justify-center items-center pr-3 group">
+                                        <a href="#">
+                                            <div id="account" class="h-[30px] w-[30px] rounded-full border-black">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Name and Time -->
+                                    <div class="flex flex-col justify-around">
+                                        <h3 class="text-[14px] font-semibold">Amulya Jain</h3>
+                                        <h3 class="text-[10px] text-navbg">2 hours ago</h3>
+                                    </div>
+                                </div>
+                                <!-- Comment content -->
+                                <div class="px-2 text-sm">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quia suscipit
+                                    corrupti, provident quibusdam illo, nisi ut omnis eligendi modi repellat dignissimos
+                                    totam soluta, molestias tempore mollitia distinctio. Vero delectus dolor
+                                    perspiciatis
+                                    optio dolores explicabo repellat sunt, sequi asperiores neque!
+                                </div>
+                            </div>
+                            <div
+                                class=" border flex flex-col bg-lightpurple rounded-xl py-1 border-black divide-y divide-black ">
+                                <!-- Name and profile pic -->
+                                <div class="flex mb-1">
+                                    <!-- Account -->
+                                    <div class="group flex ml-2 justify-center items-center pr-3 group">
+                                        <a href="#">
+                                            <div id="account" class="h-[30px] w-[30px] rounded-full border-black">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Name and Time -->
+                                    <div class="flex flex-col justify-around">
+                                        <h3 class="text-[14px] font-semibold">Amulya Jain</h3>
+                                        <h3 class="text-[10px] text-navbg">2 hours ago</h3>
+                                    </div>
+                                </div>
+                                <!-- Comment content -->
+                                <div class="px-2 text-sm">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quia suscipit
+                                    corrupti, provident quibusdam illo, nisi ut omnis eligendi modi repellat dignissimos
+                                    totam soluta, molestias tempore mollitia distinctio. Vero delectus dolor
+                                    perspiciatis
+                                    optio dolores explicabo repellat sunt, sequi asperiores neque!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- Add a Comment -->
                 <div class="flex mt-4 items-center">
@@ -869,6 +1170,7 @@
                         </button>
                     </div>
                 </div>
+
             </div>
             <!-- End of Feed Card -->
             <div class="end-card mx-auto mt-16 pb-36 rounded-xl p-3 flex items-center justify-center flex-col">
@@ -895,7 +1197,7 @@
                 <!-- Tags -->
                 <div class="flex flex-col">
                     <!-- Tiles -->
-                    <div class="flex px-2 py-2 rounded-md hover:bg-bodybg">
+                    <div class="flex px-2 py-2 rounded-lg hover:bg-bodybg">
                         <!-- Account -->
                         <div class="group flex  justify-center items-center pr-3 group">
                             <a href="#">
@@ -913,7 +1215,7 @@
                             Follow
                         </button>
                     </div>
-                    <div class="flex px-2 py-2 rounded-md hover:bg-bodybg">
+                    <div class="flex px-2 py-2 rounded-lg hover:bg-bodybg">
                         <!-- Account -->
                         <div class="group flex  justify-center items-center pr-3 group">
                             <a href="#">
@@ -931,7 +1233,7 @@
                             Follow
                         </button>
                     </div>
-                    <div class="flex px-2 py-2 rounded-md hover:bg-bodybg">
+                    <div class="flex px-2 py-2 rounded-lg hover:bg-bodybg">
                         <!-- Account -->
                         <div class="group flex  justify-center items-center pr-3 group">
                             <a href="#">
@@ -949,7 +1251,7 @@
                             Follow
                         </button>
                     </div>
-                    <div class="flex px-2 py-2 rounded-md hover:bg-bodybg">
+                    <div class="flex px-2 py-2 rounded-lg hover:bg-bodybg">
                         <!-- Account -->
                         <div class="group flex  justify-center items-center pr-3 group">
                             <a href="#">

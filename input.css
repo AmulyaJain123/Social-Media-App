@@ -1,9 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.hid {
-  display: none;
-}
+
 .top-nav-search {
   @media (max-width: 1024px) {
     display: none;
@@ -12,7 +10,8 @@
 .post-button {
   background-image: linear-gradient(-225deg, #cb88fb, #457b9d, #1d3557);
 }
-.left-sidebar-links:hover {
+.left-sidebar-links:hover,
+.postcard-more-popup-link:hover {
   background-image: linear-gradient(-225deg, #caf0f8, #ade8f4, #90e0ef);
 }
 .gradblue {
@@ -43,11 +42,13 @@
   height: calc(100vh - 3.5rem);
 }
 .left-sidebar::-webkit-scrollbar,
-.main-body::-webkit-scrollbar {
+.main-body::-webkit-scrollbar,
+.hidden-comment-section-scroll::-webkit-scrollbar {
   width: 6px;
 }
 .left-sidebar::-webkit-scrollbar-track,
-.main-body::-webkit-scrollbar-track {
+.main-body::-webkit-scrollbar-track,
+.hidden-comment-section-scroll::-webkit-scrollbar-track {
   //border-radius: 10px;
   opacity: 0;
 }
@@ -55,6 +56,11 @@
 .main-body:hover::-webkit-scrollbar-thumb {
   opacity: 100;
   background-color: #457b9d;
+  //border-radius: 20px;
+}
+.hidden-comment-section-scroll:hover::-webkit-scrollbar-thumb {
+  opacity: 100;
+  background-color: #cb88fb;
   //border-radius: 20px;
 }
 .left-sidebar {

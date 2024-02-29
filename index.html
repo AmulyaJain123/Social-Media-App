@@ -18,9 +18,9 @@
     <title>HomePage</title>
 </head>
 
-<body class="bg-[#f1faee] font-mont">
+<body class="bg-bodybg font-mont">
     <!-- Upper Nav -->
-    <div class="bg-[#457b9d] flex justify-between sticky top-0 w-full h-[3.5rem] px-4 shadow-md shadow-slate-200">
+    <div class="bg-navbg flex justify-between sticky top-0 w-full h-[3.5rem] px-4 shadow-md shadow-slate-200">
         <!-- left part -->
         <div class="flex space-x-4 items-center">
             <!-- Logo & Name-->
@@ -33,10 +33,10 @@
                 </div>
             </a>
             <!-- Search Bar -->
-            <div class="top-nav-search flex items-center bg-[#457b9d] rounded-full px-3 border-2 border-[#cb88fb]">
+            <div class="top-nav-search flex items-center bg-navbg rounded-full px-3 border-2 border-lightpurple">
                 <img src="assets/search-magnifying-glass-icon.svg" alt="">
                 <input
-                    class=" bg-[#457b9d]  max-w-[15vw] text-md p-[0.45rem] pl-3 rounded-full focus:outline-none placeholder-[#cb88fb] "
+                    class=" bg-navbg text-lightpurple max-w-[15vw] text-md p-[0.45rem] pl-3 rounded-full focus:outline-none placeholder-lightpurple "
                     placeholder="Search" type="text">
             </div>
         </div>
@@ -44,12 +44,12 @@
         <div class="top-nav-middle min-w-[25vw] flex justify-between items-center">
             <!-- Home -->
             <div
-                class="px-2 border-b-[3.5px] group h-full flex items-center border-black/0 hover:border-[#cb88fb] duration-200">
-                <a href="#" class="p-2 rounded-md group-hover:bg-[#cb88fb] duration-200">
+                class="px-2 border-b-[3.5px] group h-full flex items-center border-black/0 hover:border-lightpurple duration-200">
+                <a href="#" class="p-2 rounded-md group-hover:bg-lightpurple duration-200">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
                         width="25" height="25" x="0" y="0" viewBox="0 0 511 511.999"
                         style="enable-background:new 0 0 512 512" xml:space="preserve"
-                        class="fill-[#cb88fb] group-hover:fill-[#1d3557]">
+                        class="fill-lightpurple group-hover:fill-navhoverfill">
                         <g>
                             <path
                                 d="M498.7 222.695c-.016-.011-.028-.027-.04-.039L289.805 13.81C280.902 4.902 269.066 0 256.477 0c-12.59 0-24.426 4.902-33.332 13.809L14.398 222.55c-.07.07-.144.144-.21.215-18.282 18.386-18.25 48.218.09 66.558 8.378 8.383 19.44 13.235 31.273 13.746.484.047.969.07 1.457.07h8.32v153.696c0 30.418 24.75 55.164 55.168 55.164h81.711c8.285 0 15-6.719 15-15V376.5c0-13.879 11.293-25.168 25.172-25.168h48.195c13.88 0 25.168 11.29 25.168 25.168V497c0 8.281 6.715 15 15 15h81.711c30.422 0 55.168-24.746 55.168-55.164V303.14h7.719c12.586 0 24.422-4.903 33.332-13.813 18.36-18.367 18.367-48.254.027-66.633zm-21.243 45.422a17.03 17.03 0 0 1-12.117 5.024H442.62c-8.285 0-15 6.714-15 15v168.695c0 13.875-11.289 25.164-25.168 25.164h-66.71V376.5c0-30.418-24.747-55.168-55.169-55.168H232.38c-30.422 0-55.172 24.75-55.172 55.168V482h-66.71c-13.876 0-25.169-11.29-25.169-25.164V288.14c0-8.286-6.715-15-15-15H48a13.9 13.9 0 0 0-.703-.032c-4.469-.078-8.66-1.851-11.8-4.996-6.68-6.68-6.68-17.55 0-24.234.003 0 .003-.004.007-.008l.012-.012L244.363 35.02A17.003 17.003 0 0 1 256.477 30c4.574 0 8.875 1.781 12.113 5.02l208.8 208.796.098.094c6.645 6.692 6.633 17.54-.031 24.207zm0 0"
@@ -60,15 +60,16 @@
             </div>
             <!-- Explore -->
             <div
-                class="px-2 border-b-[3.5px] group h-full flex items-center border-black/0 hover:border-[#cb88fb] duration-200">
-                <a href="#" class="p-2 rounded-md group-hover:bg-[#cb88fb] duration-200">
+                class="px-2 border-b-[3.5px] group h-full flex items-center border-black/0 hover:border-lightpurple duration-200">
+                <a href="#" class="p-2 rounded-md group-hover:bg-lightpurple duration-200">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
                         width="25" height="25" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512"
                         xml:space="preserve" class="">
                         <g>
                             <path
                                 d="M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2zm0 26a12 12 0 1 1 12-12 12 12 0 0 1-12 12zm5.92-19.26L13.43 13a1.08 1.08 0 0 0-.45.45l-4.24 8.47a1 1 0 0 0 .9 1.44 1 1 0 0 0 .44-.1L18.57 19a1.08 1.08 0 0 0 .45-.45l4.24-8.49a1 1 0 0 0-.19-1.15 1 1 0 0 0-1.15-.17zm-4.54 8.64-5.51 2.75 2.75-5.51 5.51-2.75z"
-                                data-name="06 explore" opacity="1" data-original="#000000" class="">
+                                data-name="06 explore" opacity="1" data-original="#000000"
+                                class="fill-lightpurple group-hover:fill-navhoverfill duration-200">
                             </path>
                         </g>
                     </svg>
@@ -76,8 +77,8 @@
             </div>
             <!-- Messages -->
             <div
-                class="px-2 border-b-[3.5px] group h-full flex items-center border-black/0 hover:border-[#cb88fb] duration-200">
-                <a href="#" class="p-2 rounded-md group-hover:bg-[#cb88fb] duration-200">
+                class="px-2 border-b-[3.5px] group h-full flex items-center border-black/0 hover:border-lightpurple duration-200">
+                <a href="#" class="p-2 rounded-md group-hover:bg-lightpurple duration-200">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
                         width="25" height="25" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512"
                         xml:space="preserve" class="">
@@ -85,24 +86,24 @@
                             <path
                                 d="M8 30a1.001 1.001 0 0 1-1-1v-5H4c-1.654 0-3-1.346-3-3V5c0-1.654 1.346-3 3-3h24c1.654 0 3 1.346 3 3v16c0 1.654-1.346 3-3 3H15.851l-7.226 5.781A.998.998 0 0 1 8 30zM4 4c-.552 0-1 .449-1 1v16c0 .551.448 1 1 1h4a1 1 0 0 1 1 1v3.92l5.875-4.701A1 1 0 0 1 15.5 22H28c.552 0 1-.449 1-1V5c0-.551-.448-1-1-1z"
                                 opacity="1" data-original="#000000"
-                                class="fill-[#cb88fb] group-hover:fill-[#1d3557] duration-200"></path>
+                                class="fill-lightpurple group-hover:fill-navhoverfill duration-200"></path>
                             <path d="M24 12H8a1 1 0 1 1 0-2h16a1 1 0 1 1 0 2zM16 16H8a1 1 0 1 1 0-2h8a1 1 0 1 1 0 2z"
                                 opacity="1" data-original="#000000"
-                                class="fill-[#cb88fb] group-hover:fill-[#1d3557] duration-200"></path>
+                                class="fill-lightpurple group-hover:fill-navhoverfill duration-200"></path>
                         </g>
                     </svg>
                 </a>
             </div>
-            <!-- Groups -->
-            <div class="px-2 border-b-4 group h-full flex items-center border-black/0 hover:border-black duration-200">
-                <a href="#" class="p-2 rounded-md group-hover:bg-slate-300 duration-200">
-                    <img src="assets/groups-icon-topnav.svg" alt="">
-                </a>
-            </div>
             <!-- Friends -->
-            <div class="px-2 border-b-4 group h-full flex items-center border-black/0 hover:border-black duration-200">
-                <a href="#" class="p-2 rounded-md group-hover:bg-slate-300 duration-200">
-                    <img src="assets/friends-icon-topnav.svg" alt="">
+            <div
+                class="px-2 border-b-[3.5px] group h-full flex items-center border-black/0 hover:border-lightpurple duration-200">
+                <a href="#" class="p-2 rounded-md group-hover:bg-lightpurple duration-200">
+                    <svg width="25" height="25" viewBox="0 -6 44 44" xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="xMidYMid"
+                        class="fill-lightpurple group-hover:fill-navhoverfill duration-200">
+                        <path
+                            d="M42.001,32.000 L14.010,32.000 C12.908,32.000 12.010,31.104 12.010,30.001 L12.010,28.002 C12.010,27.636 12.211,27.300 12.532,27.124 L22.318,21.787 C19.040,18.242 19.004,13.227 19.004,12.995 L19.010,7.002 C19.010,6.946 19.015,6.891 19.024,6.837 C19.713,2.751 24.224,0.007 28.005,0.007 C28.006,0.007 28.008,0.007 28.009,0.007 C31.788,0.007 36.298,2.749 36.989,6.834 C36.998,6.889 37.003,6.945 37.003,7.000 L37.006,12.994 C37.006,13.225 36.970,18.240 33.693,21.785 L43.479,27.122 C43.800,27.298 44.000,27.634 44.000,28.000 L44.000,30.001 C44.000,31.104 43.103,32.000 42.001,32.000 ZM31.526,22.880 C31.233,22.720 31.039,22.425 31.008,22.093 C30.978,21.761 31.116,21.436 31.374,21.226 C34.971,18.310 35.007,13.048 35.007,12.995 L35.003,7.089 C34.441,4.089 30.883,2.005 28.005,2.005 C25.126,2.006 21.570,4.091 21.010,7.091 L21.004,12.997 C21.004,13.048 21.059,18.327 24.636,21.228 C24.895,21.438 25.033,21.763 25.002,22.095 C24.972,22.427 24.778,22.722 24.485,22.882 L14.010,28.596 L14.010,30.001 L41.999,30.001 L42.000,28.595 L31.526,22.880 ZM18.647,2.520 C17.764,2.177 16.848,1.997 15.995,1.997 C13.116,1.998 9.559,4.083 8.999,7.083 L8.993,12.989 C8.993,13.041 9.047,18.319 12.625,21.220 C12.884,21.430 13.022,21.755 12.992,22.087 C12.961,22.419 12.767,22.714 12.474,22.874 L1.999,28.588 L1.999,29.993 L8.998,29.993 C9.550,29.993 9.997,30.441 9.997,30.993 C9.997,31.545 9.550,31.993 8.998,31.993 L1.999,31.993 C0.897,31.993 -0.000,31.096 -0.000,29.993 L-0.000,27.994 C-0.000,27.629 0.200,27.292 0.521,27.117 L10.307,21.779 C7.030,18.234 6.993,13.219 6.993,12.988 L6.999,6.994 C6.999,6.939 7.004,6.883 7.013,6.829 C7.702,2.744 12.213,-0.000 15.995,-0.000 C15.999,-0.000 16.005,-0.000 16.010,-0.000 C17.101,-0.000 18.262,0.227 19.369,0.656 C19.885,0.856 20.140,1.435 19.941,1.949 C19.740,2.464 19.158,2.720 18.647,2.520 Z" />
+                    </svg>
                 </a>
             </div>
         </div>
@@ -110,16 +111,35 @@
         <div class="flex space-x-2 lg:pl-[10vw] items-center">
             <!-- Create -->
             <div
-                class=" flex justify-center rounded-xl  items-center h-[80%] px-2 hover:scale-105 hover:bg-slate-200 duration-200 ">
+                class=" flex justify-center  group rounded-xl  items-center h-[80%] px-2 hover:scale-105 hover:bg-lightpurple duration-200 ">
                 <a href="#">
-                    <img src="assets/create-icon-topnav.svg" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="30" height="30" x="0" y="0" viewBox="0 0 6.35 6.35"
+                        style="enable-background:new 0 0 512 512" xml:space="preserve"
+                        class="group-hover:scale-110 duration-200">
+                        <g>
+                            <path fill-rule="evenodd"
+                                d="M3.181.264A2.92 2.92 0 0 0 .264 3.18a2.922 2.922 0 0 0 2.917 2.917 2.92 2.92 0 0 0 2.915-2.917A2.919 2.919 0 0 0 3.18.264zm0 .53A2.38 2.38 0 0 1 5.566 3.18 2.382 2.382 0 0 1 3.18 5.566 2.384 2.384 0 0 1 .794 3.179 2.383 2.383 0 0 1 3.181.794zm-.004 1.057a.265.265 0 0 0-.263.27v.794h-.793a.265.265 0 0 0-.028 0 .266.266 0 0 0 .028.53h.793v.794a.265.265 0 0 0 .531 0v-.793h.794a.265.265 0 0 0 0-.531h-.794v-.794a.265.265 0 0 0-.268-.27z"
+                                paint-order="stroke fill markers" opacity="1" data-original="#000000"
+                                class="fill-lightpurple group-hover:fill-navhoverfill duration-200"></path>
+                        </g>
+                    </svg>
                 </a>
             </div>
             <!-- Notification -->
             <div
-                class=" flex justify-center rounded-xl  items-center h-[80%] px-2 hover:scale-105 hover:bg-slate-200 duration-200">
+                class=" flex justify-center rounded-xl group items-center h-[80%] px-2 hover:scale-105 hover:bg-lightpurple duration-200">
                 <a href="#">
-                    <img src="assets/notification-icon-topnav.svg" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="30" height="30" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512"
+                        xml:space="preserve" class="group-hover:scale-110 duration-200">
+                        <g>
+                            <path
+                                d="m28.07 22.66-1.71-2.46a2 2 0 0 1-.36-1.14V12a10 10 0 0 0-20 0v7.06a2 2 0 0 1-.36 1.14l-1.71 2.46A2 2 0 0 0 5.41 26h5.69a5 5 0 0 0 9.8 0h5.69a2 2 0 0 0 1.48-3.34zM16 28a3 3 0 0 1-2.82-2h5.64A3 3 0 0 1 16 28zM5.41 24a.81.81 0 0 0 .12-.14l1.75-2.52A4 4 0 0 0 8 19.06V12a8 8 0 0 1 16 0v7.06a4 4 0 0 0 .72 2.28l1.75 2.52a.81.81 0 0 0 .12.14z"
+                                data-name="28" fill="#000000" opacity="1" data-original="#000000"
+                                class="fill-lightpurple group-hover:fill-navhoverfill duration-200"></path>
+                        </g>
+                    </svg>
                 </a>
             </div>
             <!-- Account -->
@@ -132,96 +152,248 @@
         </div>
     </div>
     <!-- Scrollable left Side-Bar -->
-    <div class=" left-sidebar flex border-r-2 flex-col fixed overflow-auto top-[3.5rem] divide-y divide-slate-300 w-64">
+    <div
+        class=" left-sidebar flex border-r-2 border-navbg flex-col fixed overflow-auto top-[3.5rem] divide-y divide-navbg w-64">
         <!-- Top Links -->
-        <div class="flex flex-col mt-2  items-center">
-            <!-- Title -->
-            <div class="font-[500] text-zinc-500 text-md mb-2 w-full pl-4">Navigation</div>
+        <div class="flex text-navhoverfill flex-col mt-2  items-center">
             <!-- Links -->
-            <a href="#" class="flex pl-5 ml-5 mr-3 text-md w-[90%] rounded-lg py-3 hover:bg-zinc-200">
-                <img class="mr-3" src="assets/friends-icon.svg" alt="">
-                <span class="flex items-center">Friends</span>
+            <a href="#" class="left-sidebar-links flex pl-5 ml-5 mr-3 text-md w-[90%] rounded-lg py-3">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="25" height="25" x="0" y="0" viewBox="0 0 511 511.999"
+                    style="enable-background:new 0 0 512 512" xml:space="preserve" class="mr-3 fill-navhoverfill">
+                    <g>
+                        <path
+                            d="M498.7 222.695c-.016-.011-.028-.027-.04-.039L289.805 13.81C280.902 4.902 269.066 0 256.477 0c-12.59 0-24.426 4.902-33.332 13.809L14.398 222.55c-.07.07-.144.144-.21.215-18.282 18.386-18.25 48.218.09 66.558 8.378 8.383 19.44 13.235 31.273 13.746.484.047.969.07 1.457.07h8.32v153.696c0 30.418 24.75 55.164 55.168 55.164h81.711c8.285 0 15-6.719 15-15V376.5c0-13.879 11.293-25.168 25.172-25.168h48.195c13.88 0 25.168 11.29 25.168 25.168V497c0 8.281 6.715 15 15 15h81.711c30.422 0 55.168-24.746 55.168-55.164V303.14h7.719c12.586 0 24.422-4.903 33.332-13.813 18.36-18.367 18.367-48.254.027-66.633zm-21.243 45.422a17.03 17.03 0 0 1-12.117 5.024H442.62c-8.285 0-15 6.714-15 15v168.695c0 13.875-11.289 25.164-25.168 25.164h-66.71V376.5c0-30.418-24.747-55.168-55.169-55.168H232.38c-30.422 0-55.172 24.75-55.172 55.168V482h-66.71c-13.876 0-25.169-11.29-25.169-25.164V288.14c0-8.286-6.715-15-15-15H48a13.9 13.9 0 0 0-.703-.032c-4.469-.078-8.66-1.851-11.8-4.996-6.68-6.68-6.68-17.55 0-24.234.003 0 .003-.004.007-.008l.012-.012L244.363 35.02A17.003 17.003 0 0 1 256.477 30c4.574 0 8.875 1.781 12.113 5.02l208.8 208.796.098.094c6.645 6.692 6.633 17.54-.031 24.207zm0 0"
+                            opacity="1" data-original="#000000" class=""></path>
+                    </g>
+                </svg>
+                <span class="flex items-center">Home</span>
             </a>
-            <a href="#" class="flex pl-5 ml-5 mr-3 text-md w-[90%] rounded-lg py-3 hover:bg-zinc-200">
-                <img class="mr-4" src="assets/save-icon.svg" alt="">
-                <span class="flex items-center">Saved</span>
+            <a href="#" class="left-sidebar-links flex pl-5 ml-5 mr-3 text-md w-[90%] rounded-lg py-3">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="25" height="25" x="0" y="0" viewBox="0 0 612 612" style="enable-background:new 0 0 512 512"
+                    xml:space="preserve" class="mr-3 ">
+                    <g>
+                        <path
+                            d="M306 0C137.272 0 0 137.27 0 305.997 0 474.727 137.272 612 306 612s306-137.273 306-306.003C612 137.27 474.73 0 306 0zm0 576.657c-149.24 0-270.657-121.418-270.657-270.66C35.343 156.759 156.76 35.343 306 35.343s270.657 121.416 270.657 270.655c0 149.242-121.417 270.659-270.657 270.659z"
+                            fill=navhoverfill opacity="1" data-original="#000000" class=""></path>
+                        <path
+                            d="M474.47 144.734c-4.623-8.599-15.336-11.818-23.933-7.197L251.64 244.485a17.67 17.67 0 0 0-7.197 7.198L137.538 450.536c-3.782 7.035-2.309 15.489 3.063 20.861a17.55 17.55 0 0 0 4.137 3.07c5.313 2.857 11.436 2.71 16.428.155l.003.004.075-.04c.072-.037.143-.077.214-.115l198.995-106.87a17.668 17.668 0 0 0 7.2-7.197L474.13 162.043c.233-.401.455-.806.655-1.222l.144-.267-.018-.006c2.263-4.877 2.3-10.715-.441-15.814zm-278.067 270.95 67.933-126.361 58.418 58.42-126.351 67.941zm151.357-92.92-58.421-58.421 126.351-67.94"
+                            fill=navhoverfill opacity="1" data-original="#000000" class=""></path>
+                    </g>
+                </svg>
+                <span class="flex items-center">Explore</span>
             </a>
-            <a href="#" class="flex pl-5 ml-5 mr-3 text-md w-[90%] rounded-lg py-3 hover:bg-zinc-200">
-                <img class="mr-3" src="assets/message-icon.svg" alt="">
+            <a href="#" class="left-sidebar-links flex pl-5 ml-5 mr-3 text-md w-[90%] rounded-lg py-3">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="25" height="25" x="0" y="0" viewBox="0 0 612.01 612.01"
+                    style="enable-background:new 0 0 512 512" xml:space="preserve" class="mr-3">
+                    <g>
+                        <path
+                            d="M606.209 578.714 448.198 423.228C489.576 378.272 515 318.817 515 253.393 514.98 113.439 399.704 0 257.493 0S.006 113.439.006 253.393s115.276 253.393 257.487 253.393c61.445 0 117.801-21.253 162.068-56.586l158.624 156.099c7.729 7.614 20.277 7.614 28.006 0a19.291 19.291 0 0 0 .018-27.585zM257.493 467.8c-120.326 0-217.869-95.993-217.869-214.407S137.167 38.986 257.493 38.986c120.327 0 217.869 95.993 217.869 214.407S377.82 467.8 257.493 467.8z"
+                            fill=navhoverfill opacity="1" data-original="#000000"></path>
+                    </g>
+                </svg>
+                <span class="flex items-center">Search</span>
+            </a>
+            <a href="#" class="left-sidebar-links flex pl-5 ml-5 mr-3 text-md w-[90%] rounded-lg py-3">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="25" height="25" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512"
+                    xml:space="preserve" class="mr-3">
+                    <g>
+                        <path
+                            d="M8 30a1.001 1.001 0 0 1-1-1v-5H4c-1.654 0-3-1.346-3-3V5c0-1.654 1.346-3 3-3h24c1.654 0 3 1.346 3 3v16c0 1.654-1.346 3-3 3H15.851l-7.226 5.781A.998.998 0 0 1 8 30zM4 4c-.552 0-1 .449-1 1v16c0 .551.448 1 1 1h4a1 1 0 0 1 1 1v3.92l5.875-4.701A1 1 0 0 1 15.5 22H28c.552 0 1-.449 1-1V5c0-.551-.448-1-1-1z"
+                            opacity="1" data-original="#000000" class="fill-navhoverfill"></path>
+                        <path d="M24 12H8a1 1 0 1 1 0-2h16a1 1 0 1 1 0 2zM16 16H8a1 1 0 1 1 0-2h8a1 1 0 1 1 0 2z"
+                            opacity="1" data-original="#000000" class="fill-navhoverfill"></path>
+                    </g>
+                </svg>
                 <span class="flex items-center">Messages</span>
             </a>
-            <a href="#" class="flex pl-5 ml-5 mr-3 text-md w-[90%] rounded-lg py-3 hover:bg-zinc-200">
-                <img class="mr-3" src="assets/save-icon.svg" alt="">
-                <span class="flex items-center">Saved</span>
+            <a href="#" class="left-sidebar-links flex pl-5 ml-5 mr-3 text-md w-[90%] rounded-lg py-3">
+                <svg width="25" height="25" viewBox="0 -6 44 44" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMidYMid" class="fill-navhoverfill mr-3">
+                    <path
+                        d="M42.001,32.000 L14.010,32.000 C12.908,32.000 12.010,31.104 12.010,30.001 L12.010,28.002 C12.010,27.636 12.211,27.300 12.532,27.124 L22.318,21.787 C19.040,18.242 19.004,13.227 19.004,12.995 L19.010,7.002 C19.010,6.946 19.015,6.891 19.024,6.837 C19.713,2.751 24.224,0.007 28.005,0.007 C28.006,0.007 28.008,0.007 28.009,0.007 C31.788,0.007 36.298,2.749 36.989,6.834 C36.998,6.889 37.003,6.945 37.003,7.000 L37.006,12.994 C37.006,13.225 36.970,18.240 33.693,21.785 L43.479,27.122 C43.800,27.298 44.000,27.634 44.000,28.000 L44.000,30.001 C44.000,31.104 43.103,32.000 42.001,32.000 ZM31.526,22.880 C31.233,22.720 31.039,22.425 31.008,22.093 C30.978,21.761 31.116,21.436 31.374,21.226 C34.971,18.310 35.007,13.048 35.007,12.995 L35.003,7.089 C34.441,4.089 30.883,2.005 28.005,2.005 C25.126,2.006 21.570,4.091 21.010,7.091 L21.004,12.997 C21.004,13.048 21.059,18.327 24.636,21.228 C24.895,21.438 25.033,21.763 25.002,22.095 C24.972,22.427 24.778,22.722 24.485,22.882 L14.010,28.596 L14.010,30.001 L41.999,30.001 L42.000,28.595 L31.526,22.880 ZM18.647,2.520 C17.764,2.177 16.848,1.997 15.995,1.997 C13.116,1.998 9.559,4.083 8.999,7.083 L8.993,12.989 C8.993,13.041 9.047,18.319 12.625,21.220 C12.884,21.430 13.022,21.755 12.992,22.087 C12.961,22.419 12.767,22.714 12.474,22.874 L1.999,28.588 L1.999,29.993 L8.998,29.993 C9.550,29.993 9.997,30.441 9.997,30.993 C9.997,31.545 9.550,31.993 8.998,31.993 L1.999,31.993 C0.897,31.993 -0.000,31.096 -0.000,29.993 L-0.000,27.994 C-0.000,27.629 0.200,27.292 0.521,27.117 L10.307,21.779 C7.030,18.234 6.993,13.219 6.993,12.988 L6.999,6.994 C6.999,6.939 7.004,6.883 7.013,6.829 C7.702,2.744 12.213,-0.000 15.995,-0.000 C15.999,-0.000 16.005,-0.000 16.010,-0.000 C17.101,-0.000 18.262,0.227 19.369,0.656 C19.885,0.856 20.140,1.435 19.941,1.949 C19.740,2.464 19.158,2.720 18.647,2.520 Z" />
+                </svg>
+                <span class="flex items-center">Connections</span>
             </a>
-            <a href="#" class="flex pl-5 ml-5 mr-3 text-md w-[90%] rounded-lg py-3 hover:bg-zinc-200">
-                <img class="mr-3" src="assets/save-icon.svg" alt="">
-                <span class="flex items-center">Saved</span>
+            <a href="#" class="left-sidebar-links flex pl-5 ml-5 mr-3 text-md w-[90%] rounded-lg py-3">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="25" height="25" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
+                    xml:space="preserve" class="mr-3">
+                    <g>
+                        <path
+                            d="M256 0c-74.439 0-135 60.561-135 135s60.561 135 135 135 135-60.561 135-135S330.439 0 256 0zm0 240c-57.897 0-105-47.103-105-105S198.103 30 256 30s105 47.103 105 105-47.103 105-105 105zM423.966 358.195C387.006 320.667 338.009 300 286 300h-60c-52.008 0-101.006 20.667-137.966 58.195C51.255 395.539 31 444.833 31 497c0 8.284 6.716 15 15 15h420c8.284 0 15-6.716 15-15 0-52.167-20.255-101.461-57.034-138.805zM61.66 482c7.515-85.086 78.351-152 164.34-152h60c85.989 0 156.825 66.914 164.34 152H61.66z"
+                            fill=navhoverfill opacity="1" data-original="#000000" class=""></path>
+                    </g>
+                </svg>
+                <span class="flex items-center">Profile</span>
             </a>
-            <a href="#" class="flex pl-5 ml-5 mr-3 text-md w-[90%] rounded-lg py-3 hover:bg-zinc-200">
-                <img class="mr-3" src="assets/save-icon.svg" alt="">
-                <span class="flex items-center">Saved</span>
-            </a>
-            <a href="#" class="flex pl-5 ml-5 mr-3 text-md w-[90%] rounded-lg py-3 hover:bg-zinc-200">
-                <img class="mr-3" src="assets/save-icon.svg" alt="">
-                <span class="flex items-center">Saved</span>
-            </a>
+
             <!-- Hidden -->
             <div id="hidden-top-sidebar" class="hidflex flex-col w-full">
+                <a href="#" class="left-sidebar-links flex pl-5 ml-4 mr-3 text-md w-[90%] rounded-lg py-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="25" height="25" x="0" y="0" viewBox="0 0 512 512"
+                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="mr-3">
+                        <g>
+                            <path
+                                d="M389.468 256a16 16 0 0 1-16 16H272v101.467a16 16 0 0 1-32 0V272H138.533a16 16 0 1 1 0-32H240V138.533a16 16 0 0 1 32 0V240h101.468a16 16 0 0 1 16 16ZM512 90.182v331.636A90.284 90.284 0 0 1 421.818 512H90.183A90.285 90.285 0 0 1 0 421.818V90.182A90.285 90.285 0 0 1 90.183 0h331.635A90.284 90.284 0 0 1 512 90.182Zm-32 0A58.248 58.248 0 0 0 421.818 32H90.183A58.248 58.248 0 0 0 32 90.182v331.636A58.248 58.248 0 0 0 90.183 480h331.635A58.248 58.248 0 0 0 480 421.818Z"
+                                fill=navhoverfill opacity="1" data-original="#000000"></path>
+                        </g>
+                    </svg>
+                    <span class="flex items-center">Create</span>
+                </a>
+                <a href="#" class="left-sidebar-links flex pl-5 ml-4 mr-3 text-md w-[90%] rounded-lg py-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="25" height="25" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512"
+                        xml:space="preserve" class="mr-3 ">
+                        <g>
+                            <path
+                                d="m30.71 7.29-6-6A1 1 0 0 0 24 1H4a3 3 0 0 0-3 3v24a3 3 0 0 0 3 3h24a3 3 0 0 0 3-3V8a1 1 0 0 0-.29-.71ZM20 3v6h-8V3ZM8 29v-7a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v7Zm21-1a1 1 0 0 1-1 1h-2v-7a3 3 0 0 0-3-3H9a3 3 0 0 0-3 3v7H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h6v6a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V3h1.59L29 8.41Z"
+                                fill=navhoverfill opacity="1" data-original="#000000" class=""></path>
+                        </g>
+                    </svg>
+                    <span class="flex items-center">Saved</span>
+                </a>
+                <a href="#" class="left-sidebar-links flex pl-5 ml-4 mr-3 text-md w-[90%] rounded-lg py-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="25" height="25" x="0" y="0" viewBox="0 0 512.001 512"
+                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="mr-3">
+                        <g>
+                            <path
+                                d="M256 455.516c-7.29 0-14.316-2.641-19.793-7.438-20.684-18.086-40.625-35.082-58.219-50.074l-.09-.078c-51.582-43.957-96.125-81.918-127.117-119.313C16.137 236.81 0 197.172 0 153.871c0-42.07 14.426-80.883 40.617-109.293C67.121 15.832 103.488 0 143.031 0c29.555 0 56.621 9.344 80.446 27.77C235.5 37.07 246.398 48.453 256 61.73c9.605-13.277 20.5-24.66 32.527-33.96C312.352 9.344 339.418 0 368.973 0c39.539 0 75.91 15.832 102.414 44.578C497.578 72.988 512 111.801 512 153.871c0 43.3-16.133 82.938-50.777 124.738-30.993 37.399-75.532 75.356-127.106 119.309-17.625 15.016-37.597 32.039-58.328 50.168a30.046 30.046 0 0 1-19.789 7.43zM143.031 29.992c-31.066 0-59.605 12.399-80.367 34.914-21.07 22.856-32.676 54.45-32.676 88.965 0 36.418 13.535 68.988 43.883 105.606 29.332 35.394 72.961 72.574 123.477 115.625l.093.078c17.66 15.05 37.68 32.113 58.516 50.332 20.961-18.254 41.012-35.344 58.707-50.418 50.512-43.051 94.137-80.223 123.469-115.617 30.344-36.618 43.879-69.188 43.879-105.606 0-34.516-11.606-66.11-32.676-88.965-20.758-22.515-49.3-34.914-80.363-34.914-22.758 0-43.653 7.235-62.102 21.5-16.441 12.719-27.894 28.797-34.61 40.047-3.452 5.785-9.53 9.238-16.261 9.238s-12.809-3.453-16.262-9.238c-6.71-11.25-18.164-27.328-34.61-40.047-18.448-14.265-39.343-21.5-62.097-21.5zm0 0"
+                                fill=navhoverfill opacity="1" data-original="#000000"></path>
+                        </g>
+                    </svg>
+                    <span class="flex items-center">Liked</span>
+                </a>
 
-                <a href="#" class="flex pl-5 ml-4 mr-3 text-md w-[90%] rounded-lg py-3 hover:bg-zinc-200">
-                    <img class="mr-3" src="assets/save-icon.svg" alt="">
-                    <span class="flex items-center">Saved</span>
-                </a>
-                <a href="#" class="flex pl-5 ml-4 mr-3 text-md w-[90%] rounded-lg py-3 hover:bg-zinc-200">
-                    <img class="mr-3" src="assets/save-icon.svg" alt="">
-                    <span class="flex items-center">Saved</span>
-                </a>
-                <a href="#" class="flex pl-5 ml-4 mr-3 text-md w-[90%] rounded-lg py-3 hover:bg-zinc-200">
-                    <img class="mr-3" src="assets/save-icon.svg" alt="">
-                    <span class="flex items-center">Saved</span>
-                </a>
-                <a href="#" class="flex pl-5 ml-4 mr-3 text-md w-[90%] rounded-lg py-3 hover:bg-zinc-200">
-                    <img class="mr-3" src="assets/save-icon.svg" alt="">
-                    <span class="flex items-center">Saved</span>
-                </a>
             </div>
             <!-- See More -->
-            <a href="#" id="see-more" class="flex pl-5 ml-5 mr-3 text-md w-[90%] py-3 ">
-                <img class="mr-3" src="assets/dropdown-2.svg" alt="">
+            <a href="#" class=" flex pl-5 ml-5 mr-3 text-md w-[90%] rounded-lg py-3">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="25" height="25" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
+                    xml:space="preserve" class="hovered-paths mr-4">
+                    <g>
+                        <g fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                            clip-rule="evenodd">
+                            <path fill="#e0e0e0"
+                                d="M256 0C114.745 0 0 114.746 0 256c0 141.254 114.745 256 256 256 141.254 0 256-114.746 256-256C512 114.746 397.254 0 256 0z"
+                                opacity="1" data-original="#5c6bc0" class="hovered-path"></path>
+                            <path fill="#e0e0e0"
+                                d="M256 0c-3.69 0-7.35.124-11 .28C381.158 6.057 490 118.434 490 256S381.158 505.942 245 511.72c3.65.156 7.31.28 11 .28 141.254 0 256-114.746 256-256C512 114.746 397.254 0 256 0z"
+                                opacity="1" data-original="#3f51b5" class=""></path>
+                            <path fill="#000000"
+                                d="M133.502 187.38a11 11 0 0 0-7.778 3.222 11 11 0 0 0 0 15.556l110.253 110.25c10.969 10.969 29.087 10.967 40.055-.002l110.25-110.25a11 11 0 0 0 0-15.554 11 11 0 0 0-15.558 0L260.475 300.85c-2.56 2.561-6.382 2.563-8.943.002l-110.253-110.25a11 11 0 0 0-7.777-3.223z"
+                                opacity="1" data-original="#e8eaf6" class=""></path>
+                        </g>
+                    </g>
+                </svg>
                 <span class="flex items-center">See More</span>
             </a>
             <!-- See Less -->
-            <a href="#" id="see-less" class="flex pl-5 ml-5 mr-3 text-md w-[90%] py-3 ">
-                <img class="mr-3 rotate-180" src="assets/dropdown-2.svg" alt="">
+            <a href="#" class=" flex pl-5 ml-5 mr-3 text-md w-[90%] rounded-lg py-3">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="25" height="25" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
+                    xml:space="preserve" class="hovered-paths mr-4 rotate-180">
+                    <g>
+                        <g fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                            clip-rule="evenodd">
+                            <path fill="#e0e0e0"
+                                d="M256 0C114.745 0 0 114.746 0 256c0 141.254 114.745 256 256 256 141.254 0 256-114.746 256-256C512 114.746 397.254 0 256 0z"
+                                opacity="1" data-original="#5c6bc0" class="hovered-path"></path>
+                            <path fill="#e0e0e0"
+                                d="M256 0c-3.69 0-7.35.124-11 .28C381.158 6.057 490 118.434 490 256S381.158 505.942 245 511.72c3.65.156 7.31.28 11 .28 141.254 0 256-114.746 256-256C512 114.746 397.254 0 256 0z"
+                                opacity="1" data-original="#3f51b5" class=""></path>
+                            <path fill="#000000"
+                                d="M133.502 187.38a11 11 0 0 0-7.778 3.222 11 11 0 0 0 0 15.556l110.253 110.25c10.969 10.969 29.087 10.967 40.055-.002l110.25-110.25a11 11 0 0 0 0-15.554 11 11 0 0 0-15.558 0L260.475 300.85c-2.56 2.561-6.382 2.563-8.943.002l-110.253-110.25a11 11 0 0 0-7.777-3.223z"
+                                opacity="1" data-original="#e8eaf6" class=""></path>
+                        </g>
+                    </g>
+                </svg>
                 <span class="flex items-center">See Less</span>
             </a>
         </div>
         <!-- Settings etc -->
         <div class="flex flex-col mt-2 pt-2 items-center">
-            <!-- Title -->
-            <div class="font-[500] text-zinc-500 text-md mb-2 w-full pl-4">Info</div>
             <!-- Links -->
-            <div class="flex pl-5 ml-5 mr-3 text-md w-[90%] rounded-lg py-3 hover:bg-zinc-200">
-                <img class="mr-3" src="assets/settings-icon.svg" alt="">
+            <a href="#" class="left-sidebar-links flex pl-5 ml-5 mr-3 text-md w-[90%] rounded-lg py-3">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="25" height="25" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
+                    xml:space="preserve" class="hovered-paths mr-3">
+                    <g>
+                        <path
+                            d="M268.58 304.36c-7.18 0-13 5.82-13 13-.006 33.651-27.289 60.925-60.94 60.92-33.651-.006-60.926-27.289-60.92-60.94.006-33.647 27.283-60.92 60.93-60.92 7.18 0 13-5.82 13-13s-5.82-13-13-13c-48.002.033-86.907 38.938-86.94 86.94 0 48.013 38.922 86.935 86.935 86.935s86.935-38.922 86.935-86.935c0-7.18-5.82-13-13-13z"
+                            fill="#000000" opacity="1" data-original="#000000" class="hovered-path"></path>
+                        <path
+                            d="M371.86 347.26c-1.24-7.072-7.978-11.8-15.05-10.56l-27.21 4.77a13 13 0 0 0-10.31 9.43 128.283 128.283 0 0 1-12.77 30.77 12.998 12.998 0 0 0 .62 14l15.88 22.63a7.92 7.92 0 0 1-.88 10.17l-16.32 16.32a7.92 7.92 0 0 1-10.16.89l-22.63-15.88a12.998 12.998 0 0 0-14-.62 128.168 128.168 0 0 1-30.77 12.77 13 13 0 0 0-9.43 10.31L214 479.44a7.92 7.92 0 0 1-7.81 6.56H183.1a7.92 7.92 0 0 1-7.81-6.56l-4.77-27.2a13 13 0 0 0-9.43-10.31 128.37 128.37 0 0 1-30.78-12.77 12.998 12.998 0 0 0-14 .62l-22.59 15.87a7.92 7.92 0 0 1-10.17-.88l-16.32-16.32a7.93 7.93 0 0 1-.89-10.16l15.88-22.63a13 13 0 0 0 .62-14 128.007 128.007 0 0 1-12.77-30.77 13 13 0 0 0-10.31-9.43l-27.2-4.77A7.92 7.92 0 0 1 26 328.9v-23.09a7.92 7.92 0 0 1 6.56-7.81l27.2-4.77a13 13 0 0 0 10.31-9.43A128.024 128.024 0 0 1 82.84 253a13 13 0 0 0-.62-14l-15.87-22.56a7.92 7.92 0 0 1 .88-10.17l16.33-16.33a7.92 7.92 0 0 1 10.16-.88l22.63 15.88a12.998 12.998 0 0 0 14 .62 128.256 128.256 0 0 1 30.78-12.77 13 13 0 0 0 9.43-10.31l4.77-27.2c1.24-7.072-3.488-13.81-10.56-15.05s-13.81 3.488-15.05 10.56l-3.38 19.3a154.266 154.266 0 0 0-21.59 9l-16.05-11.26c-13.484-9.488-31.841-7.888-43.48 3.79l-16.38 16.27c-11.667 11.645-13.262 29.996-3.78 43.48l11.26 16.05a154.048 154.048 0 0 0-9 21.6l-19.3 3.38C11.802 275.248-.02 289.344 0 305.81v23.09c-.021 16.482 11.823 30.589 28.06 33.42l19.3 3.39a153.977 153.977 0 0 0 9 21.59l-11.3 16.05c-9.479 13.486-7.88 31.837 3.79 43.48l16.33 16.32c11.643 11.671 29.997 13.266 43.48 3.78l16-11.26a154.386 154.386 0 0 0 21.59 9l3.38 19.3c2.848 16.244 16.978 28.078 33.47 28.03h23.09c16.486.02 30.593-11.829 33.42-28.07l3.39-19.3a154.216 154.216 0 0 0 21.59-9l16.06 11.26c13.485 9.484 31.839 7.884 43.48-3.79l16.33-16.33c11.67-11.643 13.269-29.994 3.79-43.48l-11.25-16a154.386 154.386 0 0 0 9-21.59l19.3-3.39c7.072-1.24 11.8-7.978 10.56-15.05z"
+                            fill="#000000" opacity="1" data-original="#000000" class="hovered-path"></path>
+                        <path
+                            d="m487.6 118-13.6-2.38a124.464 124.464 0 0 0-6-14.35L476 90c8.242-11.72 6.853-27.671-3.29-37.79L459.83 39.3C449.706 29.136 433.731 27.742 422 36l-11.31 7.93a124.111 124.111 0 0 0-14.35-6L394 24.39C391.538 10.272 379.271-.023 364.94 0h-18.19c-14.33-.018-26.593 10.282-29.05 24.4L315.31 38a124.111 124.111 0 0 0-14.35 6l-11.31-8c-11.72-8.242-27.671-6.853-37.79 3.29L239 52.17c-10.164 10.124-11.558 26.099-3.3 37.83l7.93 11.31a124.111 124.111 0 0 0-6 14.35L224.08 118c-14.114 2.462-24.408 14.723-24.39 29.05v18.19c-.028 14.334 10.269 26.607 24.39 29.07l13.59 2.38a124.111 124.111 0 0 0 6 14.35l-7.94 11.31c-8.243 11.716-6.863 27.664 3.27 37.79L251.86 273c10.121 10.149 26.078 11.538 37.8 3.29l11.34-7.93a124.538 124.538 0 0 0 14.35 6l2.39 13.6c2.462 14.114 14.723 24.408 29.05 24.39h18.19c14.331 0 26.582-10.317 29.02-24.44l2.38-13.59a124.111 124.111 0 0 0 14.35-6L422 276.3c11.73 8.262 27.708 6.868 37.83-3.3l12.87-12.87c10.137-10.117 11.529-26.059 3.3-37.78L468.05 211a124.538 124.538 0 0 0 6-14.35l13.6-2.39c14.083-2.476 24.352-14.711 24.35-29.01v-18.19c.023-14.334-10.278-26.602-24.4-29.06zm-1.6 47.28a3.49 3.49 0 0 1-2.89 3.44l-21.44 3.76a13 13 0 0 0-10.31 9.43 98.323 98.323 0 0 1-9.79 23.59 12.998 12.998 0 0 0 .62 14l12.51 17.84a3.49 3.49 0 0 1-.39 4.48l-12.86 12.86a3.49 3.49 0 0 1-4.45.32l-17.87-12.5a12.998 12.998 0 0 0-14-.62 98.242 98.242 0 0 1-23.59 9.79 13 13 0 0 0-9.39 10.33l-3.76 21.44a3.49 3.49 0 0 1-3.44 2.89h-18.2a3.49 3.49 0 0 1-3.44-2.89L339.54 262a13 13 0 0 0-9.43-10.31 98.411 98.411 0 0 1-23.6-9.79 12.998 12.998 0 0 0-14 .62L274.72 255a3.49 3.49 0 0 1-4.48-.39l-12.86-12.86a3.49 3.49 0 0 1-.39-4.48l12.51-17.84a12.998 12.998 0 0 0 .62-14 98.145 98.145 0 0 1-9.79-23.59 12.999 12.999 0 0 0-10.33-9.38l-21.44-3.76a3.49 3.49 0 0 1-2.89-3.44l.01-18.2a3.49 3.49 0 0 1 2.89-3.44l21.43-3.77a13 13 0 0 0 10.31-9.43 98.242 98.242 0 0 1 9.79-23.59 12.998 12.998 0 0 0-.62-14L257 75a3.49 3.49 0 0 1 .39-4.48l12.87-12.87a3.49 3.49 0 0 1 4.48-.39l17.83 12.51a13 13 0 0 0 14 .62 98.242 98.242 0 0 1 23.59-9.79 13 13 0 0 0 9.43-10.31l3.76-21.44a3.49 3.49 0 0 1 3.4-2.85h18.19a3.49 3.49 0 0 1 3.44 2.89l3.76 21.44a13 13 0 0 0 9.43 10.31 98.145 98.145 0 0 1 23.59 9.79 12.998 12.998 0 0 0 14-.62L437 57.3a3.49 3.49 0 0 1 4.48.39l12.87 12.87a3.489 3.489 0 0 1 .35 4.44l-12.51 17.87a12.998 12.998 0 0 0-.62 14 98.323 98.323 0 0 1 9.79 23.59 13 13 0 0 0 10.31 9.43l21.44 3.76a3.49 3.49 0 0 1 2.89 3.44v18.19z"
+                            fill="#000000" opacity="1" data-original="#000000" class="hovered-path"></path>
+                        <path
+                            d="M355.84 94.05c-34.302 0-62.11 27.808-62.11 62.11.039 34.286 27.824 62.071 62.11 62.11 34.302 0 62.11-27.808 62.11-62.11s-27.808-62.11-62.11-62.11zm0 98.22c-19.943 0-36.11-16.167-36.11-36.11-.005-19.953 16.157-36.138 36.11-36.16v.05c19.943 0 36.11 16.167 36.11 36.11 0 19.943-16.167 36.11-36.11 36.11z"
+                            fill="#000000" opacity="1" data-original="#000000" class="hovered-path"></path>
+                    </g>
+                </svg>
                 <span class="flex items-center">Settings</span>
-            </div>
-            <div class="flex pl-5 ml-5 mr-3 text-md w-[90%] rounded-lg py-3 hover:bg-zinc-200">
-                <img class="mr-3" src="assets/about-icon-left-nav.svg" alt="">
+            </a>
+            <a href="#" class="left-sidebar-links flex pl-5 ml-5 mr-3 text-md w-[90%] rounded-lg py-3">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="25" height="25" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
+                    xml:space="preserve" class="mr-3">
+                    <g>
+                        <g fill="#28303f">
+                            <path
+                                d="M18.75 17a.75.75 0 0 0-1.5 0zm-1.5 4a.75.75 0 0 0 1.5 0zM5.115 7.513a.75.75 0 0 0-.23 1.483zm3.614 2.474a.75.75 0 1 0 .542-1.399zm4.021-3.934a.75.75 0 0 0-1.5 0zM12 21v.75a.75.75 0 0 0 .75-.75zM3.994 3.011l.085-.745zm7.323 2.413.43-.614zM3.994 18.372l.085-.745zm7.323 2.414.43-.615zM20.006 3.01l-.084-.745zm-7.323 2.413-.43-.614zM21.25 14a.75.75 0 0 0 1.5 0zM5.115 11.514a.75.75 0 1 0-.23 1.482zm1.702 1.872a.75.75 0 0 0 .366-1.455zM17.25 17v4h1.5v-4zM4.885 8.996c1.229.19 2.586.505 3.844.991l.542-1.399c-1.386-.536-2.853-.873-4.156-1.075zm6.365-2.943V21h1.5V6.053zM3.91 3.757c2.176.245 5.007.901 6.976 2.282l.861-1.229C9.47 3.214 6.34 2.521 4.08 2.266zm0 15.36c2.176.247 5.007.903 6.976 2.283l.861-1.229C9.47 18.575 6.34 17.883 4.08 17.627zM1.25 4.936V16.2h1.5V4.935zm2.829 12.692c-.75-.085-1.329-.708-1.329-1.427h-1.5c0 1.543 1.214 2.754 2.66 2.918zm0-15.361C2.467 2.084 1.25 3.429 1.25 4.936h1.5c0-.757.576-1.245 1.16-1.18zm15.843 0c-2.26.255-5.391.948-7.67 2.544l.862 1.229c1.97-1.38 4.8-2.037 6.976-2.282zm1.328 2.67V14h1.5V4.935zm-1.16-1.18c.584-.065 1.16.423 1.16 1.18h1.5c0-1.507-1.216-2.852-2.829-2.67zM10.886 6.04c.667.467 1.561.467 2.228 0l-.861-1.229a.445.445 0 0 1-.506 0zm0 15.36c.335.235.726.351 1.114.351v-1.5a.44.44 0 0 1-.253-.079zm-6-8.403c.618.096 1.272.223 1.93.39l.367-1.455a22.689 22.689 0 0 0-2.068-.418zM19 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+                                fill="#28303f" opacity="1" data-original="#28303f"></path>
+                        </g>
+                    </g>
+                </svg>
                 <span class="flex items-center">About</span>
-            </div>
-            <div class="flex pl-5 ml-5 mr-3 text-md w-[90%] rounded-lg py-3 hover:bg-zinc-200">
-                <img class="mr-3" src="assets/help-icon-left-nav.svg" alt="">
+            </a>
+            <a href="#" class="left-sidebar-links flex pl-5 ml-5 mr-3 text-md w-[90%] rounded-lg py-3">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="25" height="25" x="0" y="0" viewBox="0 0 682.667 682.667"
+                    style="enable-background:new 0 0 512 512" xml:space="preserve" class="mr-3">
+                    <g>
+                        <defs>
+                            <clipPath id="a" clipPathUnits="userSpaceOnUse">
+                                <path d="M0 512h512V0H0Z" fill="#000000" opacity="1" data-original="#000000"></path>
+                            </clipPath>
+                        </defs>
+                        <g clip-path="url(#a)" transform="matrix(1.33333 0 0 -1.33333 0 682.667)">
+                            <path
+                                d="M0 0c13.696-69.014 74.573-121.043 147.61-121.043 30.199 0 58.315 8.901 81.882 24.213l61.383-16.978-16.978 61.383C289.209-28.858 298.11-.742 298.11 29.457c0 73.037-52.029 133.914-121.043 147.61"
+                                style="stroke-width:30;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                transform="translate(198.89 136.043)" fill="none" stroke="#000000" stroke-width="30"
+                                stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                stroke-dasharray="none" stroke-opacity="" data-original="#000000" class=""></path>
+                            <path
+                                d="M0 0c-99.687 0-180.5-80.813-180.5-180.5 0-35.738 10.389-69.049 28.307-97.081l-21.072-76.184 76.184 21.072C-69.048-350.612-35.738-361 0-361c99.687 0 180.5 80.813 180.5 180.5S99.687 0 0 0Z"
+                                style="stroke-width:30;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                transform="translate(195.5 497)" fill="none" stroke="#000000" stroke-width="30"
+                                stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                stroke-dasharray="none" stroke-opacity="" data-original="#000000" class=""></path>
+                            <path d="M210.5 211h-30v30h30z" style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                fill="#000000" data-original="#000000"></path>
+                            <path
+                                d="M0 0c0 24.853 20.147 45 45 45S90 24.853 90 0c0-13.15-5.643-24.981-14.637-33.208L45-61v-30"
+                                style="stroke-width:30;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                transform="translate(150.5 362)" fill="none" stroke="#000000" stroke-width="30"
+                                stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                stroke-dasharray="none" stroke-opacity="" data-original="#000000" class=""></path>
+                        </g>
+                    </g>
+                </svg>
                 <span class="flex items-center">Help</span>
-            </div>
-            <div class="flex pl-5 ml-5 mr-3 text-md w-[90%] rounded-lg py-3 hover:bg-zinc-200">
-                <img class="mr-3" src="assets/save-icon.svg" alt="">
-                <span class="flex items-center">Saved</span>
-            </div>
+            </a>
         </div>
         <!-- Footer -->
         <div class="mt-6">
-            <div class="flex flex-wrap font-semibold text-zinc-500 text-[11px] gap-x-3 w-[85%] mt-2 ml-4 mb-4">
+            <div class="flex flex-wrap font-semibold text-navhoverfill text-[11px] gap-x-3 w-[85%] mt-2 ml-4 mb-4">
                 <a href="#" class="hover:underline">About</a>
                 <a href="#" class="hover:underline">Blog</a>
                 <a href="#" class="hover:underline">Careers</a>
@@ -236,26 +408,27 @@
         <!-- Mid Body -->
         <div class="mid-body w-[65%] m-3 pt-4">
             <!-- Create Post -->
-            <div class="bg-white shadow-sm mx-auto flex items-center justify-between rounded-full w-[420px]">
+            <div class="gradblue shadow-sm mx-auto flex items-center justify-between rounded-full w-[500px]">
                 <!-- <div class="flex bg-white m-2 rounded-lg items-center justify-between w-full"> -->
                 <!-- Account -->
                 <div class="group flex ml-2 justify-center items-center px-3 group">
                     <a href="#">
                         <div id="account"
-                            class="h-[45px] w-[45px] rounded-full border-black outline outline-2 outline-black/0 outline-offset-4 group-hover:outline-black duration-200">
+                            class="h-[45px] w-[45px] rounded-full border-black outline outline-2 outline-black/0 outline-offset-4 group-hover:outline-navbg duration-200">
                         </div>
                     </a>
                 </div>
                 <!-- Post as Button -->
                 <button
-                    class="flex bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white border outline outline-2 outline-black/0 hover:outline-black outline-offset-4 duration-200 border-black my-3 mr-4 w-[75%] rounded-full text-lg text-left px-5 py-2">
+                    class="flex post-button text-white border outline outline-2 outline-black/0 hover:outline-navbg outline-offset-4 duration-200 border-black my-3 mr-4 w-[100%] rounded-full text-lg text-left px-5 py-2">
                     <img class="mr-3" src="assets/create-post.svg" alt="">
                     <span>Post As Amulya</span>
                 </button>
                 <!-- </div> -->
             </div>
             <!-- Post Card -->
-            <div class="post-card mx-auto mt-6 mb-6 shadow-sm rounded-xl p-3 pl-5 flex flex-col">
+            <div
+                class="post-card text-navhoverfill gradblue mx-auto mt-6 mb-6 shadow-sm rounded-xl p-3 pl-5 flex flex-col">
                 <!-- Header -->
                 <div class="flex justify-between">
                     <!-- Name and profile pic -->
@@ -270,20 +443,29 @@
                         <!-- Name and Time -->
                         <div class="flex flex-col justify-around">
                             <h3 class="text-sm font-semibold">Amulya Jain</h3>
-                            <h3 class="text-xs text-zinc-400">2 hours ago</h3>
+                            <h3 class="text-xs text-navbg">2 hours ago</h3>
                         </div>
                     </div>
                     <!-- More Dropdown -->
                     <button>
                         <div
-                            class="h-[35px] w-[35px] rounded-full flex justify-center items-center hover:bg-slate-200 duration-200">
-                            <img src="assets/more-horizontal-dots.svg" alt="">
+                            class="h-[35px] w-[35px] rounded-full flex justify-center items-center hover:bg-[#48bfe3] duration-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path
+                                        d="M16 13c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3zM6 13c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3zM26 13c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3z"
+                                        fill=navhoverfill opacity="1" data-original="#000000"></path>
+                                </g>
+                            </svg>
                         </div>
                     </button>
                 </div>
                 <div class="flex">
                     <!-- Post -->
-                    <div class="w-full group mt-4 bg-gray-100 flex items-center justify-center rounded-lg h-[384px]">
+                    <div class="w-full group mt-4 bg-bodybg flex items-center justify-center rounded-lg h-[384px]">
                         <a href="#" class="w-full h-full">
                             <img class="object-cover h-full w-full rounded-lg group-hover:opacity-75 duration-200"
                                 src="assets/the-horse-is-moving-on-the-meadow-generative-ai-free-photo.jpg" alt="">
@@ -296,26 +478,76 @@
                             <!-- like-div -->
                             <div class="flex flex-col items-center">
                                 <button class="group">
-                                    <img class="group-hover:opacity-55" src="assets/heart-like.svg" alt="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                        viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
+                                        xml:space="preserve" class="hovered-paths group-hover:opacity-55">
+                                        <g>
+                                            <path
+                                                d="M22.128 3.901C20.918 2.675 19.309 2 17.596 2s-3.321.675-4.531 1.9L12 4.98l-1.065-1.079A6.323 6.323 0 0 0 6.404 2a6.324 6.324 0 0 0-4.532 1.901c-2.491 2.524-2.491 6.631 0 9.153l9.594 9.722a.746.746 0 0 0 1.068 0l9.594-9.721c2.491-2.523 2.491-6.629 0-9.154z"
+                                                opacity="1" data-original="#f44336" class="hovered-path fill-none">
+                                            </path>
+                                            <path
+                                                d="M11.466 22.776a.746.746 0 0 0 1.068 0l9.594-9.721c2.491-2.523 2.491-6.63 0-9.154C20.918 2.675 19.309 2 17.596 2s-3.321.675-4.531 1.9L12 4.98l-1.065-1.079A6.323 6.323 0 0 0 6.404 2a6.324 6.324 0 0 0-4.532 1.901c-2.491 2.524-2.491 6.631 0 9.153zM2.939 4.954A4.84 4.84 0 0 1 6.403 3.5c1.308 0 2.538.517 3.463 1.455l1.599 1.62a.773.773 0 0 0 1.067 0l1.599-1.621A4.847 4.847 0 0 1 17.596 3.5a4.84 4.84 0 0 1 3.464 1.454c1.917 1.943 1.917 5.104 0 7.048L12 21.183l-9.061-9.182c-1.917-1.942-1.917-5.104 0-7.047z"
+                                                opacity="1" data-original="#000000" class="fill=navhoverfill"></path>
+                                        </g>
+                                    </svg>
                                 </button>
-                                <span class="text-zinc-400 flex items-center mt-1 text-sm mx-auto">1600</span>
+                                <span class="text-navbg flex items-center mt-1 text-sm mx-auto">1600</span>
                             </div>
                             <!-- Comments-div -->
                             <div class="flex flex-col items-center">
                                 <button class="group">
-                                    <img class="group-hover:opacity-55" src="assets/messages-icon-topnav.svg" alt="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                        viewBox="0 0 32 32" style="enable-background:new 0 0 512 512"
+                                        xml:space="preserve" class="group-hover:opacity-55">
+                                        <g>
+                                            <path
+                                                d="M8 30a1.001 1.001 0 0 1-1-1v-5H4c-1.654 0-3-1.346-3-3V5c0-1.654 1.346-3 3-3h24c1.654 0 3 1.346 3 3v16c0 1.654-1.346 3-3 3H15.851l-7.226 5.781A.998.998 0 0 1 8 30zM4 4c-.552 0-1 .449-1 1v16c0 .551.448 1 1 1h4a1 1 0 0 1 1 1v3.92l5.875-4.701A1 1 0 0 1 15.5 22H28c.552 0 1-.449 1-1V5c0-.551-.448-1-1-1z"
+                                                fill=navhoverfill opacity="1" data-original="#000000">
+                                            </path>
+                                            <path
+                                                d="M24 12H8a1 1 0 1 1 0-2h16a1 1 0 1 1 0 2zM16 16H8a1 1 0 1 1 0-2h8a1 1 0 1 1 0 2z"
+                                                fill=navhoverfill opacity="1" data-original="#000000">
+                                            </path>
+                                        </g>
+                                    </svg>
                                 </button>
-                                <span class="text-zinc-400 flex mt-1 items-center text-sm mx-auto">236</span>
+                                <span class="text-navbg flex mt-1 items-center text-sm mx-auto">236</span>
                             </div>
                             <!-- Share Button -->
                             <button>
-                                <img class="hover:opacity-55" src="assets/send-airplane.svg" alt="">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                    viewBox="0 0 512.005 512.005" style="enable-background:new 0 0 512 512"
+                                    xml:space="preserve" class="hover:opacity-55">
+                                    <g>
+                                        <path
+                                            d="M511.658 51.675c2.496-11.619-8.895-21.416-20.007-17.176l-482 184a15 15 0 0 0-.054 28.006L145 298.8v164.713a15 15 0 0 0 28.396 6.75l56.001-111.128 136.664 101.423c8.313 6.17 20.262 2.246 23.287-7.669C516.947 34.532 511.431 52.726 511.658 51.675zm-118.981 52.718L157.874 271.612 56.846 232.594zM175 296.245l204.668-145.757c-176.114 185.79-166.916 176.011-167.684 177.045-1.141 1.535 1.985-4.448-36.984 72.882zm191.858 127.546-120.296-89.276 217.511-229.462z"
+                                            fill=navhoverfill opacity="1" data-original="#000000"></path>
+                                    </g>
+                                </svg>
                             </button>
                         </div>
                         <!-- right side -->
                         <div>
                             <button class="mt-6">
-                                <img class="hover:opacity-55" src="assets/bookmark-save.svg" alt="">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="hover:opacity-55">
+                                    <g>
+                                        <g fill-rule="evenodd">
+                                            <path
+                                                d="M355.8 7.976H156.206A77.1 77.1 0 0 0 79.236 85v406.019a13.029 13.029 0 0 0 22.193 9.2L256.007 345.6l154.564 154.624a13.019 13.019 0 0 0 9.2 3.8 11.85 11.85 0 0 0 4.8-.964l.1-.043.1-.04a12.889 12.889 0 0 0 7.991-11.958V85A77.1 77.1 0 0 0 355.8 7.976z"
+                                                opacity="1" data-original="#ffcd00" class="fill-none"></path>
+                                            <path
+                                                d="M398.769 440.293 270.846 312.406a21.008 21.008 0 0 0-29.692 0L113.238 440.293V85a43.035 43.035 0 0 1 42.968-43.01H355.8A43.041 43.041 0 0 1 398.769 85v355.3zM355.8-.024H156.206A85.1 85.1 0 0 0 71.236 85v406.019a21.03 21.03 0 0 0 35.851 14.86l148.92-148.963 148.906 148.963a21.082 21.082 0 0 0 14.861 6.145 19.814 19.814 0 0 0 8.03-1.644 20.889 20.889 0 0 0 12.96-19.361V85A85.1 85.1 0 0 0 355.8-.024z"
+                                                opacity="1" data-original="#000000" class="fill-navhoverfill"></path>
+                                        </g>
+                                    </g>
+                                </svg>
                             </button>
                         </div>
                     </div>
@@ -343,7 +575,8 @@
                 </div>
             </div>
             <!-- Post Card -->
-            <div class="post-card bg-white mx-auto mt-6 mb-6 shadow-sm rounded-xl p-3 pl-5 flex flex-col">
+            <div
+                class="post-card text-navhoverfill gradblue mx-auto mt-6 mb-6 shadow-sm rounded-xl p-3 pl-5 flex flex-col">
                 <!-- Header -->
                 <div class="flex justify-between">
                     <!-- Name and profile pic -->
@@ -358,20 +591,29 @@
                         <!-- Name and Time -->
                         <div class="flex flex-col justify-around">
                             <h3 class="text-sm font-semibold">Amulya Jain</h3>
-                            <h3 class="text-xs text-zinc-400">2 hours ago</h3>
+                            <h3 class="text-xs text-navbg">2 hours ago</h3>
                         </div>
                     </div>
                     <!-- More Dropdown -->
                     <button>
                         <div
-                            class="h-[35px] w-[35px] rounded-full flex justify-center items-center hover:bg-slate-200 duration-200">
-                            <img src="assets/more-horizontal-dots.svg" alt="">
+                            class="h-[35px] w-[35px] rounded-full flex justify-center items-center hover:bg-[#48bfe3] duration-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path
+                                        d="M16 13c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3zM6 13c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3zM26 13c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3z"
+                                        fill=navhoverfill opacity="1" data-original="#000000"></path>
+                                </g>
+                            </svg>
                         </div>
                     </button>
                 </div>
                 <div class="flex">
                     <!-- Post -->
-                    <div class="w-full group mt-4 bg-gray-100 flex items-center justify-center rounded-lg h-[384px]">
+                    <div class="w-full group mt-4 bg-bodybg flex items-center justify-center rounded-lg h-[384px]">
                         <a href="#" class="w-full h-full">
                             <img class="object-cover h-full w-full rounded-lg group-hover:opacity-75 duration-200"
                                 src="assets/the-horse-is-moving-on-the-meadow-generative-ai-free-photo.jpg" alt="">
@@ -384,26 +626,76 @@
                             <!-- like-div -->
                             <div class="flex flex-col items-center">
                                 <button class="group">
-                                    <img class="group-hover:opacity-55" src="assets/heart-like.svg" alt="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                        viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
+                                        xml:space="preserve" class="hovered-paths group-hover:opacity-55">
+                                        <g>
+                                            <path
+                                                d="M22.128 3.901C20.918 2.675 19.309 2 17.596 2s-3.321.675-4.531 1.9L12 4.98l-1.065-1.079A6.323 6.323 0 0 0 6.404 2a6.324 6.324 0 0 0-4.532 1.901c-2.491 2.524-2.491 6.631 0 9.153l9.594 9.722a.746.746 0 0 0 1.068 0l9.594-9.721c2.491-2.523 2.491-6.629 0-9.154z"
+                                                opacity="1" data-original="#f44336" class="hovered-path fill-none">
+                                            </path>
+                                            <path
+                                                d="M11.466 22.776a.746.746 0 0 0 1.068 0l9.594-9.721c2.491-2.523 2.491-6.63 0-9.154C20.918 2.675 19.309 2 17.596 2s-3.321.675-4.531 1.9L12 4.98l-1.065-1.079A6.323 6.323 0 0 0 6.404 2a6.324 6.324 0 0 0-4.532 1.901c-2.491 2.524-2.491 6.631 0 9.153zM2.939 4.954A4.84 4.84 0 0 1 6.403 3.5c1.308 0 2.538.517 3.463 1.455l1.599 1.62a.773.773 0 0 0 1.067 0l1.599-1.621A4.847 4.847 0 0 1 17.596 3.5a4.84 4.84 0 0 1 3.464 1.454c1.917 1.943 1.917 5.104 0 7.048L12 21.183l-9.061-9.182c-1.917-1.942-1.917-5.104 0-7.047z"
+                                                opacity="1" data-original="#000000" class="fill=navhoverfill"></path>
+                                        </g>
+                                    </svg>
                                 </button>
-                                <span class="text-zinc-400 flex items-center mt-1 text-sm mx-auto">1600</span>
+                                <span class="text-navbg flex items-center mt-1 text-sm mx-auto">1600</span>
                             </div>
                             <!-- Comments-div -->
                             <div class="flex flex-col items-center">
                                 <button class="group">
-                                    <img class="group-hover:opacity-55" src="assets/messages-icon-topnav.svg" alt="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                        viewBox="0 0 32 32" style="enable-background:new 0 0 512 512"
+                                        xml:space="preserve" class="group-hover:opacity-55">
+                                        <g>
+                                            <path
+                                                d="M8 30a1.001 1.001 0 0 1-1-1v-5H4c-1.654 0-3-1.346-3-3V5c0-1.654 1.346-3 3-3h24c1.654 0 3 1.346 3 3v16c0 1.654-1.346 3-3 3H15.851l-7.226 5.781A.998.998 0 0 1 8 30zM4 4c-.552 0-1 .449-1 1v16c0 .551.448 1 1 1h4a1 1 0 0 1 1 1v3.92l5.875-4.701A1 1 0 0 1 15.5 22H28c.552 0 1-.449 1-1V5c0-.551-.448-1-1-1z"
+                                                fill=navhoverfill opacity="1" data-original="#000000">
+                                            </path>
+                                            <path
+                                                d="M24 12H8a1 1 0 1 1 0-2h16a1 1 0 1 1 0 2zM16 16H8a1 1 0 1 1 0-2h8a1 1 0 1 1 0 2z"
+                                                fill=navhoverfill opacity="1" data-original="#000000">
+                                            </path>
+                                        </g>
+                                    </svg>
                                 </button>
-                                <span class="text-zinc-400 flex mt-1 items-center text-sm mx-auto">236</span>
+                                <span class="text-navbg flex mt-1 items-center text-sm mx-auto">236</span>
                             </div>
                             <!-- Share Button -->
                             <button>
-                                <img class="hover:opacity-55" src="assets/send-airplane.svg" alt="">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                    viewBox="0 0 512.005 512.005" style="enable-background:new 0 0 512 512"
+                                    xml:space="preserve" class="hover:opacity-55">
+                                    <g>
+                                        <path
+                                            d="M511.658 51.675c2.496-11.619-8.895-21.416-20.007-17.176l-482 184a15 15 0 0 0-.054 28.006L145 298.8v164.713a15 15 0 0 0 28.396 6.75l56.001-111.128 136.664 101.423c8.313 6.17 20.262 2.246 23.287-7.669C516.947 34.532 511.431 52.726 511.658 51.675zm-118.981 52.718L157.874 271.612 56.846 232.594zM175 296.245l204.668-145.757c-176.114 185.79-166.916 176.011-167.684 177.045-1.141 1.535 1.985-4.448-36.984 72.882zm191.858 127.546-120.296-89.276 217.511-229.462z"
+                                            fill=navhoverfill opacity="1" data-original="#000000"></path>
+                                    </g>
+                                </svg>
                             </button>
                         </div>
                         <!-- right side -->
                         <div>
                             <button class="mt-6">
-                                <img class="hover:opacity-55" src="assets/bookmark-save.svg" alt="">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="hover:opacity-55">
+                                    <g>
+                                        <g fill-rule="evenodd">
+                                            <path
+                                                d="M355.8 7.976H156.206A77.1 77.1 0 0 0 79.236 85v406.019a13.029 13.029 0 0 0 22.193 9.2L256.007 345.6l154.564 154.624a13.019 13.019 0 0 0 9.2 3.8 11.85 11.85 0 0 0 4.8-.964l.1-.043.1-.04a12.889 12.889 0 0 0 7.991-11.958V85A77.1 77.1 0 0 0 355.8 7.976z"
+                                                opacity="1" data-original="#ffcd00" class="fill-none"></path>
+                                            <path
+                                                d="M398.769 440.293 270.846 312.406a21.008 21.008 0 0 0-29.692 0L113.238 440.293V85a43.035 43.035 0 0 1 42.968-43.01H355.8A43.041 43.041 0 0 1 398.769 85v355.3zM355.8-.024H156.206A85.1 85.1 0 0 0 71.236 85v406.019a21.03 21.03 0 0 0 35.851 14.86l148.92-148.963 148.906 148.963a21.082 21.082 0 0 0 14.861 6.145 19.814 19.814 0 0 0 8.03-1.644 20.889 20.889 0 0 0 12.96-19.361V85A85.1 85.1 0 0 0 355.8-.024z"
+                                                opacity="1" data-original="#000000" class="fill-navhoverfill"></path>
+                                        </g>
+                                    </g>
+                                </svg>
                             </button>
                         </div>
                     </div>
@@ -411,19 +703,19 @@
                 <!-- Add a Comment -->
                 <div class="flex mt-4 items-center">
                     <!-- left part -->
-                    <div class="flex w-full">
+                    <div class="flex w-full mr-[0.3rem]">
                         <!-- Account -->
-                        <div class="group flex ml-2 justify-center items-center pr-3 group">
+                        <div class="group flex  justify-center items-center pr-3 group">
                             <a href="#">
                                 <div id="account" class="h-[25px] w-[25px] rounded-full border-black">
                                 </div>
                             </a>
                         </div>
                         <input placeholder="Add a comment...."
-                            class="text-sm font-sans pl-3 placeholder-zinc-600 focus:outline-none border-none  w-full"
+                            class="text-sm bg-[#f1faee] py-1 rounded-md font-mont pl-3 placeholder-zinc-600 focus:outline-none border-none w-full"
                             type="text">
                     </div>
-                    <div>
+                    <div class="flex items-center justify-center mx-[0.3rem]">
                         <button class="ml-2">
                             <img src="assets/send-airplane-horizontal.svg" alt="">
                         </button>
@@ -431,7 +723,8 @@
                 </div>
             </div>
             <!-- Post Card -->
-            <div class="post-card bg-white mx-auto mt-6 mb-6 shadow-sm rounded-xl p-3 pl-5 flex flex-col">
+            <div
+                class="post-card text-navhoverfill gradblue mx-auto mt-6 mb-6 shadow-sm rounded-xl p-3 pl-5 flex flex-col">
                 <!-- Header -->
                 <div class="flex justify-between">
                     <!-- Name and profile pic -->
@@ -446,20 +739,29 @@
                         <!-- Name and Time -->
                         <div class="flex flex-col justify-around">
                             <h3 class="text-sm font-semibold">Amulya Jain</h3>
-                            <h3 class="text-xs text-zinc-400">2 hours ago</h3>
+                            <h3 class="text-xs text-navbg">2 hours ago</h3>
                         </div>
                     </div>
                     <!-- More Dropdown -->
                     <button>
                         <div
-                            class="h-[35px] w-[35px] rounded-full flex justify-center items-center hover:bg-slate-200 duration-200">
-                            <img src="assets/more-horizontal-dots.svg" alt="">
+                            class="h-[35px] w-[35px] rounded-full flex justify-center items-center hover:bg-[#48bfe3] duration-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path
+                                        d="M16 13c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3zM6 13c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3zM26 13c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3z"
+                                        fill=navhoverfill opacity="1" data-original="#000000"></path>
+                                </g>
+                            </svg>
                         </div>
                     </button>
                 </div>
                 <div class="flex">
                     <!-- Post -->
-                    <div class="w-full group mt-4 bg-gray-100 flex items-center justify-center rounded-lg h-[384px]">
+                    <div class="w-full group mt-4 bg-bodybg flex items-center justify-center rounded-lg h-[384px]">
                         <a href="#" class="w-full h-full">
                             <img class="object-cover h-full w-full rounded-lg group-hover:opacity-75 duration-200"
                                 src="assets/the-horse-is-moving-on-the-meadow-generative-ai-free-photo.jpg" alt="">
@@ -472,26 +774,76 @@
                             <!-- like-div -->
                             <div class="flex flex-col items-center">
                                 <button class="group">
-                                    <img class="group-hover:opacity-55" src="assets/heart-like.svg" alt="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                        viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
+                                        xml:space="preserve" class="hovered-paths group-hover:opacity-55">
+                                        <g>
+                                            <path
+                                                d="M22.128 3.901C20.918 2.675 19.309 2 17.596 2s-3.321.675-4.531 1.9L12 4.98l-1.065-1.079A6.323 6.323 0 0 0 6.404 2a6.324 6.324 0 0 0-4.532 1.901c-2.491 2.524-2.491 6.631 0 9.153l9.594 9.722a.746.746 0 0 0 1.068 0l9.594-9.721c2.491-2.523 2.491-6.629 0-9.154z"
+                                                opacity="1" data-original="#f44336" class="hovered-path fill-none">
+                                            </path>
+                                            <path
+                                                d="M11.466 22.776a.746.746 0 0 0 1.068 0l9.594-9.721c2.491-2.523 2.491-6.63 0-9.154C20.918 2.675 19.309 2 17.596 2s-3.321.675-4.531 1.9L12 4.98l-1.065-1.079A6.323 6.323 0 0 0 6.404 2a6.324 6.324 0 0 0-4.532 1.901c-2.491 2.524-2.491 6.631 0 9.153zM2.939 4.954A4.84 4.84 0 0 1 6.403 3.5c1.308 0 2.538.517 3.463 1.455l1.599 1.62a.773.773 0 0 0 1.067 0l1.599-1.621A4.847 4.847 0 0 1 17.596 3.5a4.84 4.84 0 0 1 3.464 1.454c1.917 1.943 1.917 5.104 0 7.048L12 21.183l-9.061-9.182c-1.917-1.942-1.917-5.104 0-7.047z"
+                                                opacity="1" data-original="#000000" class="fill=navhoverfill"></path>
+                                        </g>
+                                    </svg>
                                 </button>
-                                <span class="text-zinc-400 flex items-center mt-1 text-sm mx-auto">1600</span>
+                                <span class="text-navbg flex items-center mt-1 text-sm mx-auto">1600</span>
                             </div>
                             <!-- Comments-div -->
                             <div class="flex flex-col items-center">
                                 <button class="group">
-                                    <img class="group-hover:opacity-55" src="assets/messages-icon-topnav.svg" alt="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                        viewBox="0 0 32 32" style="enable-background:new 0 0 512 512"
+                                        xml:space="preserve" class="group-hover:opacity-55">
+                                        <g>
+                                            <path
+                                                d="M8 30a1.001 1.001 0 0 1-1-1v-5H4c-1.654 0-3-1.346-3-3V5c0-1.654 1.346-3 3-3h24c1.654 0 3 1.346 3 3v16c0 1.654-1.346 3-3 3H15.851l-7.226 5.781A.998.998 0 0 1 8 30zM4 4c-.552 0-1 .449-1 1v16c0 .551.448 1 1 1h4a1 1 0 0 1 1 1v3.92l5.875-4.701A1 1 0 0 1 15.5 22H28c.552 0 1-.449 1-1V5c0-.551-.448-1-1-1z"
+                                                fill=navhoverfill opacity="1" data-original="#000000">
+                                            </path>
+                                            <path
+                                                d="M24 12H8a1 1 0 1 1 0-2h16a1 1 0 1 1 0 2zM16 16H8a1 1 0 1 1 0-2h8a1 1 0 1 1 0 2z"
+                                                fill=navhoverfill opacity="1" data-original="#000000">
+                                            </path>
+                                        </g>
+                                    </svg>
                                 </button>
-                                <span class="text-zinc-400 flex mt-1 items-center text-sm mx-auto">236</span>
+                                <span class="text-navbg flex mt-1 items-center text-sm mx-auto">236</span>
                             </div>
                             <!-- Share Button -->
                             <button>
-                                <img class="hover:opacity-55" src="assets/send-airplane.svg" alt="">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                    viewBox="0 0 512.005 512.005" style="enable-background:new 0 0 512 512"
+                                    xml:space="preserve" class="hover:opacity-55">
+                                    <g>
+                                        <path
+                                            d="M511.658 51.675c2.496-11.619-8.895-21.416-20.007-17.176l-482 184a15 15 0 0 0-.054 28.006L145 298.8v164.713a15 15 0 0 0 28.396 6.75l56.001-111.128 136.664 101.423c8.313 6.17 20.262 2.246 23.287-7.669C516.947 34.532 511.431 52.726 511.658 51.675zm-118.981 52.718L157.874 271.612 56.846 232.594zM175 296.245l204.668-145.757c-176.114 185.79-166.916 176.011-167.684 177.045-1.141 1.535 1.985-4.448-36.984 72.882zm191.858 127.546-120.296-89.276 217.511-229.462z"
+                                            fill=navhoverfill opacity="1" data-original="#000000"></path>
+                                    </g>
+                                </svg>
                             </button>
                         </div>
                         <!-- right side -->
                         <div>
                             <button class="mt-6">
-                                <img class="hover:opacity-55" src="assets/bookmark-save.svg" alt="">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="hover:opacity-55">
+                                    <g>
+                                        <g fill-rule="evenodd">
+                                            <path
+                                                d="M355.8 7.976H156.206A77.1 77.1 0 0 0 79.236 85v406.019a13.029 13.029 0 0 0 22.193 9.2L256.007 345.6l154.564 154.624a13.019 13.019 0 0 0 9.2 3.8 11.85 11.85 0 0 0 4.8-.964l.1-.043.1-.04a12.889 12.889 0 0 0 7.991-11.958V85A77.1 77.1 0 0 0 355.8 7.976z"
+                                                opacity="1" data-original="#ffcd00" class="fill-none"></path>
+                                            <path
+                                                d="M398.769 440.293 270.846 312.406a21.008 21.008 0 0 0-29.692 0L113.238 440.293V85a43.035 43.035 0 0 1 42.968-43.01H355.8A43.041 43.041 0 0 1 398.769 85v355.3zM355.8-.024H156.206A85.1 85.1 0 0 0 71.236 85v406.019a21.03 21.03 0 0 0 35.851 14.86l148.92-148.963 148.906 148.963a21.082 21.082 0 0 0 14.861 6.145 19.814 19.814 0 0 0 8.03-1.644 20.889 20.889 0 0 0 12.96-19.361V85A85.1 85.1 0 0 0 355.8-.024z"
+                                                opacity="1" data-original="#000000" class="fill-navhoverfill"></path>
+                                        </g>
+                                    </g>
+                                </svg>
                             </button>
                         </div>
                     </div>
@@ -499,19 +851,19 @@
                 <!-- Add a Comment -->
                 <div class="flex mt-4 items-center">
                     <!-- left part -->
-                    <div class="flex w-full">
+                    <div class="flex w-full mr-[0.3rem]">
                         <!-- Account -->
-                        <div class="group flex ml-2 justify-center items-center pr-3 group">
+                        <div class="group flex  justify-center items-center pr-3 group">
                             <a href="#">
                                 <div id="account" class="h-[25px] w-[25px] rounded-full border-black">
                                 </div>
                             </a>
                         </div>
                         <input placeholder="Add a comment...."
-                            class="text-sm font-sans pl-3 placeholder-zinc-600 focus:outline-none border-none  w-full"
+                            class="text-sm bg-[#f1faee] py-1 rounded-md font-mont pl-3 placeholder-zinc-600 focus:outline-none border-none w-full"
                             type="text">
                     </div>
-                    <div>
+                    <div class="flex items-center justify-center mx-[0.3rem]">
                         <button class="ml-2">
                             <img src="assets/send-airplane-horizontal.svg" alt="">
                         </button>
@@ -534,104 +886,8 @@
         </div>
         <!-- Right Body -->
         <div class="right-body w-[35%] m-3 pt-4 ">
-            <!-- Online Friends -->
-            <div class="bg-white w-[300px] shadow-sm px-4 rounded-lg mx-auto flex flex-col">
-                <!-- Header -->
-                <div class="flex py-3 justify-between">
-                    <span class="text-md font-semibold">Online</span>
-                    <button class="hover:bg-gray-200 p-1 rounded-full"><img src="assets/sync-icon.svg" alt=""></button>
-                </div>
-                <!-- People -->
-                <div class="flex justify-between pb-4 pt-3 space-x-2">
-                    <!-- Accounts -->
-                    <div class="flex">
-                        <div class="group flex ml-2 justify-center items-center pr-2 group">
-                            <a href="#">
-                                <div id="account" class="relative h-[35px] w-[35px] rounded-full border-black">
-                                    <div class="bg-green-400 w-3 h-3 rounded-full absolute bottom-0 right-0"></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="group flex ml-2 justify-center items-center pr-2 group">
-                            <a href="#">
-                                <div id="account" class="relative h-[35px] w-[35px] rounded-full border-black">
-                                    <div class="bg-green-400 w-3 h-3 rounded-full absolute bottom-0 right-0"></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="group flex ml-2 justify-center items-center pr-2 group">
-                            <a href="#">
-                                <div id="account" class="relative h-[35px] w-[35px] rounded-full border-black">
-                                    <div class="bg-green-400 w-3 h-3 rounded-full absolute bottom-0 right-0"></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="group flex ml-2 justify-center items-center pr-2 group">
-                            <a href="#">
-                                <div id="account" class="relative h-[35px] w-[35px] rounded-full border-black">
-                                    <div class="bg-green-400 w-3 h-3 rounded-full absolute bottom-0 right-0"></div>
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-                    <!-- See all -->
-                    <button class="text-sm hover:text-blue-500"> See all</button>
-                </div>
-            </div>
-            <!-- Trending Tags -->
-            <div class="bg-white w-[300px] mt-6 shadow-sm px-4 pb-4 rounded-lg mx-auto flex flex-col">
-                <!-- Header -->
-                <div class="flex py-3 ">
-                    <span class="text-md font-semibold">Trending Tags</span>
-                </div>
-                <!-- Tags -->
-                <div class="flex flex-col">
-                    <a href="" class="flex px-2 py-2 rounded-md hover:bg-gray-100">
-                        <img class="mr-4" src="assets/hashtags-icon.svg" alt="">
-                        <div class="flex flex-col">
-                            <span class="text-sm font-semibold">Kylie Jenner</span>
-                            <span class="text-xs text-zinc-500">60M Post</span>
-                        </div>
-                    </a>
-                    <a href="" class="flex px-2 py-2 rounded-md hover:bg-gray-100">
-                        <img class="mr-4" src="assets/hashtags-icon.svg" alt="">
-                        <div class="flex flex-col">
-                            <span class="text-sm font-semibold">iamsrk</span>
-                            <span class="text-xs text-zinc-500">32M Post</span>
-                        </div>
-                    </a>
-                    <a href="" class="flex px-2 py-2 rounded-md hover:bg-gray-100">
-                        <img class="mr-4" src="assets/hashtags-icon.svg" alt="">
-                        <div class="flex flex-col">
-                            <span class="text-sm font-semibold">Messi</span>
-                            <span class="text-xs text-zinc-500">83M Post</span>
-                        </div>
-                    </a>
-                    <a href="" class="flex px-2 py-2 rounded-md hover:bg-gray-100">
-                        <img class="mr-4" src="assets/hashtags-icon.svg" alt="">
-                        <div class="flex flex-col">
-                            <span class="text-sm font-semibold">Ronaldo</span>
-                            <span class="text-xs text-zinc-500">66M Post</span>
-                        </div>
-                    </a>
-                    <a href="" class="flex px-2 py-2 rounded-md hover:bg-gray-100">
-                        <img class="mr-4" src="assets/hashtags-icon.svg" alt="">
-                        <div class="flex flex-col">
-                            <span class="text-sm font-semibold">Rihaana</span>
-                            <span class="text-xs text-zinc-500">31M Post</span>
-                        </div>
-                    </a>
-                </div>
-                <!-- show more -->
-                <div class="flex pl-3 pt-2 mt-1">
-                    <a href="">
-                        <span class="text-sm hover:text-blue-500">Show more</span>
-                    </a>
-                </div>
-            </div>
             <!-- Who to follow -->
-            <div class="bg-white w-[300px] mt-6 shadow-sm px-4 pb-4 rounded-lg mx-auto flex flex-col">
+            <div class="gradblue w-[300px] text-navhoverfill shadow-sm px-4 pb-4 rounded-lg mx-auto flex flex-col">
                 <!-- Header -->
                 <div class="flex py-3 ">
                     <span class="text-md font-semibold">Who to follow</span>
@@ -639,7 +895,7 @@
                 <!-- Tags -->
                 <div class="flex flex-col">
                     <!-- Tiles -->
-                    <div class="flex px-2 py-2 rounded-md hover:bg-gray-100">
+                    <div class="flex px-2 py-2 rounded-md hover:bg-bodybg">
                         <!-- Account -->
                         <div class="group flex  justify-center items-center pr-3 group">
                             <a href="#">
@@ -653,11 +909,11 @@
                         </div>
                         <!-- Follow Button -->
                         <button
-                            class="flex items-center text-sm ml-auto border border-blue-400 hover:bg-white hover:text-blue-400 duration-200 bg-blue-400 py-1 px-3 text-white rounded-md">
+                            class="right-sidebar-follow-button font-semibold flex items-center text-sm ml-auto  py-1 px-3 rounded-md">
                             Follow
                         </button>
                     </div>
-                    <div class="flex px-2 py-2 rounded-md hover:bg-gray-100">
+                    <div class="flex px-2 py-2 rounded-md hover:bg-bodybg">
                         <!-- Account -->
                         <div class="group flex  justify-center items-center pr-3 group">
                             <a href="#">
@@ -671,11 +927,11 @@
                         </div>
                         <!-- Follow Button -->
                         <button
-                            class="flex items-center text-sm ml-auto border border-blue-400 hover:bg-white hover:text-blue-400 duration-200 bg-blue-400 py-1 px-3 text-white rounded-md">
+                            class="right-sidebar-follow-button font-semibold flex items-center text-sm ml-auto  py-1 px-3 rounded-md">
                             Follow
                         </button>
                     </div>
-                    <div class="flex px-2 py-2 rounded-md hover:bg-gray-100">
+                    <div class="flex px-2 py-2 rounded-md hover:bg-bodybg">
                         <!-- Account -->
                         <div class="group flex  justify-center items-center pr-3 group">
                             <a href="#">
@@ -689,11 +945,11 @@
                         </div>
                         <!-- Follow Button -->
                         <button
-                            class="flex items-center text-sm ml-auto border border-blue-400 hover:bg-white hover:text-blue-400 duration-200 bg-blue-400 py-1 px-3 text-white rounded-md">
+                            class="right-sidebar-follow-button font-semibold flex items-center text-sm ml-auto  py-1 px-3 rounded-md">
                             Follow
                         </button>
                     </div>
-                    <div class="flex px-2 py-2 rounded-md hover:bg-gray-100">
+                    <div class="flex px-2 py-2 rounded-md hover:bg-bodybg">
                         <!-- Account -->
                         <div class="group flex  justify-center items-center pr-3 group">
                             <a href="#">
@@ -707,7 +963,7 @@
                         </div>
                         <!-- Follow Button -->
                         <button
-                            class="flex items-center text-sm ml-auto border border-blue-400 hover:bg-white hover:text-blue-400 duration-200 bg-blue-400 py-1 px-3 text-white rounded-md">
+                            class="right-sidebar-follow-button font-semibold flex items-center text-sm ml-auto  py-1 px-3 rounded-md">
                             Follow
                         </button>
                     </div>
@@ -715,7 +971,7 @@
                 <!-- show more -->
                 <div class="flex pl-3 pt-2 mt-1">
                     <a href="">
-                        <span class="text-sm hover:text-blue-500">Show more</span>
+                        <span class="text-sm hover:font-medium hover:text-[#0077b6]">Show more</span>
                     </a>
                 </div>
             </div>

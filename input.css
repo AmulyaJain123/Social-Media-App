@@ -9,13 +9,30 @@
     display: none;
   }
 }
-.post-card {
+.post-button {
+  background-image: linear-gradient(-225deg, #cb88fb, #457b9d, #1d3557);
+}
+.left-sidebar-links:hover {
+  background-image: linear-gradient(-225deg, #caf0f8, #ade8f4, #90e0ef);
+}
+.gradblue {
   background-image: linear-gradient(-225deg, #caf0f8, #ade8f4, #90e0ef);
 }
 .top-nav-middle {
   @media (max-width: 768px) {
     display: none;
   }
+}
+.right-sidebar-follow-button {
+  background-color: #0077b6;
+  color: #f1faee;
+  border: 2px solid #0077b6;
+}
+.right-sidebar-follow-button:hover {
+  background-color: #f1faee;
+  color: #0077b6;
+  border: 2px solid #0077b6;
+  transition: all 200ms;
 }
 #account {
   background-image: url("../assets/png-transparent-computer-icons-google-account-scalable-graphics-computer-file-my-account-icon-rim-123rf-symbol-thumbnail.png");
@@ -31,14 +48,14 @@
 }
 .left-sidebar::-webkit-scrollbar-track,
 .main-body::-webkit-scrollbar-track {
-  border-radius: 10px;
+  //border-radius: 10px;
   opacity: 0;
 }
 .left-sidebar:hover::-webkit-scrollbar-thumb,
 .main-body:hover::-webkit-scrollbar-thumb {
   opacity: 100;
-  background-color: #6b7280;
-  border-radius: 20px;
+  background-color: #457b9d;
+  //border-radius: 20px;
 }
 .left-sidebar {
   @media (max-width: 640px) {

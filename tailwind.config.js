@@ -8,7 +8,14 @@ module.exports = {
       poppins: ['Poppins','sans-serif'],
       mont:['Montserrat','sans-serif'],
     }, 
-    extend: {},
+    extend: {
+      colors: {
+        bodybg: '#f1faee',
+        lightpurple: '#cb88fb',
+        navbg: '#457b9d',
+        navhoverfill: '#1d3557'
+      },
+    },
   },
   safelist: {
 

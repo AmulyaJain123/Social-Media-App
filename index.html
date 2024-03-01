@@ -111,7 +111,7 @@
         <div class="flex space-x-2 lg:pl-[10vw] items-center">
             <!-- Create -->
             <div
-                class=" flex justify-center  group rounded-xl  items-center h-[80%] px-2 hover:scale-105 hover:bg-lightpurple duration-200 ">
+                class="create-post-button flex justify-center  group rounded-xl  items-center h-[80%] px-2 hover:scale-105 hover:bg-lightpurple duration-200 ">
                 <a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
                         width="30" height="30" x="0" y="0" viewBox="0 0 6.35 6.35"
@@ -231,7 +231,7 @@
                 <span class="flex items-center">Profile</span>
             </a>
             <!-- hidden -->
-            <div id="hidden-top-sidebar" class="hidden flex flex-col w-full">
+            <div id="hidden-top-sidebar" class="create-post-button hidden flex flex-col w-full">
                 <a href="#" class="left-sidebar-links flex pl-5 ml-4 mr-3 text-md w-[90%] rounded-lg py-3">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
                         width="25" height="25" x="0" y="0" viewBox="0 0 512 512"
@@ -404,9 +404,341 @@
     </div>
     <!-- Main Body -->
     <div class="main-body flex fixed top-[3.5rem] right-0 overflow-auto">
-        <!-- POST-CARD SEE MORE POPUP -->
+        <!-- CREATE POST POPUP -->
+        <div id="create-post-popup"
+            class="hidden flex z-30 text-navhoverfill font-semibold bg-bodybg border-2 border-navhoverfill rounded-xl fixed  top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] flex-col w-[550px]">
+            <!-- close -->
+            <div id="create-post-popup-close"
+                class="absolute top-0 right-0 flex justify-center items-center m-2 rounded-full hover:bg-red-300">
+                <button>
+                    <svg fill="navhoverfill" width="25" height="25" viewBox="0 0 32 32" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16 0c-8.836 0-16 7.163-16 16s7.163 16 16 16c8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 30.032c-7.72 0-14-6.312-14-14.032s6.28-14 14-14 14 6.28 14 14-6.28 14.032-14 14.032zM21.657 10.344c-0.39-0.39-1.023-0.39-1.414 0l-4.242 4.242-4.242-4.242c-0.39-0.39-1.024-0.39-1.415 0s-0.39 1.024 0 1.414l4.242 4.242-4.242 4.242c-0.39 0.39-0.39 1.024 0 1.414s1.024 0.39 1.415 0l4.242-4.242 4.242 4.242c0.39 0.39 1.023 0.39 1.414 0s0.39-1.024 0-1.414l-4.242-4.242 4.242-4.242c0.391-0.391 0.391-1.024 0-1.414z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="divide-y-2 divide-navhoverfill border-navhoverfill">
+                <!-- Header -->
+                <div class="py-2 rounded-t-xl w-full flex items-center justify-center">
+                    Create Post
+                </div>
+                <!-- Text Area -->
+                <textarea placeholder="Type your post here..." class="resize-y w-full focus:outline-none p-3" name=""
+                    id="" cols="30" rows="10"></textarea>
+                <!-- Attachments -->
+                <div class="flex flex-col divide-y-2  divide-navhoverfill">
+                    <div class="py-2 w-full flex items-center justify-center">
+                        ATTACHMENTS
+                    </div>
+                    <div class="flex w-full items-center divide-x-2 divide-navhoverfill">
+                        <button class="w-1/3 grad-background-effect py-2 flex justify-center items center">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                viewBox="0 0 682.667 682.667" style="enable-background:new 0 0 512 512"
+                                xml:space="preserve" class="mr-4">
+                                <g>
+                                    <defs>
+                                        <clipPath id="a" clipPathUnits="userSpaceOnUse">
+                                            <path d="M0 512h512V0H0Z" fill="#000000" opacity="1"
+                                                data-original="#000000"></path>
+                                        </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#a)" transform="matrix(1.33333 0 0 -1.33333 0 682.667)">
+                                        <path
+                                            d="M0 0h-328.205c-20.634 0-37.362 16.728-37.362 37.363v211.902c0 34.987 28.362 63.35 63.35 63.35H0c20.635 0 37.363-16.728 37.363-37.363V37.363C37.363 16.728 20.635 0 0 0"
+                                            style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                            transform="translate(375.567 141.653)" fill="#ee4e71"
+                                            data-original="#ee4e71" class=""></path>
+                                        <path
+                                            d="M0 0h-328.205c-20.634 0-37.362 16.728-37.362 37.363v211.902c0 34.987 28.362 63.35 63.35 63.35H0c20.635 0 37.363-16.728 37.363-37.363V37.363C37.363 16.728 20.635 0 0 0Z"
+                                            style="stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                            transform="translate(375.567 141.653)" fill="none" stroke="#000000"
+                                            stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity=""
+                                            data-original="#000000" class=""></path>
+                                        <path
+                                            d="M0 0h-328.205c-20.635 0-37.362 16.728-37.362 37.363v236.115c0 21.614 17.522 39.137 39.136 39.137H0c20.635 0 37.363-16.728 37.363-37.363V37.363C37.363 16.728 20.635 0 0 0"
+                                            style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                            transform="translate(418.066 99.582)" fill="#ffd866" data-original="#ffd866"
+                                            class=""></path>
+                                        <path
+                                            d="M0 0h124.103c20.634 0 37.362-16.728 37.362-37.363v-237.889c0-20.635-16.728-37.363-37.362-37.363h-328.205c-20.635 0-37.363 16.728-37.363 37.363v236.115C-241.465-17.522-223.943 0-202.328 0H-80"
+                                            style="stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                            transform="translate(293.964 412.197)" fill="none" stroke="#000000"
+                                            stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity=""
+                                            data-original="#000000" class=""></path>
+                                        <path
+                                            d="M0 0h-337.913c-17.954 0-32.509 14.555-32.509 32.509v247.597c0 17.955 14.555 32.509 32.509 32.509H0c17.954 0 32.509-14.554 32.509-32.509V32.509C32.509 14.555 17.954 0 0 0"
+                                            style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                            transform="translate(469.491 57.732)" fill="#d6effb" data-original="#d6effb"
+                                            class=""></path>
+                                        <path
+                                            d="M0 0h-337.913c-17.954 0-32.509 14.555-32.509 32.509v247.597c0 17.955 14.555 32.509 32.509 32.509H0c17.954 0 32.509-14.554 32.509-32.509V32.509C32.509 14.555 17.954 0 0 0Z"
+                                            style="stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                            transform="translate(469.491 57.732)" fill="none" stroke="#000000"
+                                            stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity=""
+                                            data-original="#000000" class=""></path>
+                                        <path
+                                            d="M0 0h337.913c17.954 0 32.508 14.555 32.508 32.509v63.776l-59.528 44.965a23.567 23.567 0 0 1-28.082.242l-62.049-45.207L109.777 210.71c-8.76 9.033-23.072 9.589-32.508 1.265l-109.778-96.852V32.509C-32.509 14.555-17.955 0 0 0"
+                                            style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                            transform="translate(131.579 57.732)" fill="#00b7ec"
+                                            data-original="#00b7ec"></path>
+                                        <path
+                                            d="M0 0h337.913c17.954 0 32.508 14.555 32.508 32.509v63.776l-59.528 44.965a23.567 23.567 0 0 1-28.082.242l-62.049-45.207L109.777 210.71c-8.76 9.033-23.072 9.589-32.508 1.265l-109.778-96.852V32.509C-32.509 14.555-17.955 0 0 0Z"
+                                            style="stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                            transform="translate(131.579 57.732)" fill="none" stroke="#000000"
+                                            stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity=""
+                                            data-original="#000000" class=""></path>
+                                        <path d="m0 0 94.262-97.185"
+                                            style="stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                            transform="translate(288.72 219.61)" fill="none" stroke="#000000"
+                                            stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity=""
+                                            data-original="#000000" class=""></path>
+                                        <path
+                                            d="M0 0c0-18.112-14.683-32.795-32.795-32.795-18.113 0-32.796 14.683-32.796 32.795 0 18.112 14.683 32.795 32.796 32.795C-14.683 32.795 0 18.112 0 0"
+                                            style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                            transform="translate(421.31 276.858)" fill="#ffd866" data-original="#ffd866"
+                                            class=""></path>
+                                        <path
+                                            d="M0 0c0-18.112-14.683-32.795-32.795-32.795-18.113 0-32.796 14.683-32.796 32.795 0 18.112 14.683 32.795 32.796 32.795C-14.683 32.795 0 18.112 0 0Z"
+                                            style="stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                            transform="translate(421.31 276.858)" fill="none" stroke="#000000"
+                                            stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity=""
+                                            data-original="#000000" class=""></path>
+                                        <path d="M0 0v0"
+                                            style="stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                            transform="translate(253.964 412.197)" fill="none" stroke="#000000"
+                                            stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity=""
+                                            data-original="#000000" class=""></path>
+                                    </g>
+                                </g>
+                            </svg><span>Image</span>
+                        </button>
+                        <button class="w-1/3 grad-background-effect py-2 flex justify-center items center">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                viewBox="0 0 682.667 682.667" style="enable-background:new 0 0 512 512"
+                                xml:space="preserve" class="hovered-paths mr-4">
+                                <g>
+                                    <defs>
+                                        <clipPath id="a" clipPathUnits="userSpaceOnUse">
+                                            <path d="M0 512h512V0H0Z" fill="#000000" opacity="1"
+                                                data-original="#000000"></path>
+                                        </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#a)" transform="matrix(1.33333 0 0 -1.33333 0 682.667)">
+                                        <path
+                                            d="m0 0 59.967 35.293C70.596 41.549 84 33.885 84 21.551v-192.227c0-12.334-13.404-19.998-24.033-13.742L0-149.126Z"
+                                            style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                            transform="translate(418 222.563)" fill="#9bc6ff" data-original="#9bc6ff">
+                                        </path>
+                                        <path d="M418 216h-40V80h40z"
+                                            style="fill-opacity:1;fill-rule:nonzero;stroke:none" fill="#98a1b3"
+                                            data-original="#98a1b3"></path>
+                                        <path
+                                            d="M0 0h320c13.255 0 24-10.745 24-24v-200c0-13.255-10.745-24-24-24H0c-13.255 0-24 10.745-24 24v200C-24-10.745-13.255 0 0 0"
+                                            style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                            transform="translate(34 272)" fill="#8690a6" data-original="#8690a6"></path>
+                                        <path
+                                            d="M0 0c0-13.255-10.745-24-24-24S-48-13.255-48 0s10.745 24 24 24S0 13.255 0 0"
+                                            style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                            transform="translate(330 200)" fill="#f5737f" data-original="#f5737f">
+                                        </path>
+                                        <path d="M418 216h-40V80h40z"
+                                            style="stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                            fill="none" stroke="#000000" stroke-width="20" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none"
+                                            stroke-opacity="" data-original="#000000" class="hovered-path"></path>
+                                        <path
+                                            d="m0 0 59.967 35.293C70.596 41.549 84 33.885 84 21.551v-192.227c0-12.334-13.404-19.998-24.033-13.742L0-149.126Z"
+                                            style="stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                            transform="translate(418 222.563)" fill="none" stroke="#000000"
+                                            stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity=""
+                                            data-original="#000000" class="hovered-path"></path>
+                                        <path
+                                            d="M0 0c0-13.255-10.745-24-24-24S-48-13.255-48 0s10.745 24 24 24S0 13.255 0 0Z"
+                                            style="stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                            transform="translate(330 200)" fill="none" stroke="#000000"
+                                            stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity=""
+                                            data-original="#000000" class="hovered-path"></path>
+                                        <path d="M0 0v0"
+                                            style="stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                            transform="translate(194 24)" fill="none" stroke="#000000" stroke-width="20"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                            stroke-dasharray="none" stroke-opacity="" data-original="#000000"
+                                            class="hovered-path"></path>
+                                        <path
+                                            d="M0 0c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80S0-44.183 0 0"
+                                            style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                            transform="translate(170 352)" fill="#98a1b3" data-original="#98a1b3">
+                                        </path>
+                                        <path
+                                            d="M0 0c0 59.647-48.353 108-108 108S-216 59.647-216 0s48.353-108 108-108S0-59.647 0 0"
+                                            style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                            transform="translate(383.943 380)" fill="#8690a6" data-original="#8690a6">
+                                        </path>
+                                        <path
+                                            d="M0 0c0 59.647-48.353 108-108 108S-216 59.647-216 0s48.353-108 108-108S0-59.647 0 0z"
+                                            style="stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                            transform="translate(383.943 380)" fill="none" stroke="#000000"
+                                            stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity=""
+                                            data-original="#000000" class="hovered-path"></path>
+                                        <path
+                                            d="M0 0c0 37.555-30.445 68-68 68s-68-30.445-68-68 30.445-68 68-68S0-37.555 0 0"
+                                            style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                            transform="translate(343.943 380)" fill="#d3d7df" data-original="#d3d7df">
+                                        </path>
+                                        <path
+                                            d="M0 0c0 37.555-30.445 68-68 68s-68-30.445-68-68 30.445-68 68-68S0-37.555 0 0z"
+                                            style="stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                            transform="translate(343.943 380)" fill="none" stroke="#000000"
+                                            stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity=""
+                                            data-original="#000000" class="hovered-path"></path>
+                                        <path d="M0 0v0"
+                                            style="stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                            transform="translate(275.943 407.333)" fill="none" stroke="#000000"
+                                            stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity=""
+                                            data-original="#000000" class="hovered-path"></path>
+                                        <path d="M0 0v0"
+                                            style="stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                            transform="translate(275.943 352.667)" fill="none" stroke="#000000"
+                                            stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity=""
+                                            data-original="#000000" class="hovered-path"></path>
+                                        <path d="M0 0v0"
+                                            style="stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                            transform="translate(303.276 380)" fill="none" stroke="#000000"
+                                            stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity=""
+                                            data-original="#000000" class="hovered-path"></path>
+                                        <path d="M0 0v0"
+                                            style="stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                            transform="translate(248.61 380)" fill="none" stroke="#000000"
+                                            stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity=""
+                                            data-original="#000000" class="hovered-path"></path>
+                                        <path
+                                            d="M0 0c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80S0-44.183 0 0z"
+                                            style="stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                            transform="translate(170 352)" fill="none" stroke="#000000"
+                                            stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity=""
+                                            data-original="#000000" class="hovered-path"></path>
+                                        <path
+                                            d="M0 0c0 19.882-16.118 36-36 36S-72 19.882-72 0s16.118-36 36-36S0-19.882 0 0"
+                                            style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+                                            transform="translate(126 352)" fill="#d3d7df" data-original="#d3d7df">
+                                        </path>
+                                        <path
+                                            d="M0 0c0 19.882-16.118 36-36 36S-72 19.882-72 0s16.118-36 36-36S0-19.882 0 0z"
+                                            style="stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                            transform="translate(126 352)" fill="none" stroke="#000000"
+                                            stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity=""
+                                            data-original="#000000" class="hovered-path"></path>
+                                        <path
+                                            d="M0 0h-115c-13.255 0-24 10.745-24 24v200c0 13.255 10.745 24 24 24h320c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H90"
+                                            style="stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                            transform="translate(149 24)" fill="none" stroke="#000000" stroke-width="20"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                            stroke-dasharray="none" stroke-opacity="" data-original="#000000"
+                                            class="hovered-path"></path>
+                                        <path d="M238 168H64V72h174z"
+                                            style="fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                            data-original="#000000"></path>
+                                        <path d="M330 80h-48v48h48z"
+                                            style="fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                            data-original="#000000"></path>
+                                    </g>
+                                </g>
+                            </svg><span>Video</span>
+                        </button>
+                        <button class="w-1/3 grad-background-effect py-2 flex justify-center items center">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="mr-4">
+                                <g>
+                                    <path fill="#bdbdbe" d="M14 6V2h48v58H14z" opacity="1" data-original="#bdbdbe">
+                                    </path>
+                                    <path fill="#e5e5e5" d="M12 28v34h46V16L48 6H12z" opacity="1"
+                                        data-original="#e5e5e5"></path>
+                                    <path fill="#f2f2f2" d="M15 6v49a4 4 0 0 0 4 4h39V16L48 6z" opacity="1"
+                                        data-original="#f2f2f2" class=""></path>
+                                    <path fill="#b2ccea" d="M46 55H16V32h30v10z" opacity="1" data-original="#b2ccea">
+                                    </path>
+                                    <path fill="#d7d7d8" d="M13.5 29.5h30a2 2 0 0 0 2-2v-14a2 2 0 0 0-2-2H12v18z"
+                                        opacity="1" data-original="#d7d7d8" class=""></path>
+                                    <path fill="#ffc239" d="M12 28H2V10h42v18z" opacity="1" data-original="#ffc239"
+                                        class=""></path>
+                                    <path fill="#ffd55d" d="M6 21a4 4 0 0 0 4 4h34V10H6z" opacity="1"
+                                        data-original="#ffd55d" class=""></path>
+                                    <path fill="#9c9d9e" d="M48 6v8a2 2 0 0 0 2 2h8z" opacity="1"
+                                        data-original="#9c9d9e"></path>
+                                    <path fill="#d1e0f2" d="M46 53H20a2 2 0 0 1-2-2V36a2 2 0 0 1 2-2h26z" opacity="1"
+                                        data-original="#d1e0f2"></path>
+                                    <path fill="#00c564" d="M38.062 51H20l3-8 4 2 4-8 3 5h4l1.489 3.351z" opacity="1"
+                                        data-original="#00c564"></path>
+                                    <circle cx="21" cy="37" r="2" fill="#ffb127" opacity="1" data-original="#ffb127">
+                                    </circle>
+                                    <g fill="#fff">
+                                        <path
+                                            d="M20 18h-3v2h2v2a1 1 0 0 1-1 1h-1c-1.442 0-3-1.529-3-4s1.558-4 3-4a3.478 3.478 0 0 1 2.293.707l1.414-1.414A5.311 5.311 0 0 0 17 13c-2.4 0-5 2.294-5 6s2.6 6 5 6h1a3 3 0 0 0 3-3v-3a1 1 0 0 0-1-1zM23 13h2v12h-2zM34 15v-2h-6a1 1 0 0 0-1 1v11h2v-6h4v-2h-4v-2z"
+                                            fill="#ffffff" opacity="1" data-original="#ffffff"></path>
+                                    </g>
+                                    <path fill="#00a963"
+                                        d="m38.062 51 .944-3.736L38 45h-3.182a1.444 1.444 0 0 1-1.239-.7l-1.7-2.831a.939.939 0 0 0-1.645.063l-2.722 5.444a1.147 1.147 0 0 1-1.539.513l-1.911-.956a1.07 1.07 0 0 0-1.48.582L21.125 51z"
+                                        opacity="1" data-original="#00a963"></path>
+                                    <circle cx="46" cy="50" r="8" fill="#c64635" opacity="1" data-original="#c64635">
+                                    </circle>
+                                    <path fill="#d16b5d"
+                                        d="M46 42a7.958 7.958 0 0 0-4.851 1.649 7.99 7.99 0 0 0 11.2 11.2A7.99 7.99 0 0 0 46 42z"
+                                        opacity="1" data-original="#d16b5d"></path>
+                                    <path fill="#d7d7d8" d="M44 46v8l6-4z" opacity="1" data-original="#d7d7d8" class="">
+                                    </path>
+                                    <path fill="#f2f2f2" d="M45 49.565A1.434 1.434 0 0 0 46.435 51H48.5l1.5-1-5-3.333z"
+                                        opacity="1" data-original="#f2f2f2" class=""></path>
+                                    <path
+                                        d="M62 1H14a1 1 0 0 0-1 1v3h-1a1 1 0 0 0-1 1v3H2a1 1 0 0 0-1 1v18a1 1 0 0 0 1 1h9v33a1 1 0 0 0 1 1h46a1 1 0 0 0 1-1v-1h3a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM3 11h40v16H3zm10 50V29h31a1 1 0 0 0 1-1V10a1 1 0 0 0-1-1H13V7h34v7a3 3 0 0 0 3 3h7v44zM49 8.414 55.586 15H50a1 1 0 0 1-1-1zM61 59h-2V16a1 1 0 0 0-.293-.707l-10-10A1 1 0 0 0 48 5H15V3h46z"
+                                        fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                    <path
+                                        d="M47 41.059V32a1 1 0 0 0-1-1H16a1 1 0 0 0-1 1v23a1 1 0 0 0 1 1h23.311A8.993 8.993 0 1 0 47 41.059zM17 54V33h28v8.059a8.967 8.967 0 0 0-5.23 2.461l-.856-1.926A1 1 0 0 0 38 41h-3.434l-2.709-4.515a1 1 0 0 0-1.752.068l-3.552 7.105-3.106-1.553a.993.993 0 0 0-.812-.036 1 1 0 0 0-.572.58l-3 8A1 1 0 0 0 20 52h17.232a8.906 8.906 0 0 0 .718 2zm20-4H21.443l2.1-5.609 3.007 1.5a1 1 0 0 0 1.342-.448l3.185-6.37 2.063 3.438A1 1 0 0 0 34 43h3.35l1.008 2.269A8.937 8.937 0 0 0 37 50zm9 7a7 7 0 1 1 7-7 7.008 7.008 0 0 1-7 7z"
+                                        fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                    <path
+                                        d="M24 37a3 3 0 1 0-3 3 3 3 0 0 0 3-3zm-4 0a1 1 0 1 1 1 1 1 1 0 0 1-1-1zM50.554 49.167l-6-4A1 1 0 0 0 43 46v8a1 1 0 0 0 1.555.832l6-4a1 1 0 0 0 0-1.664zM45 52.131v-4.262L48.2 50zM20 18h-3v2h2v2a1 1 0 0 1-1 1h-1c-1.442 0-3-1.529-3-4s1.558-4 3-4a3.478 3.478 0 0 1 2.293.707l1.414-1.414A5.311 5.311 0 0 0 17 13c-2.4 0-5 2.294-5 6s2.6 6 5 6h1a3 3 0 0 0 3-3v-3a1 1 0 0 0-1-1zM23 13h2v12h-2zM27 14v11h2v-6h4v-2h-4v-2h5v-2h-6a1 1 0 0 0-1 1z"
+                                        fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                </g>
+                            </svg><span>GIF</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Create -->
+                <div class="w-full flex items-center justify-center">
+                    <!-- Create Button -->
+                    <button
+                        class="my-1 right-sidebar-follow-button font-semibold flex items-center text-sm   py-2 px-10 rounded-md">
+                        Create
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Overlay -->
         <div id="postcard-see-more-popup-overlay"
             class="hidden z-10 h-screen w-screen backdrop-blur-sm  fixed top-0 left-0"></div>
+        <!-- POST-CARD SEE MORE POPUP -->
         <div id="postcard-see-more-popup"
             class="hidden fixed top-[50%] z-20 left-[50%] translate-y-[-50%] translate-x-[-50%] flex flex-col w-[400px] border-2 border-navhoverfill bg-bodybg rounded-xl">
             <!-- close -->
@@ -438,7 +770,8 @@
                 <a href="#" class="postcard-more-popup-link flex w-full items-center py-3 justify-center">
                     Share
                 </a>
-                <a href="#" class="postcard-more-popup-link flex w-full rounded-b-xl items-center py-3 justify-center">
+                <a href="#" id="postcard-seemore-view-comments"
+                    class="postcard-more-popup-link flex w-full rounded-b-xl items-center py-3 justify-center">
                     View Comments
                 </a>
             </div>
@@ -458,7 +791,7 @@
                 </div>
                 <!-- Post as Button -->
                 <button
-                    class="flex post-button text-white border outline outline-2 outline-black/0 hover:outline-navbg outline-offset-4 duration-200 border-black my-3 mr-4 w-[100%] rounded-full text-lg text-left px-5 py-2">
+                    class="create-post-button flex post-button text-white border outline outline-2 outline-black/0 hover:outline-navbg outline-offset-4 duration-200 border-black my-3 mr-4 w-[100%] rounded-full text-lg text-left px-5 py-2">
                     <img class="mr-3" src="assets/create-post.svg" alt="">
                     <span>Post As Amulya</span>
                 </button>
@@ -555,7 +888,7 @@
                                 <span class="text-navbg flex mt-1 items-center text-sm mx-auto">236</span>
                             </div>
                             <!-- Share Button -->
-                            <button>
+                            <button class="post-share-button">
                                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
                                     viewBox="0 0 512.005 512.005" style="enable-background:new 0 0 512 512"
@@ -673,6 +1006,107 @@
                                     perspiciatis
                                     optio dolores explicabo repellat sunt, sequi asperiores neque!
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SHARE POST POPUP -->
+                    <div class="absolute hidden bg-yellow-400 py-3 top-[112px] right-[-284px] px-3 rounded-lg">
+                        <div class="h-3 w-3 bg-inherit rotate-45 absolute top-[50px] left-[-6px] "></div>
+                        <div class="flex flex-col">
+                            <!-- Copy Link Button -->
+                            <button
+                                class="py-2 px-4 mb-2 text-sm flex justify-center items-center rounded-md bg-red-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="mr-3">
+                                    <g>
+                                        <path
+                                            d="M64.6 319.3c-17.5-17.5-26.2-38.7-26.2-63.4 0-23.7 9.5-46.4 26.2-63.2 17.5-17.5 38.6-26.2 63.4-26.2h89.6c10.6 0 19.2-8.6 19.2-19.2s-8.6-19.2-19.2-19.2H128c-35.4 0-65.6 12.5-90.6 37.4S0 220.6 0 256s12.5 65.6 37.4 90.6S92.6 384 128 384h89.6c10.6 0 19.2-8.6 19.2-19.2s-8.6-19.2-19.2-19.2h-88.8c-24.1.1-47.2-9.4-64.2-26.3z"
+                                            fill="#000000" opacity="1" data-original="#000000"></path>
+                                        <path
+                                            d="M176 236.8h160c10.6 0 19.2 8.6 19.2 19.2s-8.6 19.2-19.2 19.2H176c-10.6 0-19.2-8.6-19.2-19.2s8.6-19.2 19.2-19.2z"
+                                            fill="#000000" opacity="1" data-original="#000000"></path>
+                                        <path
+                                            d="M474.6 165.4c-25-25-55.1-37.4-90.6-37.4h-89.6c-10.6 0-19.2 8.6-19.2 19.2s8.6 19.2 19.2 19.2h88.8c24-.1 47.1 9.4 64.2 26.3 17.5 17.5 26.2 38.7 26.2 63.4 0 23.7-9.5 46.4-26.2 63.2-17.5 17.5-38.6 26.2-63.4 26.2h-89.6c-10.6 0-19.2 8.6-19.2 19.2s8.6 19.2 19.2 19.2H384c35.4 0 65.6-12.5 90.6-37.4 25-25 37.4-55.1 37.4-90.6 0-35.3-12.5-65.5-37.4-90.5z"
+                                            fill="#000000" opacity="1" data-original="#000000"></path>
+                                    </g>
+                                </svg><span>Copy Link</span>
+                            </button>
+                            <!-- Direct Share on ConKat Button -->
+                            <button id="direct-share-on-share-button"
+                                class="py-2 px-4 text-sm rounded-md flex justify-center items-center bg-red-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                    viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="mr-3">
+                                    <g>
+                                        <path
+                                            d="m23.772 10.462-8.5-8.25a.752.752 0 0 0-.814-.153.752.752 0 0 0-.458.691v4.252C6.257 7.136 0 13.476 0 21.25c0 .342.241.622.572.708a.715.715 0 0 0 .177.022.788.788 0 0 0 .678-.404A12.754 12.754 0 0 1 12.582 15H14v4.25c0 .301.181.573.458.691a.752.752 0 0 0 .814-.153l8.5-8.25a.747.747 0 0 0 0-1.076z"
+                                            fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                    </g>
+                                </svg><span>Share directly on ConKat</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- DIRECT SHARE ON SHARE POPUP -->
+                    <div id="direct-share-on-share-popup"
+                        class="flex hidden z-20 font-semibold text-navhoverfill flex-col fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] rounded-xl border-2 border-navhoverfill w-[500px] h-[500px] bg-bodybg">
+                        <!-- close -->
+                        <div id="direct-share-on-share-close"
+                            class="absolute top-0 right-0 flex justify-center items-center m-[10px] rounded-full hover:bg-red-300">
+                            <button>
+                                <svg fill="navhoverfill" width="25" height="25" viewBox="0 0 32 32" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16 0c-8.836 0-16 7.163-16 16s7.163 16 16 16c8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 30.032c-7.72 0-14-6.312-14-14.032s6.28-14 14-14 14 6.28 14 14-6.28 14.032-14 14.032zM21.657 10.344c-0.39-0.39-1.023-0.39-1.414 0l-4.242 4.242-4.242-4.242c-0.39-0.39-1.024-0.39-1.415 0s-0.39 1.024 0 1.414l4.242 4.242-4.242 4.242c-0.39 0.39-0.39 1.024 0 1.414s1.024 0.39 1.415 0l4.242-4.242 4.242 4.242c0.39 0.39 1.023 0.39 1.414 0s0.39-1.024 0-1.414l-4.242-4.242 4.242-4.242c0.391-0.391 0.391-1.024 0-1.414z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="divide-y-2 flex flex-col divide-navhoverfill h-full w-full">
+                            <!-- Header -->
+                            <div class="w-full py-3 flex justify-center  items-center">
+                                Send directly on Conkat
+                            </div>
+                            <!-- Search Bar -->
+                            <div class="w-full py-2 px-3 flex items-center">
+                                <div class="flex items-center w-full px-4 rounded-md grad-background">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0"
+                                        viewBox="0 0 512.005 512.005" style="enable-background:new 0 0 512 512"
+                                        xml:space="preserve" class="">
+                                        <g>
+                                            <path
+                                                d="m505.749 475.587-145.6-145.6c28.203-34.837 45.184-79.104 45.184-127.317C405.333 90.926 314.41.003 202.666.003S0 90.925 0 202.669s90.923 202.667 202.667 202.667c48.213 0 92.48-16.981 127.317-45.184l145.6 145.6c4.16 4.16 9.621 6.251 15.083 6.251s10.923-2.091 15.083-6.251c8.341-8.341 8.341-21.824-.001-30.165zM202.667 362.669c-88.235 0-160-71.765-160-160s71.765-160 160-160 160 71.765 160 160-71.766 160-160 160z"
+                                                fill="#000000" opacity="1" data-original="#000000"></path>
+                                        </g>
+                                    </svg>
+                                    <input type="text" name="" class="py-2 bg-inherit focus:outline-none pl-4 w-full"
+                                        placeholder="Search People" id="">
+                                </div>
+                            </div>
+                            <!-- Search Area -->
+                            <div class=" w-full h-full"></div>
+                            <!-- Comment Tile -->
+                            <div class="w-full py-2 px-3 flex items-center">
+                                <div class="flex items-center w-full px-4 rounded-md grad-background">
+                                    <input type="text" name="" class="py-2 bg-inherit focus:outline-none pl-4 w-full"
+                                        placeholder="Add a Comment..." id="">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0"
+                                            y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
+                                            xml:space="preserve" class="ml-3">
+                                            <g>
+                                                <path
+                                                    d="M8.75 17.612v4.638a.751.751 0 0 0 1.354.444l2.713-3.692zM23.685.139a.75.75 0 0 0-.782-.054l-22.5 11.75a.752.752 0 0 0 .104 1.375l6.255 2.138 13.321-11.39L9.775 16.377l10.483 3.583a.753.753 0 0 0 .984-.599l2.75-18.5a.751.751 0 0 0-.307-.722z"
+                                                    fill="#000000" opacity="1" data-original="#000000"></path>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </div>
+
                             </div>
                         </div>
                     </div>

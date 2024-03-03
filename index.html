@@ -33,7 +33,7 @@
                 </div>
             </a>
             <!-- Search Bar -->
-            <div class="top-nav-search flex items-center bg-navbg rounded-full px-3 border-2 border-lightpurple">
+            <div class="top-nav-search flex items-center bg-navbg rounded-lg px-3 border-2 border-lightpurple">
                 <img src="assets/search-magnifying-glass-icon.svg" alt="">
                 <input
                     class=" bg-navbg text-lightpurple max-w-[15vw] text-md p-[0.45rem] pl-3 rounded-full focus:outline-none placeholder-lightpurple "
@@ -153,7 +153,7 @@
     </div>
     <!-- Scrollable left Side-Bar -->
     <div
-        class=" left-sidebar flex border-r-2 border-navbg flex-col fixed overflow-auto top-[3.5rem] divide-y divide-navbg w-64">
+        class=" left-sidebar flex border-r-2 border-navbg flex-col justify-between fixed overflow-auto top-[3.5rem] divide-y divide-navbg w-64">
         <!-- Top Links -->
         <div class="flex text-navhoverfill flex-col mt-2  items-center">
             <!-- Links -->
@@ -391,8 +391,9 @@
             </a>
         </div>
         <!-- Footer -->
-        <div class="mt-6">
-            <div class="flex flex-wrap font-semibold text-navhoverfill text-[11px] gap-x-3 w-[85%] mt-2 ml-4 mb-4">
+        <div class="mt-6 ">
+            <div id="footer"
+                class="flex flex-wrap font-semibold text-navhoverfill text-[11px] gap-x-3 w-[85%] mt-2 ml-4 mb-4">
                 <a href="#" class="hover:underline">About</a>
                 <a href="#" class="hover:underline">Blog</a>
                 <a href="#" class="hover:underline">Careers</a>
@@ -1289,7 +1290,7 @@
                 </button>
             </div>
             <!-- Tiles -->
-            <div class="divide-y divide-navhoverfill">
+            <div class="divide-y-2 divide-navhoverfill">
                 <div class="postcard-more-popup-link flex w-full rounded-t-xl items-center py-3 justify-center">
                     @amulya123
                 </div>
@@ -1760,7 +1761,7 @@
                                 <span class="text-navbg flex mt-1 items-center text-sm mx-auto">236</span>
                             </div>
                             <!-- Share Button -->
-                            <button>
+                            <button class="post-share-button">
                                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
                                     viewBox="0 0 512.005 512.005" style="enable-background:new 0 0 512 512"
@@ -1878,6 +1879,107 @@
                                     perspiciatis
                                     optio dolores explicabo repellat sunt, sequi asperiores neque!
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SHARE POST POPUP -->
+                    <div class="absolute hidden bg-yellow-400 py-3 top-[112px] right-[-284px] px-3 rounded-lg">
+                        <div class="h-3 w-3 bg-inherit rotate-45 absolute top-[50px] left-[-6px] "></div>
+                        <div class="flex flex-col">
+                            <!-- Copy Link Button -->
+                            <button
+                                class="py-2 px-4 mb-2 text-sm flex justify-center items-center rounded-md bg-red-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="mr-3">
+                                    <g>
+                                        <path
+                                            d="M64.6 319.3c-17.5-17.5-26.2-38.7-26.2-63.4 0-23.7 9.5-46.4 26.2-63.2 17.5-17.5 38.6-26.2 63.4-26.2h89.6c10.6 0 19.2-8.6 19.2-19.2s-8.6-19.2-19.2-19.2H128c-35.4 0-65.6 12.5-90.6 37.4S0 220.6 0 256s12.5 65.6 37.4 90.6S92.6 384 128 384h89.6c10.6 0 19.2-8.6 19.2-19.2s-8.6-19.2-19.2-19.2h-88.8c-24.1.1-47.2-9.4-64.2-26.3z"
+                                            fill="#000000" opacity="1" data-original="#000000"></path>
+                                        <path
+                                            d="M176 236.8h160c10.6 0 19.2 8.6 19.2 19.2s-8.6 19.2-19.2 19.2H176c-10.6 0-19.2-8.6-19.2-19.2s8.6-19.2 19.2-19.2z"
+                                            fill="#000000" opacity="1" data-original="#000000"></path>
+                                        <path
+                                            d="M474.6 165.4c-25-25-55.1-37.4-90.6-37.4h-89.6c-10.6 0-19.2 8.6-19.2 19.2s8.6 19.2 19.2 19.2h88.8c24-.1 47.1 9.4 64.2 26.3 17.5 17.5 26.2 38.7 26.2 63.4 0 23.7-9.5 46.4-26.2 63.2-17.5 17.5-38.6 26.2-63.4 26.2h-89.6c-10.6 0-19.2 8.6-19.2 19.2s8.6 19.2 19.2 19.2H384c35.4 0 65.6-12.5 90.6-37.4 25-25 37.4-55.1 37.4-90.6 0-35.3-12.5-65.5-37.4-90.5z"
+                                            fill="#000000" opacity="1" data-original="#000000"></path>
+                                    </g>
+                                </svg><span>Copy Link</span>
+                            </button>
+                            <!-- Direct Share on ConKat Button -->
+                            <button id="direct-share-on-share-button"
+                                class="py-2 px-4 text-sm rounded-md flex justify-center items-center bg-red-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                    viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="mr-3">
+                                    <g>
+                                        <path
+                                            d="m23.772 10.462-8.5-8.25a.752.752 0 0 0-.814-.153.752.752 0 0 0-.458.691v4.252C6.257 7.136 0 13.476 0 21.25c0 .342.241.622.572.708a.715.715 0 0 0 .177.022.788.788 0 0 0 .678-.404A12.754 12.754 0 0 1 12.582 15H14v4.25c0 .301.181.573.458.691a.752.752 0 0 0 .814-.153l8.5-8.25a.747.747 0 0 0 0-1.076z"
+                                            fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                    </g>
+                                </svg><span>Share directly on ConKat</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- DIRECT SHARE ON SHARE POPUP -->
+                    <div id="direct-share-on-share-popup"
+                        class="flex hidden z-20 font-semibold text-navhoverfill flex-col fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] rounded-xl border-2 border-navhoverfill w-[500px] h-[500px] bg-bodybg">
+                        <!-- close -->
+                        <div id="direct-share-on-share-close"
+                            class="absolute top-0 right-0 flex justify-center items-center m-[10px] rounded-full hover:bg-red-300">
+                            <button>
+                                <svg fill="navhoverfill" width="25" height="25" viewBox="0 0 32 32" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16 0c-8.836 0-16 7.163-16 16s7.163 16 16 16c8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 30.032c-7.72 0-14-6.312-14-14.032s6.28-14 14-14 14 6.28 14 14-6.28 14.032-14 14.032zM21.657 10.344c-0.39-0.39-1.023-0.39-1.414 0l-4.242 4.242-4.242-4.242c-0.39-0.39-1.024-0.39-1.415 0s-0.39 1.024 0 1.414l4.242 4.242-4.242 4.242c-0.39 0.39-0.39 1.024 0 1.414s1.024 0.39 1.415 0l4.242-4.242 4.242 4.242c0.39 0.39 1.023 0.39 1.414 0s0.39-1.024 0-1.414l-4.242-4.242 4.242-4.242c0.391-0.391 0.391-1.024 0-1.414z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="divide-y-2 flex flex-col divide-navhoverfill h-full w-full">
+                            <!-- Header -->
+                            <div class="w-full py-3 flex justify-center  items-center">
+                                Send directly on Conkat
+                            </div>
+                            <!-- Search Bar -->
+                            <div class="w-full py-2 px-3 flex items-center">
+                                <div class="flex items-center w-full px-4 rounded-md grad-background">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0"
+                                        viewBox="0 0 512.005 512.005" style="enable-background:new 0 0 512 512"
+                                        xml:space="preserve" class="">
+                                        <g>
+                                            <path
+                                                d="m505.749 475.587-145.6-145.6c28.203-34.837 45.184-79.104 45.184-127.317C405.333 90.926 314.41.003 202.666.003S0 90.925 0 202.669s90.923 202.667 202.667 202.667c48.213 0 92.48-16.981 127.317-45.184l145.6 145.6c4.16 4.16 9.621 6.251 15.083 6.251s10.923-2.091 15.083-6.251c8.341-8.341 8.341-21.824-.001-30.165zM202.667 362.669c-88.235 0-160-71.765-160-160s71.765-160 160-160 160 71.765 160 160-71.766 160-160 160z"
+                                                fill="#000000" opacity="1" data-original="#000000"></path>
+                                        </g>
+                                    </svg>
+                                    <input type="text" name="" class="py-2 bg-inherit focus:outline-none pl-4 w-full"
+                                        placeholder="Search People" id="">
+                                </div>
+                            </div>
+                            <!-- Search Area -->
+                            <div class=" w-full h-full"></div>
+                            <!-- Comment Tile -->
+                            <div class="w-full py-2 px-3 flex items-center">
+                                <div class="flex items-center w-full px-4 rounded-md grad-background">
+                                    <input type="text" name="" class="py-2 bg-inherit focus:outline-none pl-4 w-full"
+                                        placeholder="Add a Comment..." id="">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0"
+                                            y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
+                                            xml:space="preserve" class="ml-3">
+                                            <g>
+                                                <path
+                                                    d="M8.75 17.612v4.638a.751.751 0 0 0 1.354.444l2.713-3.692zM23.685.139a.75.75 0 0 0-.782-.054l-22.5 11.75a.752.752 0 0 0 .104 1.375l6.255 2.138 13.321-11.39L9.775 16.377l10.483 3.583a.753.753 0 0 0 .984-.599l2.75-18.5a.751.751 0 0 0-.307-.722z"
+                                                    fill="#000000" opacity="1" data-original="#000000"></path>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -1996,7 +2098,7 @@
                                 <span class="text-navbg flex mt-1 items-center text-sm mx-auto">236</span>
                             </div>
                             <!-- Share Button -->
-                            <button>
+                            <button class="post-share-button">
                                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
                                     viewBox="0 0 512.005 512.005" style="enable-background:new 0 0 512 512"
@@ -2117,6 +2219,107 @@
                             </div>
                         </div>
                     </div>
+                    <!-- SHARE POST POPUP -->
+                    <div class="absolute hidden bg-yellow-400 py-3 top-[112px] right-[-284px] px-3 rounded-lg">
+                        <div class="h-3 w-3 bg-inherit rotate-45 absolute top-[50px] left-[-6px] "></div>
+                        <div class="flex flex-col">
+                            <!-- Copy Link Button -->
+                            <button
+                                class="py-2 px-4 mb-2 text-sm flex justify-center items-center rounded-md bg-red-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="mr-3">
+                                    <g>
+                                        <path
+                                            d="M64.6 319.3c-17.5-17.5-26.2-38.7-26.2-63.4 0-23.7 9.5-46.4 26.2-63.2 17.5-17.5 38.6-26.2 63.4-26.2h89.6c10.6 0 19.2-8.6 19.2-19.2s-8.6-19.2-19.2-19.2H128c-35.4 0-65.6 12.5-90.6 37.4S0 220.6 0 256s12.5 65.6 37.4 90.6S92.6 384 128 384h89.6c10.6 0 19.2-8.6 19.2-19.2s-8.6-19.2-19.2-19.2h-88.8c-24.1.1-47.2-9.4-64.2-26.3z"
+                                            fill="#000000" opacity="1" data-original="#000000"></path>
+                                        <path
+                                            d="M176 236.8h160c10.6 0 19.2 8.6 19.2 19.2s-8.6 19.2-19.2 19.2H176c-10.6 0-19.2-8.6-19.2-19.2s8.6-19.2 19.2-19.2z"
+                                            fill="#000000" opacity="1" data-original="#000000"></path>
+                                        <path
+                                            d="M474.6 165.4c-25-25-55.1-37.4-90.6-37.4h-89.6c-10.6 0-19.2 8.6-19.2 19.2s8.6 19.2 19.2 19.2h88.8c24-.1 47.1 9.4 64.2 26.3 17.5 17.5 26.2 38.7 26.2 63.4 0 23.7-9.5 46.4-26.2 63.2-17.5 17.5-38.6 26.2-63.4 26.2h-89.6c-10.6 0-19.2 8.6-19.2 19.2s8.6 19.2 19.2 19.2H384c35.4 0 65.6-12.5 90.6-37.4 25-25 37.4-55.1 37.4-90.6 0-35.3-12.5-65.5-37.4-90.5z"
+                                            fill="#000000" opacity="1" data-original="#000000"></path>
+                                    </g>
+                                </svg><span>Copy Link</span>
+                            </button>
+                            <!-- Direct Share on ConKat Button -->
+                            <button id="direct-share-on-share-button"
+                                class="py-2 px-4 text-sm rounded-md flex justify-center items-center bg-red-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                    viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="mr-3">
+                                    <g>
+                                        <path
+                                            d="m23.772 10.462-8.5-8.25a.752.752 0 0 0-.814-.153.752.752 0 0 0-.458.691v4.252C6.257 7.136 0 13.476 0 21.25c0 .342.241.622.572.708a.715.715 0 0 0 .177.022.788.788 0 0 0 .678-.404A12.754 12.754 0 0 1 12.582 15H14v4.25c0 .301.181.573.458.691a.752.752 0 0 0 .814-.153l8.5-8.25a.747.747 0 0 0 0-1.076z"
+                                            fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                    </g>
+                                </svg><span>Share directly on ConKat</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- DIRECT SHARE ON SHARE POPUP -->
+                    <div id="direct-share-on-share-popup"
+                        class="flex hidden z-20 font-semibold text-navhoverfill flex-col fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] rounded-xl border-2 border-navhoverfill w-[500px] h-[500px] bg-bodybg">
+                        <!-- close -->
+                        <div id="direct-share-on-share-close"
+                            class="absolute top-0 right-0 flex justify-center items-center m-[10px] rounded-full hover:bg-red-300">
+                            <button>
+                                <svg fill="navhoverfill" width="25" height="25" viewBox="0 0 32 32" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16 0c-8.836 0-16 7.163-16 16s7.163 16 16 16c8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 30.032c-7.72 0-14-6.312-14-14.032s6.28-14 14-14 14 6.28 14 14-6.28 14.032-14 14.032zM21.657 10.344c-0.39-0.39-1.023-0.39-1.414 0l-4.242 4.242-4.242-4.242c-0.39-0.39-1.024-0.39-1.415 0s-0.39 1.024 0 1.414l4.242 4.242-4.242 4.242c-0.39 0.39-0.39 1.024 0 1.414s1.024 0.39 1.415 0l4.242-4.242 4.242 4.242c0.39 0.39 1.023 0.39 1.414 0s0.39-1.024 0-1.414l-4.242-4.242 4.242-4.242c0.391-0.391 0.391-1.024 0-1.414z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="divide-y-2 flex flex-col divide-navhoverfill h-full w-full">
+                            <!-- Header -->
+                            <div class="w-full py-3 flex justify-center  items-center">
+                                Send directly on Conkat
+                            </div>
+                            <!-- Search Bar -->
+                            <div class="w-full py-2 px-3 flex items-center">
+                                <div class="flex items-center w-full px-4 rounded-md grad-background">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0"
+                                        viewBox="0 0 512.005 512.005" style="enable-background:new 0 0 512 512"
+                                        xml:space="preserve" class="">
+                                        <g>
+                                            <path
+                                                d="m505.749 475.587-145.6-145.6c28.203-34.837 45.184-79.104 45.184-127.317C405.333 90.926 314.41.003 202.666.003S0 90.925 0 202.669s90.923 202.667 202.667 202.667c48.213 0 92.48-16.981 127.317-45.184l145.6 145.6c4.16 4.16 9.621 6.251 15.083 6.251s10.923-2.091 15.083-6.251c8.341-8.341 8.341-21.824-.001-30.165zM202.667 362.669c-88.235 0-160-71.765-160-160s71.765-160 160-160 160 71.765 160 160-71.766 160-160 160z"
+                                                fill="#000000" opacity="1" data-original="#000000"></path>
+                                        </g>
+                                    </svg>
+                                    <input type="text" name="" class="py-2 bg-inherit focus:outline-none pl-4 w-full"
+                                        placeholder="Search People" id="">
+                                </div>
+                            </div>
+                            <!-- Search Area -->
+                            <div class=" w-full h-full"></div>
+                            <!-- Comment Tile -->
+                            <div class="w-full py-2 px-3 flex items-center">
+                                <div class="flex items-center w-full px-4 rounded-md grad-background">
+                                    <input type="text" name="" class="py-2 bg-inherit focus:outline-none pl-4 w-full"
+                                        placeholder="Add a Comment..." id="">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0"
+                                            y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
+                                            xml:space="preserve" class="ml-3">
+                                            <g>
+                                                <path
+                                                    d="M8.75 17.612v4.638a.751.751 0 0 0 1.354.444l2.713-3.692zM23.685.139a.75.75 0 0 0-.782-.054l-22.5 11.75a.752.752 0 0 0 .104 1.375l6.255 2.138 13.321-11.39L9.775 16.377l10.483 3.583a.753.753 0 0 0 .984-.599l2.75-18.5a.751.751 0 0 0-.307-.722z"
+                                                    fill="#000000" opacity="1" data-original="#000000"></path>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- Add a Comment -->
                 <div class="flex mt-4 items-center">
@@ -2142,17 +2345,7 @@
 
             </div>
             <!-- End of Feed Card -->
-            <div class="end-card mx-auto mt-16 pb-36 rounded-xl p-3 flex items-center justify-center flex-col">
-                <div class="flex">
-                    <img class="grayscale opacity-25 mr-16" src="assets/thinking-emoji.svg" alt="">
-                    <span
-                        class="text-4xl leading-relaxed font-bold font-kode flex items-center justify-center text-center text-zinc-300">Hmm....</span>
-                </div>
-                <div
-                    class="text-4xl leading-relaxed mt-8 w-100 font-bold font-kode flex items-center justify-center text-center text-zinc-300">
-                    Seems you have
-                    reached the end
-                    of your feed</div>
+            <div class="h-[400px] w-full">
             </div>
         </div>
         <!-- Right Body -->

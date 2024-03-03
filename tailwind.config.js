@@ -3,11 +3,11 @@ module.exports = {
   content: ['./*.html'],
   theme: {
     fontFamily: {
-      sans: ['Inter','sans-serif'],
+      sans: ['Inter', 'sans-serif'],
       kode: ['Kode Mono', 'sans-serif'],
-      poppins: ['Poppins','sans-serif'],
-      mont:['Montserrat','sans-serif'],
-    }, 
+      poppins: ['Poppins', 'sans-serif'],
+      mont: ['Montserrat', 'sans-serif'],
+    },
     extend: {
       colors: {
         bodybg: '#f1faee',
@@ -17,9 +17,7 @@ module.exports = {
       },
     },
   },
-  safelist: {
-
-  },
+  safelist: [
+  ],
   plugins: [],
 }
-

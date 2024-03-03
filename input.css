@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: #000000;
+}
+
+input:checked ~ .nm-toggle-bg {
+  background-color: #bcbaba;
+}
+
 .top-nav-search {
   @media (max-width: 1024px) {
     display: none;
@@ -45,17 +54,21 @@
 }
 .left-sidebar::-webkit-scrollbar,
 .main-body::-webkit-scrollbar,
-.hidden-comment-section-scroll::-webkit-scrollbar {
+.hidden-comment-section-scroll::-webkit-scrollbar,
+#notification-div::-webkit-scrollbar {
   width: 6px;
 }
 .left-sidebar::-webkit-scrollbar-track,
 .main-body::-webkit-scrollbar-track,
-.hidden-comment-section-scroll::-webkit-scrollbar-track {
+.hidden-comment-section-scroll::-webkit-scrollbar-track,
+#notification-div::-webkit-scrollbar-track {
   //border-radius: 10px;
   opacity: 0;
 }
+
 .left-sidebar:hover::-webkit-scrollbar-thumb,
-.main-body:hover::-webkit-scrollbar-thumb {
+.main-body:hover::-webkit-scrollbar-thumb,
+#notification-div:hover::-webkit-scrollbar-thumb {
   opacity: 100;
   background-color: #457b9d;
   //border-radius: 20px;
@@ -91,4 +104,11 @@
 }
 .end-card {
   width: 550px;
+}
+.active-scale {
+  transform: scale(1.2);
+}
+.notification-button-active {
+  transform: scale(1.1);
+  background-color: #1d3557;
 }

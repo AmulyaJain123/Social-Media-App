@@ -127,7 +127,7 @@
                 </a>
             </div>
             <!-- Notification -->
-            <div
+            <div id="top-nav-notification-button"
                 class=" flex justify-center rounded-xl group items-center h-[80%] px-2 hover:scale-105 hover:bg-lightpurple duration-200">
                 <a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -143,7 +143,7 @@
                 </a>
             </div>
             <!-- Account -->
-            <div class=" flex justify-center items-center h-[80%] px-3">
+            <div id="top-nav-account-button" class=" flex justify-center items-center h-[80%] px-3">
                 <a href="#">
                     <div id="account" class="h-[35px] w-[35px] rounded-full hover:scale-110 duration-200 border-black ">
                     </div>
@@ -404,6 +404,543 @@
     </div>
     <!-- Main Body -->
     <div class="main-body flex fixed top-[3.5rem] right-0 overflow-auto">
+        <!-- Transparent Overlay -->
+        <div id="transparent-overlay" class="hidden z-10 h-screen w-screen fixed top-0 left-0"></div>
+        <!-- NOTIFICATION POPUP -->
+        <div id="notification-popup"
+            class="bg-bodybg hidden text-navhoverfill z-20 border-2 border-black w-[350px] rounded-xl fixed top-[60px] right-[40px] pb-2 flex flex-col items-center">
+            <!-- TRANSPARENT OVERLAY SPECIFICALLY FOR THE NOTIFICATION POPUP -->
+            <div id="transparent-overlay-notification-popup" class="h-full hidden w-full z-30 absolute top-0 right-0">
+            </div>
+            <!-- NOTIFICATION MORE POPUP -->
+            <div id="notification-more-popup"
+                class="rounded-xl z-40 hidden absolute top-[54px] right-[28px] text-sm font-semibold border-2 space-y-4 w-[250px] bg-slate-400 border-black p-3 flex flex-col items-center">
+                <!-- mark all as read -->
+                <button class="flex w-full items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="20" height="20" x="0" y="0" viewBox="0 0 512 512"
+                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="ml-2 mr-3">
+                        <g>
+                            <path
+                                d="M504.502 75.496c-9.997-9.998-26.205-9.998-36.204 0L161.594 382.203 43.702 264.311c-9.997-9.998-26.205-9.997-36.204 0-9.998 9.997-9.998 26.205 0 36.203l135.994 135.992c9.994 9.997 26.214 9.99 36.204 0L504.502 111.7c9.998-9.997 9.997-26.206 0-36.204z"
+                                fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                        </g>
+                    </svg>
+                    <span>Mark all as read</span>
+                </button>
+                <!-- notification Settings  -->
+                <a href="#" class="flex w-full items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="20" height="20" x="0" y="0" viewBox="0 0 682.667 682.667"
+                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="ml-2 mr-3">
+                        <g>
+                            <defs>
+                                <clipPath id="a" clipPathUnits="userSpaceOnUse">
+                                    <path d="M0 512h512V0H0Z" fill="#000000" opacity="1" data-original="#000000"></path>
+                                </clipPath>
+                            </defs>
+                            <g clip-path="url(#a)" transform="matrix(1.33333 0 0 -1.33333 0 682.667)">
+                                <path
+                                    d="M0 0c-43.446 0-78.667-35.22-78.667-78.667 0-43.446 35.221-78.666 78.667-78.666 43.446 0 78.667 35.22 78.667 78.666C78.667-35.22 43.446 0 0 0Zm220.802-22.53-21.299-17.534c-24.296-20.001-24.296-57.204 0-77.205l21.299-17.534c7.548-6.214 9.497-16.974 4.609-25.441l-42.057-72.845c-4.889-8.467-15.182-12.159-24.337-8.729l-25.835 9.678c-29.469 11.04-61.688-7.561-66.862-38.602l-4.535-27.213c-1.607-9.643-9.951-16.712-19.727-16.712h-84.116c-9.776 0-18.12 7.069-19.727 16.712l-4.536 27.213c-5.173 31.041-37.392 49.642-66.861 38.602l-25.834-9.678c-9.156-3.43-19.449.262-24.338 8.729l-42.057 72.845c-4.888 8.467-2.939 19.227 4.609 25.441l21.3 17.534c24.295 20.001 24.295 57.204 0 77.205l-21.3 17.534c-7.548 6.214-9.497 16.974-4.609 25.441l42.057 72.845c4.889 8.467 15.182 12.159 24.338 8.729l25.834-9.678c29.469-11.04 61.688 7.561 66.861 38.602l4.536 27.213c1.607 9.643 9.951 16.711 19.727 16.711h84.116c9.776 0 18.12-7.068 19.727-16.711l4.535-27.213c5.174-31.041 37.393-49.642 66.862-38.602l25.835 9.678c9.155 3.43 19.448-.262 24.337-8.729l42.057-72.845c4.888-8.467 2.939-19.227-4.609-25.441z"
+                                    style="stroke-width:40;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                    transform="translate(256 334.666)" fill="none" stroke="#000000" stroke-width="40"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                    stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                    <span>Notification Settings</span>
+                </a>
+            </div>
+            <div class="flex flex-col w-full items-center divide-y-2 divide-navhoverfill">
+                <!-- Header -->
+                <div class="py-2 px-4 flex w-full items-center justify-between">
+                    <span class="text-lg font-semibold flex items-center">All Notification</span>
+                    <button id="notification-more-button" class="rounded-full grad-background-effect p-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="25" height="25" x="0" y="0" viewBox="0 0 24 24"
+                            style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                            <g>
+                                <path fill="#000000" fill-rule="evenodd"
+                                    d="M7 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm5 1.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                                    clip-rule="evenodd" opacity="1" data-original="#000000"></path>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Notification Tiles -->
+                <div id="notification-div" class=" w-full px-2  h-[300px] overflow-auto items-center">
+                    <!-- Single Notification -->
+                    <div class="relative flex py-3 px-1 items-center">
+                        <!-- SINGLE NOTIFICATION MORE POPUP -->
+                        <div id="single-notification-more-popup"
+                            class="rounded-xl z-40 hidden absolute top-[54px] right-[28px] text-sm font-semibold border-2 space-y-4 w-[250px] bg-slate-400 border-black p-3 flex flex-col items-center">
+                            <!-- mark as read -->
+                            <button class="flex w-full items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0"
+                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="ml-2 mr-3">
+                                    <g>
+                                        <path
+                                            d="M504.502 75.496c-9.997-9.998-26.205-9.998-36.204 0L161.594 382.203 43.702 264.311c-9.997-9.998-26.205-9.997-36.204 0-9.998 9.997-9.998 26.205 0 36.203l135.994 135.992c9.994 9.997 26.214 9.99 36.204 0L504.502 111.7c9.998-9.997 9.997-26.206 0-36.204z"
+                                            fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                    </g>
+                                </svg>
+                                <span>Mark as read</span>
+                            </button>
+                            <!-- Remove notification  -->
+                            <a href="#" class="flex w-full items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0"
+                                    viewBox="0 0 384 384" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="hovered-paths ml-2 mr-3">
+                                    <g>
+                                        <path
+                                            d="M64 341.333C64 364.907 83.093 384 106.667 384h170.667C300.907 384 320 364.907 320 341.333v-256H64v256zM266.667 21.333 245.333 0H138.667l-21.334 21.333H42.667V64h298.666V21.333z"
+                                            fill="#000000" opacity="1" data-original="#000000" class="hovered-path">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span>Remove Notification</span>
+                            </a>
+                        </div>
+                        <div class=" flex justify-center items-center h-[80%] px-3">
+                            <a href="#">
+                                <div id="account"
+                                    class="h-[40px] w-[40px] rounded-full hover:scale-110 duration-200 border-black ">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="w-[70%] text-sm font-semibold items-center">
+                            You have recieved a new message from Zaddy.
+                        </div>
+                        <span class="text-inherit text-sm flex justify-center items-center mx-1 mr-2">3h</span>
+                        <button id="single-notification-more-button" class="rounded-full grad-background-effect p-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path fill="#000000" fill-rule="evenodd"
+                                        d="M7 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm5 1.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                                        clip-rule="evenodd" opacity="1" data-original="#000000"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="relative flex py-3 px-1 items-center">
+                        <!-- SINGLE NOTIFICATION MORE POPUP -->
+                        <div id="single-notification-more-popup"
+                            class="rounded-xl z-40 hidden absolute top-[54px] right-[28px] text-sm font-semibold border-2 space-y-4 w-[250px] bg-slate-400 border-black p-3 flex flex-col items-center">
+                            <!-- mark as read -->
+                            <button class="flex w-full items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0"
+                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="ml-2 mr-3">
+                                    <g>
+                                        <path
+                                            d="M504.502 75.496c-9.997-9.998-26.205-9.998-36.204 0L161.594 382.203 43.702 264.311c-9.997-9.998-26.205-9.997-36.204 0-9.998 9.997-9.998 26.205 0 36.203l135.994 135.992c9.994 9.997 26.214 9.99 36.204 0L504.502 111.7c9.998-9.997 9.997-26.206 0-36.204z"
+                                            fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                    </g>
+                                </svg>
+                                <span>Mark as read</span>
+                            </button>
+                            <!-- Remove notification  -->
+                            <a href="#" class="flex w-full items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0"
+                                    viewBox="0 0 384 384" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="hovered-paths ml-2 mr-3">
+                                    <g>
+                                        <path
+                                            d="M64 341.333C64 364.907 83.093 384 106.667 384h170.667C300.907 384 320 364.907 320 341.333v-256H64v256zM266.667 21.333 245.333 0H138.667l-21.334 21.333H42.667V64h298.666V21.333z"
+                                            fill="#000000" opacity="1" data-original="#000000" class="hovered-path">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span>Remove Notification</span>
+                            </a>
+                        </div>
+                        <div class=" flex justify-center items-center h-[80%] px-3">
+                            <a href="#">
+                                <div id="account"
+                                    class="h-[40px] w-[40px] rounded-full hover:scale-110 duration-200 border-black ">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="w-[70%] text-sm font-semibold items-center">
+                            You have recieved a new message from Zaddy.
+                        </div>
+                        <span class="text-inherit text-sm flex justify-center items-center mx-1 mr-2">3h</span>
+                        <button id="single-notification-more-button" class="rounded-full grad-background-effect p-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path fill="#000000" fill-rule="evenodd"
+                                        d="M7 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm5 1.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                                        clip-rule="evenodd" opacity="1" data-original="#000000"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="relative flex py-3 px-1 items-center">
+                        <!-- SINGLE NOTIFICATION MORE POPUP -->
+                        <div id="single-notification-more-popup"
+                            class="rounded-xl z-40 hidden absolute top-[54px] right-[28px] text-sm font-semibold border-2 space-y-4 w-[250px] bg-slate-400 border-black p-3 flex flex-col items-center">
+                            <!-- mark as read -->
+                            <button class="flex w-full items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0"
+                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="ml-2 mr-3">
+                                    <g>
+                                        <path
+                                            d="M504.502 75.496c-9.997-9.998-26.205-9.998-36.204 0L161.594 382.203 43.702 264.311c-9.997-9.998-26.205-9.997-36.204 0-9.998 9.997-9.998 26.205 0 36.203l135.994 135.992c9.994 9.997 26.214 9.99 36.204 0L504.502 111.7c9.998-9.997 9.997-26.206 0-36.204z"
+                                            fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                    </g>
+                                </svg>
+                                <span>Mark as read</span>
+                            </button>
+                            <!-- Remove notification  -->
+                            <a href="#" class="flex w-full items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0"
+                                    viewBox="0 0 384 384" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="hovered-paths ml-2 mr-3">
+                                    <g>
+                                        <path
+                                            d="M64 341.333C64 364.907 83.093 384 106.667 384h170.667C300.907 384 320 364.907 320 341.333v-256H64v256zM266.667 21.333 245.333 0H138.667l-21.334 21.333H42.667V64h298.666V21.333z"
+                                            fill="#000000" opacity="1" data-original="#000000" class="hovered-path">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span>Remove Notification</span>
+                            </a>
+                        </div>
+                        <div class=" flex justify-center items-center h-[80%] px-3">
+                            <a href="#">
+                                <div id="account"
+                                    class="h-[40px] w-[40px] rounded-full hover:scale-110 duration-200 border-black ">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="w-[70%] text-sm font-semibold items-center">
+                            You have recieved a new message from Zaddy.
+                        </div>
+                        <span class="text-inherit text-sm flex justify-center items-center mx-1 mr-2">3h</span>
+                        <button id="single-notification-more-button" class="rounded-full grad-background-effect p-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path fill="#000000" fill-rule="evenodd"
+                                        d="M7 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm5 1.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                                        clip-rule="evenodd" opacity="1" data-original="#000000"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="relative flex py-3 px-1 items-center">
+                        <!-- SINGLE NOTIFICATION MORE POPUP -->
+                        <div id="single-notification-more-popup"
+                            class="rounded-xl z-40 hidden absolute top-[54px] right-[28px] text-sm font-semibold border-2 space-y-4 w-[250px] bg-slate-400 border-black p-3 flex flex-col items-center">
+                            <!-- mark as read -->
+                            <button class="flex w-full items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0"
+                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="ml-2 mr-3">
+                                    <g>
+                                        <path
+                                            d="M504.502 75.496c-9.997-9.998-26.205-9.998-36.204 0L161.594 382.203 43.702 264.311c-9.997-9.998-26.205-9.997-36.204 0-9.998 9.997-9.998 26.205 0 36.203l135.994 135.992c9.994 9.997 26.214 9.99 36.204 0L504.502 111.7c9.998-9.997 9.997-26.206 0-36.204z"
+                                            fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                    </g>
+                                </svg>
+                                <span>Mark as read</span>
+                            </button>
+                            <!-- Remove notification  -->
+                            <a href="#" class="flex w-full items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0"
+                                    viewBox="0 0 384 384" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="hovered-paths ml-2 mr-3">
+                                    <g>
+                                        <path
+                                            d="M64 341.333C64 364.907 83.093 384 106.667 384h170.667C300.907 384 320 364.907 320 341.333v-256H64v256zM266.667 21.333 245.333 0H138.667l-21.334 21.333H42.667V64h298.666V21.333z"
+                                            fill="#000000" opacity="1" data-original="#000000" class="hovered-path">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span>Remove Notification</span>
+                            </a>
+                        </div>
+                        <div class=" flex justify-center items-center h-[80%] px-3">
+                            <a href="#">
+                                <div id="account"
+                                    class="h-[40px] w-[40px] rounded-full hover:scale-110 duration-200 border-black ">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="w-[70%] text-sm font-semibold items-center">
+                            You have recieved a new message from Zaddy.
+                        </div>
+                        <span class="text-inherit text-sm flex justify-center items-center mx-1 mr-2">3h</span>
+                        <button id="single-notification-more-button" class="rounded-full grad-background-effect p-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path fill="#000000" fill-rule="evenodd"
+                                        d="M7 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm5 1.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                                        clip-rule="evenodd" opacity="1" data-original="#000000"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="relative flex py-3 px-1 items-center">
+                        <!-- SINGLE NOTIFICATION MORE POPUP -->
+                        <div id="single-notification-more-popup"
+                            class="rounded-xl z-40 hidden absolute top-[54px] right-[28px] text-sm font-semibold border-2 space-y-4 w-[250px] bg-slate-400 border-black p-3 flex flex-col items-center">
+                            <!-- mark as read -->
+                            <button class="flex w-full items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0"
+                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="ml-2 mr-3">
+                                    <g>
+                                        <path
+                                            d="M504.502 75.496c-9.997-9.998-26.205-9.998-36.204 0L161.594 382.203 43.702 264.311c-9.997-9.998-26.205-9.997-36.204 0-9.998 9.997-9.998 26.205 0 36.203l135.994 135.992c9.994 9.997 26.214 9.99 36.204 0L504.502 111.7c9.998-9.997 9.997-26.206 0-36.204z"
+                                            fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                    </g>
+                                </svg>
+                                <span>Mark as read</span>
+                            </button>
+                            <!-- Remove notification  -->
+                            <a href="#" class="flex w-full items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0"
+                                    viewBox="0 0 384 384" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="hovered-paths ml-2 mr-3">
+                                    <g>
+                                        <path
+                                            d="M64 341.333C64 364.907 83.093 384 106.667 384h170.667C300.907 384 320 364.907 320 341.333v-256H64v256zM266.667 21.333 245.333 0H138.667l-21.334 21.333H42.667V64h298.666V21.333z"
+                                            fill="#000000" opacity="1" data-original="#000000" class="hovered-path">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span>Remove Notification</span>
+                            </a>
+                        </div>
+                        <div class=" flex justify-center items-center h-[80%] px-3">
+                            <a href="#">
+                                <div id="account"
+                                    class="h-[40px] w-[40px] rounded-full hover:scale-110 duration-200 border-black ">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="w-[70%] text-sm font-semibold items-center">
+                            You have recieved a new message from Zaddy.
+                        </div>
+                        <span class="text-inherit text-sm flex justify-center items-center mx-1 mr-2">3h</span>
+                        <button id="single-notification-more-button" class="rounded-full grad-background-effect p-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path fill="#000000" fill-rule="evenodd"
+                                        d="M7 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm5 1.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                                        clip-rule="evenodd" opacity="1" data-original="#000000"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="relative flex py-3 px-1 items-center">
+                        <!-- SINGLE NOTIFICATION MORE POPUP -->
+                        <div id="single-notification-more-popup"
+                            class="rounded-xl z-40 hidden absolute top-[54px] right-[28px] text-sm font-semibold border-2 space-y-4 w-[250px] bg-slate-400 border-black p-3 flex flex-col items-center">
+                            <!-- mark as read -->
+                            <button class="flex w-full items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0"
+                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="ml-2 mr-3">
+                                    <g>
+                                        <path
+                                            d="M504.502 75.496c-9.997-9.998-26.205-9.998-36.204 0L161.594 382.203 43.702 264.311c-9.997-9.998-26.205-9.997-36.204 0-9.998 9.997-9.998 26.205 0 36.203l135.994 135.992c9.994 9.997 26.214 9.99 36.204 0L504.502 111.7c9.998-9.997 9.997-26.206 0-36.204z"
+                                            fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                    </g>
+                                </svg>
+                                <span>Mark as read</span>
+                            </button>
+                            <!-- Remove notification  -->
+                            <a href="#" class="flex w-full items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0"
+                                    viewBox="0 0 384 384" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                    class="hovered-paths ml-2 mr-3">
+                                    <g>
+                                        <path
+                                            d="M64 341.333C64 364.907 83.093 384 106.667 384h170.667C300.907 384 320 364.907 320 341.333v-256H64v256zM266.667 21.333 245.333 0H138.667l-21.334 21.333H42.667V64h298.666V21.333z"
+                                            fill="#000000" opacity="1" data-original="#000000" class="hovered-path">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span>Remove Notification</span>
+                            </a>
+                        </div>
+                        <div class=" flex justify-center items-center h-[80%] px-3">
+                            <a href="#">
+                                <div id="account"
+                                    class="h-[40px] w-[40px] rounded-full hover:scale-110 duration-200 border-black ">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="w-[70%] text-sm font-semibold items-center">
+                            You have recieved a new message from Zaddy.
+                        </div>
+                        <span class="text-inherit text-sm flex justify-center items-center mx-1 mr-2">3h</span>
+                        <button id="single-notification-more-button" class="rounded-full grad-background-effect p-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0"
+                                viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path fill="#000000" fill-rule="evenodd"
+                                        d="M7 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm5 1.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                                        clip-rule="evenodd" opacity="1" data-original="#000000"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="w-full h-[80px]"></div>
+                </div>
+            </div>
+        </div>
+        <!-- ACCOUNT POPUP -->
+        <div id="account-popup"
+            class="bg-bodybg hidden z-20 w-[300px] border-2 border-black fixed top-[60px] right-[10px]  rounded-xl flex flex-col justify-center">
+            <div class="flex flex-col  items-center divide-y-2 divide-black">
+                <!-- Header -->
+                <div class="flex w-full p-2 items-center ">
+                    <!-- Account -->
+                    <a href="#" class="flex items-center">
+                        <div class=" flex justify-center items-center h-[80%] px-3">
+                            <!-- <a href="#"> -->
+                            <div id="account"
+                                class="h-[40px] w-[40px] rounded-full hover:scale-110 duration-200 border-black ">
+                            </div>
+
+                        </div>
+                        <!-- Text -->
+                        <div class="flex flex-col py-1">
+                            <h3 class="font-semibold text-md">Amulya Jain</h3>
+                            <h3 class="text-xs">@amulya123</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class=" flex flex-col w-full ">
+                    <!-- Settings -->
+                    <button class="flex pb-3 pt-5 pl-8 pr-2 w-full grad-background-effect">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="25" height="25" x="0" y="0" viewBox="0 0 512 512"
+                            style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths mr-3">
+                            <g>
+                                <path
+                                    d="M268.58 304.36c-7.18 0-13 5.82-13 13-.006 33.651-27.289 60.925-60.94 60.92-33.651-.006-60.926-27.289-60.92-60.94.006-33.647 27.283-60.92 60.93-60.92 7.18 0 13-5.82 13-13s-5.82-13-13-13c-48.002.033-86.907 38.938-86.94 86.94 0 48.013 38.922 86.935 86.935 86.935s86.935-38.922 86.935-86.935c0-7.18-5.82-13-13-13z"
+                                    fill="#000000" opacity="1" data-original="#000000" class="hovered-path"></path>
+                                <path
+                                    d="M371.86 347.26c-1.24-7.072-7.978-11.8-15.05-10.56l-27.21 4.77a13 13 0 0 0-10.31 9.43 128.283 128.283 0 0 1-12.77 30.77 12.998 12.998 0 0 0 .62 14l15.88 22.63a7.92 7.92 0 0 1-.88 10.17l-16.32 16.32a7.92 7.92 0 0 1-10.16.89l-22.63-15.88a12.998 12.998 0 0 0-14-.62 128.168 128.168 0 0 1-30.77 12.77 13 13 0 0 0-9.43 10.31L214 479.44a7.92 7.92 0 0 1-7.81 6.56H183.1a7.92 7.92 0 0 1-7.81-6.56l-4.77-27.2a13 13 0 0 0-9.43-10.31 128.37 128.37 0 0 1-30.78-12.77 12.998 12.998 0 0 0-14 .62l-22.59 15.87a7.92 7.92 0 0 1-10.17-.88l-16.32-16.32a7.93 7.93 0 0 1-.89-10.16l15.88-22.63a13 13 0 0 0 .62-14 128.007 128.007 0 0 1-12.77-30.77 13 13 0 0 0-10.31-9.43l-27.2-4.77A7.92 7.92 0 0 1 26 328.9v-23.09a7.92 7.92 0 0 1 6.56-7.81l27.2-4.77a13 13 0 0 0 10.31-9.43A128.024 128.024 0 0 1 82.84 253a13 13 0 0 0-.62-14l-15.87-22.56a7.92 7.92 0 0 1 .88-10.17l16.33-16.33a7.92 7.92 0 0 1 10.16-.88l22.63 15.88a12.998 12.998 0 0 0 14 .62 128.256 128.256 0 0 1 30.78-12.77 13 13 0 0 0 9.43-10.31l4.77-27.2c1.24-7.072-3.488-13.81-10.56-15.05s-13.81 3.488-15.05 10.56l-3.38 19.3a154.266 154.266 0 0 0-21.59 9l-16.05-11.26c-13.484-9.488-31.841-7.888-43.48 3.79l-16.38 16.27c-11.667 11.645-13.262 29.996-3.78 43.48l11.26 16.05a154.048 154.048 0 0 0-9 21.6l-19.3 3.38C11.802 275.248-.02 289.344 0 305.81v23.09c-.021 16.482 11.823 30.589 28.06 33.42l19.3 3.39a153.977 153.977 0 0 0 9 21.59l-11.3 16.05c-9.479 13.486-7.88 31.837 3.79 43.48l16.33 16.32c11.643 11.671 29.997 13.266 43.48 3.78l16-11.26a154.386 154.386 0 0 0 21.59 9l3.38 19.3c2.848 16.244 16.978 28.078 33.47 28.03h23.09c16.486.02 30.593-11.829 33.42-28.07l3.39-19.3a154.216 154.216 0 0 0 21.59-9l16.06 11.26c13.485 9.484 31.839 7.884 43.48-3.79l16.33-16.33c11.67-11.643 13.269-29.994 3.79-43.48l-11.25-16a154.386 154.386 0 0 0 9-21.59l19.3-3.39c7.072-1.24 11.8-7.978 10.56-15.05z"
+                                    fill="#000000" opacity="1" data-original="#000000" class="hovered-path"></path>
+                                <path
+                                    d="m487.6 118-13.6-2.38a124.464 124.464 0 0 0-6-14.35L476 90c8.242-11.72 6.853-27.671-3.29-37.79L459.83 39.3C449.706 29.136 433.731 27.742 422 36l-11.31 7.93a124.111 124.111 0 0 0-14.35-6L394 24.39C391.538 10.272 379.271-.023 364.94 0h-18.19c-14.33-.018-26.593 10.282-29.05 24.4L315.31 38a124.111 124.111 0 0 0-14.35 6l-11.31-8c-11.72-8.242-27.671-6.853-37.79 3.29L239 52.17c-10.164 10.124-11.558 26.099-3.3 37.83l7.93 11.31a124.111 124.111 0 0 0-6 14.35L224.08 118c-14.114 2.462-24.408 14.723-24.39 29.05v18.19c-.028 14.334 10.269 26.607 24.39 29.07l13.59 2.38a124.111 124.111 0 0 0 6 14.35l-7.94 11.31c-8.243 11.716-6.863 27.664 3.27 37.79L251.86 273c10.121 10.149 26.078 11.538 37.8 3.29l11.34-7.93a124.538 124.538 0 0 0 14.35 6l2.39 13.6c2.462 14.114 14.723 24.408 29.05 24.39h18.19c14.331 0 26.582-10.317 29.02-24.44l2.38-13.59a124.111 124.111 0 0 0 14.35-6L422 276.3c11.73 8.262 27.708 6.868 37.83-3.3l12.87-12.87c10.137-10.117 11.529-26.059 3.3-37.78L468.05 211a124.538 124.538 0 0 0 6-14.35l13.6-2.39c14.083-2.476 24.352-14.711 24.35-29.01v-18.19c.023-14.334-10.278-26.602-24.4-29.06zm-1.6 47.28a3.49 3.49 0 0 1-2.89 3.44l-21.44 3.76a13 13 0 0 0-10.31 9.43 98.323 98.323 0 0 1-9.79 23.59 12.998 12.998 0 0 0 .62 14l12.51 17.84a3.49 3.49 0 0 1-.39 4.48l-12.86 12.86a3.49 3.49 0 0 1-4.45.32l-17.87-12.5a12.998 12.998 0 0 0-14-.62 98.242 98.242 0 0 1-23.59 9.79 13 13 0 0 0-9.39 10.33l-3.76 21.44a3.49 3.49 0 0 1-3.44 2.89h-18.2a3.49 3.49 0 0 1-3.44-2.89L339.54 262a13 13 0 0 0-9.43-10.31 98.411 98.411 0 0 1-23.6-9.79 12.998 12.998 0 0 0-14 .62L274.72 255a3.49 3.49 0 0 1-4.48-.39l-12.86-12.86a3.49 3.49 0 0 1-.39-4.48l12.51-17.84a12.998 12.998 0 0 0 .62-14 98.145 98.145 0 0 1-9.79-23.59 12.999 12.999 0 0 0-10.33-9.38l-21.44-3.76a3.49 3.49 0 0 1-2.89-3.44l.01-18.2a3.49 3.49 0 0 1 2.89-3.44l21.43-3.77a13 13 0 0 0 10.31-9.43 98.242 98.242 0 0 1 9.79-23.59 12.998 12.998 0 0 0-.62-14L257 75a3.49 3.49 0 0 1 .39-4.48l12.87-12.87a3.49 3.49 0 0 1 4.48-.39l17.83 12.51a13 13 0 0 0 14 .62 98.242 98.242 0 0 1 23.59-9.79 13 13 0 0 0 9.43-10.31l3.76-21.44a3.49 3.49 0 0 1 3.4-2.85h18.19a3.49 3.49 0 0 1 3.44 2.89l3.76 21.44a13 13 0 0 0 9.43 10.31 98.145 98.145 0 0 1 23.59 9.79 12.998 12.998 0 0 0 14-.62L437 57.3a3.49 3.49 0 0 1 4.48.39l12.87 12.87a3.489 3.489 0 0 1 .35 4.44l-12.51 17.87a12.998 12.998 0 0 0-.62 14 98.323 98.323 0 0 1 9.79 23.59 13 13 0 0 0 10.31 9.43l21.44 3.76a3.49 3.49 0 0 1 2.89 3.44v18.19z"
+                                    fill="#000000" opacity="1" data-original="#000000" class="hovered-path"></path>
+                                <path
+                                    d="M355.84 94.05c-34.302 0-62.11 27.808-62.11 62.11.039 34.286 27.824 62.071 62.11 62.11 34.302 0 62.11-27.808 62.11-62.11s-27.808-62.11-62.11-62.11zm0 98.22c-19.943 0-36.11-16.167-36.11-36.11-.005-19.953 16.157-36.138 36.11-36.16v.05c19.943 0 36.11 16.167 36.11 36.11 0 19.943-16.167 36.11-36.11 36.11z"
+                                    fill="#000000" opacity="1" data-original="#000000" class="hovered-path"></path>
+                            </g>
+                        </svg>
+                        <span>Account Settings</span>
+                    </button>
+                    <!-- Night Mode -->
+                    <div class="flex py-2 pt-3 pl-8 pr-2 w-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="25" height="25" x="0" y="0" viewBox="0 0 32 32"
+                            style="enable-background:new 0 0 512 512" xml:space="preserve" class="mr-3">
+                            <g>
+                                <path
+                                    d="M30.18 18.893a1.373 1.373 0 0 0-1.632-.011 11.05 11.05 0 0 1-14.215-1.224 11.05 11.05 0 0 1-1.22-14.218 1.399 1.399 0 0 0-.016-1.644 1.322 1.322 0 0 0-1.5-.477 15.127 15.127 0 0 0-6.941 4.767c-4.722 5.73-4.507 14.203.499 19.71 2.812 3.093 6.655 4.851 10.823 4.949a14.958 14.958 0 0 0 11.037-4.416 14.937 14.937 0 0 0 3.643-5.893 1.357 1.357 0 0 0-.478-1.543zm-4.225 6.376a13.48 13.48 0 0 1-9.94 3.978c-3.754-.09-7.217-1.673-9.75-4.46-4.508-4.958-4.701-12.588-.45-17.747a13.627 13.627 0 0 1 5.866-4.161 12.544 12.544 0 0 0 1.592 15.841 12.548 12.548 0 0 0 15.841 1.594 13.435 13.435 0 0 1-3.159 4.955z"
+                                    fill="#000000" opacity="1" data-original="#000000"></path>
+                                <path
+                                    d="M17.736 10.642a5.22 5.22 0 0 1 3.611 3.613.97.97 0 0 0 .938.722h.002a.971.971 0 0 0 .94-.721 5.231 5.231 0 0 1 3.614-3.614l.002-.001a.971.971 0 0 0-.002-1.879 5.222 5.222 0 0 1-3.615-3.613.97.97 0 0 0-.939-.719h-.002a.971.971 0 0 0-.938.722 5.21 5.21 0 0 1-3.61 3.61.972.972 0 0 0-.001 1.88zm4.552-3.808a6.763 6.763 0 0 0 2.871 2.868 6.77 6.77 0 0 0-2.871 2.871 6.763 6.763 0 0 0-2.868-2.871 6.75 6.75 0 0 0 2.868-2.868z"
+                                    fill="#000000" opacity="1" data-original="#000000"></path>
+                            </g>
+                        </svg>
+                        <span>Night Mode</span>
+                        <!-- Night Mode Toggle Button -->
+                        <div class="mb-2 flex w-fit items-center justify-center ml-14">
+                            <label for="nm-toggle" class="flex cursor-pointer items-center">
+                                <div class="relative">
+                                    <input type="checkbox" id="nm-toggle" class="sr-only" />
+                                    <div class="nm-toggle-bg block h-7 w-12 rounded-full bg-gray-600"></div>
+                                    <div class="dot absolute left-1 top-1 h-5 w-5 rounded-full bg-white transition">
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Log out -->
+                <button class="flex py-3 pl-8 pr-2 w-full rounded-b-xl grad-background-effect">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="25" height="25" x="0" y="0" viewBox="0 0 682.667 682.667"
+                        style="enable-background:new 0 0 512 512" xml:space="preserve" class="mr-3">
+                        <g>
+                            <defs>
+                                <clipPath id="b" clipPathUnits="userSpaceOnUse">
+                                    <path d="M0 512h512V0H0Z" fill="#000000" opacity="1" data-original="#000000"></path>
+                                </clipPath>
+                            </defs>
+                            <mask id="a">
+                                <rect width="100%" height="100%" fill="#ffffff" opacity="1" data-original="#ffffff">
+                                </rect>
+                            </mask>
+                            <g mask="url(#a)">
+                                <g clip-path="url(#b)" transform="matrix(1.33333 0 0 -1.33333 0 682.667)">
+                                    <path
+                                        d="M0 0v-40c0-33.137-26.863-60-60-60h-201c-33.137 0-60 26.863-60 60v352c0 33.137 26.863 60 60 60h201c33.137 0 60-26.863 60-60v-40"
+                                        style="stroke-width:40;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                        transform="translate(341 120)" fill="none" stroke="#000000" stroke-width="40"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                        stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="">
+                                    </path>
+                                    <path d="M0 0h-271"
+                                        style="stroke-width:40;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                        transform="translate(487 255)" fill="none" stroke="#000000" stroke-width="40"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                        stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="">
+                                    </path>
+                                    <path d="m0 0 44.786 44.787c11.716 11.716 11.716 30.71 0 42.426L0 132"
+                                        style="stroke-width:40;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                                        transform="translate(438.427 189)" fill="none" stroke="#000000"
+                                        stroke-width="40" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity=""
+                                        data-original="#000000" class=""></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <span>Log Out</span>
+                </button>
+            </div>
+        </div>
         <!-- CREATE POST POPUP -->
         <div id="create-post-popup"
             class="hidden flex z-30 text-navhoverfill font-semibold bg-bodybg border-2 border-navhoverfill rounded-xl fixed  top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] flex-col w-[550px]">
@@ -429,9 +966,7 @@
                     id="" cols="30" rows="10"></textarea>
                 <!-- Attachments -->
                 <div class="flex flex-col divide-y-2  divide-navhoverfill">
-                    <div class="py-2 w-full flex items-center justify-center">
-                        ATTACHMENTS
-                    </div>
+
                     <div class="flex w-full items-center divide-x-2 divide-navhoverfill">
                         <button class="w-1/3 grad-background-effect py-2 flex justify-center items center">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
@@ -726,10 +1261,10 @@
                     </div>
                 </div>
                 <!-- Create -->
-                <div class="w-full flex items-center justify-center">
+                <div class="w-full flex items-center py-2 justify-center">
                     <!-- Create Button -->
                     <button
-                        class="my-1 right-sidebar-follow-button font-semibold flex items-center text-sm   py-2 px-10 rounded-md">
+                        class="my-1 right-sidebar-follow-button font-semibold flex items-center text-sm   py-3 px-10 rounded-md">
                         Create
                     </button>
                 </div>
@@ -1703,12 +2238,6 @@
                             Follow
                         </button>
                     </div>
-                </div>
-                <!-- show more -->
-                <div class="flex pl-3 pt-2 mt-1">
-                    <a href="">
-                        <span class="text-sm hover:font-medium hover:text-[#0077b6]">Show more</span>
-                    </a>
                 </div>
             </div>
         </div>

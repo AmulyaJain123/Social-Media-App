@@ -137,6 +137,7 @@ transparent_overlay.addEventListener('click', () => {
     notification_popup.classList.add('hidden');
     let top_nav_notification_button = document.querySelector('#top-nav-notification-button');
     top_nav_notification_button.classList.remove('notification-button-active');
+    top_nav_notification_button.firstElementChild.firstElementChild.firstElementChild.firstElementChild.classList.remove("fill-navhoverfill");
     let notification_more_popup = document.querySelector('#notification-more-popup');
     notification_more_popup.classList.add('hidden');
     let transparent_overlay_notification_popup = document.querySelector('#transparent-overlay-notification-popup');
@@ -157,6 +158,7 @@ top_nav_notification_button.addEventListener('click', () => {
   let transparent_overlay = document.querySelector('#transparent-overlay');
   transparent_overlay.classList.remove('hidden');
   top_nav_notification_button.classList.add('notification-button-active');
+  top_nav_notification_button.firstElementChild.firstElementChild.firstElementChild.firstElementChild.classList.add("fill-navhoverfill");
 })
 let notification_more_button = document.querySelector('#notification-more-button');
 notification_more_button.addEventListener('click', () => {

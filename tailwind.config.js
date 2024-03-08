@@ -10,10 +10,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        bodybg: '#f1faee',
-        lightpurple: '#cb88fb',
-        navbg: '#457b9d',
-        navhoverfill: '#1d3557'
+        bodybg: '#f8f9fa',
+        lightpurple: '#9376E0',
+        navbg: '#dee2ff',
+        navhoverfill: '#DEE2E6'
       },
     },
   },

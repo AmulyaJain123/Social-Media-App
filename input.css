@@ -17,16 +17,16 @@ input:checked ~ .nm-toggle-bg {
   }
 }
 .post-button {
-  background-image: linear-gradient(-225deg, #cb88fb, #457b9d, #1d3557);
+  background-image: linear-gradient(-225deg, #dee2ff, #9376e0);
 }
 .left-sidebar-links:hover,
 .postcard-more-popup-link:hover,
 .grad-background,
 .grad-background-effect:hover {
-  background-image: linear-gradient(-225deg, #caf0f8, #ade8f4, #90e0ef);
+  background-image: linear-gradient(-225deg, #dee2ff, #9376e0);
 }
 .gradblue {
-  background-image: linear-gradient(-225deg, #caf0f8, #ade8f4, #90e0ef);
+  background-image: linear-gradient(-225deg, #dee2ff, #9376e0);
 }
 .top-nav-middle {
   @media (max-width: 768px) {
@@ -34,14 +34,14 @@ input:checked ~ .nm-toggle-bg {
   }
 }
 .right-sidebar-follow-button {
-  background-color: #0077b6;
-  color: #f1faee;
-  border: 2px solid #0077b6;
+  background-color: #dee2ff;
+  color: black;
+  border: 2px solid #dee2ff;
 }
 .right-sidebar-follow-button:hover {
-  background-color: #f1faee;
-  color: #0077b6;
-  border: 2px solid #0077b6;
+  background-color: #f8f9fa;
+  color: #9376e0;
+  border: 2px solid #9376e0;
   transition: all 200ms;
 }
 #account {
@@ -70,13 +70,13 @@ input:checked ~ .nm-toggle-bg {
 .main-body:hover::-webkit-scrollbar-thumb,
 #notification-div:hover::-webkit-scrollbar-thumb {
   opacity: 100;
-  background-color: #457b9d;
+  background-color: #dee2ff;
   //border-radius: 20px;
 }
 .hidden-comment-section-scroll:hover::-webkit-scrollbar-thumb {
   opacity: 100;
-  background-color: #cb88fb;
-  //border-radius: 20px;
+  background-color: #dee2ff;
+  border-radius: 20px;
 }
 .left-sidebar {
   @media (max-width: 640px) {
@@ -110,5 +110,5 @@ input:checked ~ .nm-toggle-bg {
 }
 .notification-button-active {
   transform: scale(1.1);
-  background-color: #1d3557;
+  background-color: #9376e0;
 }

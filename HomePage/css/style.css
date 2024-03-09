@@ -1200,6 +1200,10 @@ video {
   fill: #9376E0;
 }
 
+.fill-navhoverfill {
+  fill: #DEE2E6;
+}
+
 .fill-none {
   fill: none;
 }
@@ -1460,14 +1464,14 @@ video {
 
 .backimage {
   background-image: linear-gradient(
-		135deg,
-		hsl(256deg 63% 67%) 0%,
-		hsl(236deg 87% 89%) 29%,
-		hsl(234deg 100% 97%) 43%,
-		hsl(234deg 100% 97%) 57%,
-		hsl(236deg 87% 89%) 71%,
-		hsl(256deg 63% 67%) 100%
-	);
+    135deg,
+    hsl(256deg 63% 67%) 0%,
+    hsl(236deg 87% 89%) 29%,
+    hsl(234deg 100% 97%) 43%,
+    hsl(234deg 100% 97%) 57%,
+    hsl(236deg 87% 89%) 71%,
+    hsl(256deg 63% 67%) 100%
+  );
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1477,14 +1481,14 @@ video {
 
 .backimagerev {
   background-image: linear-gradient(
-		245deg,
-		hsl(233deg 100% 94%) 0%,
-		hsl(233deg 100% 94%) 29%,
-		hsl(234deg 100% 97%) 43%,
-		hsl(234deg 100% 97%) 57%,
-		hsl(233deg 100% 94%) 71%,
-		hsl(233deg 100% 94%) 100%
-	);
+    245deg,
+    hsl(233deg 100% 94%) 0%,
+    hsl(233deg 100% 94%) 29%,
+    hsl(234deg 100% 97%) 43%,
+    hsl(234deg 100% 97%) 57%,
+    hsl(233deg 100% 94%) 71%,
+    hsl(233deg 100% 94%) 100%
+  );
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1617,9 +1621,14 @@ input:checked ~ .nm-toggle-bg {
   transform: scale(1.2);
 }
 
-.notification-button-active {
-  transform: scale(1.1);
-  background-color: #9376e0;
+.top-nav-notification-button.notification-button-active {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 118 224 / var(--tw-bg-opacity));
+  /* transform: scale(1.1);
+  background-color: #9376e0; */
 }
 
 .hover\:scale-105:hover {
@@ -1661,6 +1670,10 @@ input:checked ~ .nm-toggle-bg {
 .hover\:bg-red-300:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
+.hover\:fill-black:hover {
+  fill: #000;
 }
 
 .hover\:text-black:hover {

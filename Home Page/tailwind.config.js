@@ -13,7 +13,8 @@ module.exports = {
         bodybg: '#f8f9fa',
         lightpurple: '#9376E0',
         navbg: '#dee2ff',
-        navhoverfill: '#DEE2E6'
+        navhoverfill: '#DEE2E6',
+        gold: '#ffd700'
       },
     },
   },

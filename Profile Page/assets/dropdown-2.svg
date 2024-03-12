@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25"
+    x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+    class="hovered-paths">
+    <g>
+        <g fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+            clip-rule="evenodd">
+            <path fill="#e0e0e0"
+                d="M256 0C114.745 0 0 114.746 0 256c0 141.254 114.745 256 256 256 141.254 0 256-114.746 256-256C512 114.746 397.254 0 256 0z"
+                opacity="1" data-original="#5c6bc0" class="hovered-path"></path>
+            <path fill="#e0e0e0"
+                d="M256 0c-3.69 0-7.35.124-11 .28C381.158 6.057 490 118.434 490 256S381.158 505.942 245 511.72c3.65.156 7.31.28 11 .28 141.254 0 256-114.746 256-256C512 114.746 397.254 0 256 0z"
+                opacity="1" data-original="#3f51b5" class=""></path>
+            <path fill="#000000"
+                d="M133.502 187.38a11 11 0 0 0-7.778 3.222 11 11 0 0 0 0 15.556l110.253 110.25c10.969 10.969 29.087 10.967 40.055-.002l110.25-110.25a11 11 0 0 0 0-15.554 11 11 0 0 0-15.558 0L260.475 300.85c-2.56 2.561-6.382 2.563-8.943.002l-110.253-110.25a11 11 0 0 0-7.777-3.223z"
+                opacity="1" data-original="#e8eaf6" class=""></path>
+        </g>
+    </g>
+</svg>
